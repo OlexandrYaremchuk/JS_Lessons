@@ -1,0 +1,28 @@
+.App {
+  width: 100%;
+  /* position: fixed; */
+
+
+}
+
+.Main {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.navbarBox {
+  width: 30%;
+}
+
+.mainTextBox {
+  width: 70%;
+}
+
+.mainTextBox,
+.navbarBox {
+  overflow-y: scroll;
+  height: 100%;
+  max-height: 860px;
+  scrollbar-color: rebeccapurple green;
+}
