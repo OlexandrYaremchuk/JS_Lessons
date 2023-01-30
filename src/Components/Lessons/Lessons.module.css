@@ -1,9 +1,34 @@
 .lessonsBox {
-    padding: 20px;
+    padding: 15px;
+    position: relative;
     /* background-color: aqua; */
+}
 
+.breadNav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: fixed;
+    top: 0;
 
+    background-color: #ffffff;
 
+}
+
+.breadNav li {
+    max-width: 13%;
+    margin-right: 15px;
+    /* border-right: 1px solid grey; */
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #dbdbdb;
+}
+
+.article {
+    margin-top: 50px;
 }
 
 .interestBox {
