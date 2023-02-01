@@ -12,6 +12,9 @@ const Navbar = () => {
         <div className={s.navbar}>
             <ul className={s.navbarList}>
                 <Scrollspy items={[]}>
+                    <Link to='/GitHub'>
+                        <li id='GitHub'>Основи Git та GitHub</li>
+                    </Link>
                     <Link to='/M1L1'>
                         <li id='M1L1'>Модуль 1 - Заняття 1 - Змінні та типи</li>
                     </Link>

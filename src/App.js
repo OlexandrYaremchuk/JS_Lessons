@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
 import M1L1 from './Components/Lessons/M1L1';
 import M1L2 from './Components/Lessons/M1L2';
+import GitHub from './Components/Lessons/GitHub';
 
 function App(props) {
   return (
@@ -20,6 +21,7 @@ function App(props) {
 
           <div className='mainTextBox'>
             <Routes>
+              <Route path='GitHub' element={<GitHub />} />
               <Route path='M1L1' element={<M1L1 />} />
               <Route path='M1L2' element={<M1L2 />} />
 
