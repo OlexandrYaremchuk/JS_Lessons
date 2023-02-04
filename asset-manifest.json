@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.a05e6614.css",
-    "main.js": "/JS_Lessons/static/js/main.4123bd98.js",
+    "main.css": "/JS_Lessons/static/css/main.5c873ea5.css",
+    "main.js": "/JS_Lessons/static/js/main.5e5f623c.js",
     "static/media/logo.png": "/JS_Lessons/static/media/logo.96a13af0147433eded9b.png",
     "static/media/string-idx.png": "/JS_Lessons/static/media/string-idx.60617d76eeb93df4c1c9.png",
     "static/media/not-strict-equality.png": "/JS_Lessons/static/media/not-strict-equality.ad2ae06c7fe753176ea1.png",
@@ -12,11 +12,11 @@
     "static/media/table2.png": "/JS_Lessons/static/media/table2.48b2b2fae3558d2526df.png",
     "static/media/code1.png": "/JS_Lessons/static/media/code1.84eb1d03fffe2214130f.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.a05e6614.css.map": "/JS_Lessons/static/css/main.a05e6614.css.map",
-    "main.4123bd98.js.map": "/JS_Lessons/static/js/main.4123bd98.js.map"
+    "main.5c873ea5.css.map": "/JS_Lessons/static/css/main.5c873ea5.css.map",
+    "main.5e5f623c.js.map": "/JS_Lessons/static/js/main.5e5f623c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a05e6614.css",
-    "static/js/main.4123bd98.js"
+    "static/css/main.5c873ea5.css",
+    "static/js/main.5e5f623c.js"
   ]
 }
