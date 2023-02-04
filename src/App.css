@@ -1,25 +1,24 @@
 .App {
-  width: 100%;
+  width: 100vw;
+
   position: fixed;
-  min-height: 1500px;
+  /* min-height: 1500px; */
+  height: 200vh;
 
   font-size: 14px;
-
-
 }
 
 .Main {
   display: flex;
   justify-content: space-around;
-
 }
 
 .navbarBox {
-  width: 25%;
+  width: 25vw;
 }
 
 .mainTextBox {
-  width: 75%;
+  width: 75vw;
 }
 
 .mainTextBox,
@@ -29,9 +28,7 @@
   scrollbar-color: rebeccapurple green;
 }
 
-
 .Main {
-  height: 100%;
-  min-height: 460px;
-  max-height: 1200px;
+  min-height: 960px;
+  height: 100vh;
 }

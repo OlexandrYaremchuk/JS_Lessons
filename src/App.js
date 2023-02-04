@@ -15,10 +15,10 @@ import Header from "./Components/Header/Header";
 import M1L1 from "./Components/Lessons/M1L1";
 import M1L2 from "./Components/Lessons/M1L2";
 import GitHub from "./Components/Lessons/GitHub";
-
+import Grid from "@mui/material/Grid";
 function App(props) {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="App">
         <Header />
         <div className="Main">
@@ -35,7 +35,7 @@ function App(props) {
           </div>
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
