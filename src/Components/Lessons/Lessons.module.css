@@ -5,9 +5,10 @@
 }
 
 .breadNav {
-  width: 82%;
+  width: 73vw;
   margin: 0;
   padding: 0;
+  background-color: #863131;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -91,4 +92,8 @@ pre {
 
 .stringImg {
   width: 850px;
+}
+.themeIMG {
+  display: "flex";
+  justify-content: "center";
 }
