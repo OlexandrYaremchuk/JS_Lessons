@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.d1c85624.css",
-    "main.js": "/JS_Lessons/static/js/main.8363cba9.js",
+    "main.css": "/JS_Lessons/static/css/main.5ffc717a.css",
+    "main.js": "/JS_Lessons/static/js/main.ba4b5cfc.js",
+    "static/media/switch.png": "/JS_Lessons/static/media/switch.8d75cc28a53f0eefd994.png",
     "static/media/else-if.png": "/JS_Lessons/static/media/else-if.445d23bed4576bc5c309.png",
     "static/media/logo.png": "/JS_Lessons/static/media/logo.96a13af0147433eded9b.png",
     "static/media/if-else.png": "/JS_Lessons/static/media/if-else.8c237d89d1ab8455b043.png",
     "static/media/string-idx.png": "/JS_Lessons/static/media/string-idx.60617d76eeb93df4c1c9.png",
     "static/media/not-strict-equality.png": "/JS_Lessons/static/media/not-strict-equality.ad2ae06c7fe753176ea1.png",
+    "static/media/GlobalScope.png": "/JS_Lessons/static/media/GlobalScope.441f988eebebc48e8355.png",
     "static/media/strict-equality.png": "/JS_Lessons/static/media/strict-equality.c1ff38ef60bbdd45d020.png",
     "static/media/if.png": "/JS_Lessons/static/media/if.4131abedcfe90ec127c8.png",
+    "static/media/doWhile.png": "/JS_Lessons/static/media/doWhile.153391e687f9198ef862.png",
+    "static/media/WhileCicle.png": "/JS_Lessons/static/media/WhileCicle.297dd0a910133fd3dd2e.png",
     "static/media/boolean-operators.png": "/JS_Lessons/static/media/boolean-operators.d3500979139116e56280.png",
     "static/media/table1.png": "/JS_Lessons/static/media/table1.d0cffc45d85b64cc01ee.png",
     "static/media/sprite.svg": "/JS_Lessons/static/media/sprite.9310228960ef7fd9564558b0b2422760.svg",
     "static/media/table2.png": "/JS_Lessons/static/media/table2.48b2b2fae3558d2526df.png",
     "static/media/code1.png": "/JS_Lessons/static/media/code1.84eb1d03fffe2214130f.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.d1c85624.css.map": "/JS_Lessons/static/css/main.d1c85624.css.map",
-    "main.8363cba9.js.map": "/JS_Lessons/static/js/main.8363cba9.js.map"
+    "main.5ffc717a.css.map": "/JS_Lessons/static/css/main.5ffc717a.css.map",
+    "main.ba4b5cfc.js.map": "/JS_Lessons/static/js/main.ba4b5cfc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1c85624.css",
-    "static/js/main.8363cba9.js"
+    "static/css/main.5ffc717a.css",
+    "static/js/main.ba4b5cfc.js"
   ]
 }
