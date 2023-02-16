@@ -13,15 +13,18 @@
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
-  position: fixed;
+  position: sticky;
   top: 0;
 
   background-color: #ffffff;
 }
 
-.breadNav li {
-  max-width: 13%;
+.breadNavList {
+  display: flex;
+  max-width: 100%;
+  list-style: none;
   margin-right: 15px;
+  margin-left: 1%;
   /* border-right: 1px solid grey; */
   font-size: 14px;
   text-align: center;

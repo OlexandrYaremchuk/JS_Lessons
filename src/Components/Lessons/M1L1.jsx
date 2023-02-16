@@ -13,41 +13,52 @@ import Scrollspy from "react-scrollspy";
 const M1L1 = () => {
   return (
     <div className={s.lessonsBox}>
-      <div>
+      <div className={s.breadNav}>
         <Scrollspy
-          items={["section-1", "section-2", "section-3"]}
+          items={[
+            "section-1",
+            "section-2",
+            "section-3",
+            "section-4",
+            "section-5",
+            "section-6",
+            "section-7",
+            "section-8",
+            "section-9",
+          ]}
           currentClassName="is-current"
-          className={s.breadNav}
         >
-          <li>
-            <a href="#section-1">Підключення скрипту</a>
-          </li>
-          <li>
-            <a href="#section-2">Інструменти розробника</a>
-          </li>
-          <li>
-            <a href="#section-3">Основи синтаксису</a>
-          </li>
-          <li>
-            <a href="#section-4">Змінні та типи</a>
-          </li>
+          <div className={s.breadNavList}>
+            <li>
+              <a href="#section-1">Підключення скрипту</a>
+            </li>
+            <li>
+              <a href="#section-2">Інструменти розробника</a>
+            </li>
+            <li>
+              <a href="#section-3">Основи синтаксису</a>
+            </li>
+            <li>
+              <a href="#section-4">Змінні та типи</a>
+            </li>
 
-          <li>
-            <a href="#section-5">Взаємодія з користувачем</a>
-          </li>
+            <li>
+              <a href="#section-5">Взаємодія з користувачем</a>
+            </li>
 
-          <li>
-            <a href="#section-6">Основні оператори</a>
-          </li>
-          <li>
-            <a href="#section-7">Числа</a>
-          </li>
-          <li>
-            <a href="#section-8">Рядки</a>
-          </li>
-          <li>
-            <a href="#section-9">Логічні оператори</a>
-          </li>
+            <li>
+              <a href="#section-6">Основні оператори</a>
+            </li>
+            <li>
+              <a href="#section-7">Числа</a>
+            </li>
+            <li>
+              <a href="#section-8">Рядки</a>
+            </li>
+            <li>
+              <a href="#section-9">Логічні оператори</a>
+            </li>
+          </div>
         </Scrollspy>
       </div>
 
