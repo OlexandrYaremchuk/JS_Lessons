@@ -15,6 +15,7 @@ import Header from "./Components/Header/Header";
 import M1L1 from "./Components/Lessons/M1L1";
 import M1L2 from "./Components/Lessons/M1L2";
 import GitHub from "./Components/Lessons/GitHub";
+import Arrey from "./Components/Lessons/Arrey";
 function App(props) {
   return (
     <BrowserRouter>
@@ -30,6 +31,7 @@ function App(props) {
               <Route path="GitHub" element={<GitHub />} />
               <Route path="M1L1" element={<M1L1 />} />
               <Route path="M1L2" element={<M1L2 />} />
+              <Route path="Arrey" element={<Arrey />} />
             </Routes>
           </div>
         </div>
