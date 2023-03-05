@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/JS_Lessons/static/css/main.5ffc717a.css",
-    "main.js": "/JS_Lessons/static/js/main.cc8d4f64.js",
+    "main.js": "/JS_Lessons/static/js/main.2751581d.js",
+    "static/media/object.png": "/JS_Lessons/static/media/object.639208ed3a450a46bf69.png",
     "static/media/scope.png": "/JS_Lessons/static/media/scope.947d6ff593e5023fbdca.png",
     "static/media/switch.png": "/JS_Lessons/static/media/switch.8d75cc28a53f0eefd994.png",
     "static/media/else-if.png": "/JS_Lessons/static/media/else-if.445d23bed4576bc5c309.png",
@@ -35,10 +36,10 @@
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "index.html": "/JS_Lessons/index.html",
     "main.5ffc717a.css.map": "/JS_Lessons/static/css/main.5ffc717a.css.map",
-    "main.cc8d4f64.js.map": "/JS_Lessons/static/js/main.cc8d4f64.js.map"
+    "main.2751581d.js.map": "/JS_Lessons/static/js/main.2751581d.js.map"
   },
   "entrypoints": [
     "static/css/main.5ffc717a.css",
-    "static/js/main.cc8d4f64.js"
+    "static/js/main.2751581d.js"
   ]
 }
