@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/JS_Lessons/static/css/main.5ffc717a.css",
-    "main.js": "/JS_Lessons/static/js/main.62afe8c3.js",
+    "main.js": "/JS_Lessons/static/js/main.cc8d4f64.js",
+    "static/media/scope.png": "/JS_Lessons/static/media/scope.947d6ff593e5023fbdca.png",
     "static/media/switch.png": "/JS_Lessons/static/media/switch.8d75cc28a53f0eefd994.png",
     "static/media/else-if.png": "/JS_Lessons/static/media/else-if.445d23bed4576bc5c309.png",
     "static/media/logo.png": "/JS_Lessons/static/media/logo.96a13af0147433eded9b.png",
@@ -9,6 +10,7 @@
     "static/media/pop.png": "/JS_Lessons/static/media/pop.fd179314efee43b19d72.png",
     "static/media/if-else.png": "/JS_Lessons/static/media/if-else.8c237d89d1ab8455b043.png",
     "static/media/string-idx.png": "/JS_Lessons/static/media/string-idx.60617d76eeb93df4c1c9.png",
+    "static/media/stack.png": "/JS_Lessons/static/media/stack.d7aa9e85aa33a23cacf9.png",
     "static/media/not-strict-equality.png": "/JS_Lessons/static/media/not-strict-equality.ad2ae06c7fe753176ea1.png",
     "static/media/GlobalScope.png": "/JS_Lessons/static/media/GlobalScope.441f988eebebc48e8355.png",
     "static/media/Java.png": "/JS_Lessons/static/media/Java.405b73b9f02d6ae69f5d.png",
@@ -24,17 +26,19 @@
     "static/media/table2.png": "/JS_Lessons/static/media/table2.48b2b2fae3558d2526df.png",
     "static/media/code1.png": "/JS_Lessons/static/media/code1.84eb1d03fffe2214130f.png",
     "static/media/slice.png": "/JS_Lessons/static/media/slice.37abbaf496987d568521.png",
+    "static/media/call-stack.png": "/JS_Lessons/static/media/call-stack.21911e0b095027e03a0f.png",
     "static/media/splice3.png": "/JS_Lessons/static/media/splice3.3fe56b34b901d6535276.png",
     "static/media/link.png": "/JS_Lessons/static/media/link.1f6d1a803ed066f017ac.png",
     "static/media/splice2.png": "/JS_Lessons/static/media/splice2.6fa30534ff37c9896cb7.png",
     "static/media/push.png": "/JS_Lessons/static/media/push.57a6128db6feba82facc.png",
+    "static/media/fn-basics.png": "/JS_Lessons/static/media/fn-basics.ba2828e9781a30ba7be1.png",
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "index.html": "/JS_Lessons/index.html",
     "main.5ffc717a.css.map": "/JS_Lessons/static/css/main.5ffc717a.css.map",
-    "main.62afe8c3.js.map": "/JS_Lessons/static/js/main.62afe8c3.js.map"
+    "main.cc8d4f64.js.map": "/JS_Lessons/static/js/main.cc8d4f64.js.map"
   },
   "entrypoints": [
     "static/css/main.5ffc717a.css",
-    "static/js/main.62afe8c3.js"
+    "static/js/main.cc8d4f64.js"
   ]
 }
