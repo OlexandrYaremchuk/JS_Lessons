@@ -61,11 +61,12 @@
   fill: rgb(12, 136, 185);
 }
 
-span {
+.Span {
   background-color: #dbdbdb;
   border: 1px solid #79bff8;
   border-radius: 5px;
   padding: 0 5px;
+  color: rgb(176, 66, 46);
 }
 
 h1,
@@ -75,7 +76,7 @@ h3 {
 }
 
 h3 {
-  color: rgba(53, 53, 53, 0.644);
+  color: rgba(7, 97, 192, 0.944);
 }
 
 h5 {
@@ -89,8 +90,9 @@ h5 {
 
 pre {
   width: 100%;
-  background-color: rgb(210, 214, 230);
+  background-color: rgb(185, 185, 185);
   border-radius: 10px;
+  color: #ffffff;
 }
 
 .stringImg {

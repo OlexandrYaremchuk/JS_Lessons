@@ -14,8 +14,12 @@ import slice from "../../img/slice.png";
 import splice1 from "../../img/splice1.png";
 import splice2 from "../../img/splice2.png";
 import splice3 from "../../img/splice3.png";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Arrey = () => {
+  const codeStyle = materialDark;
+
   return (
     <div className={s.lessonsBox}>
       <div className={s.breadNav}>
@@ -50,21 +54,23 @@ const Arrey = () => {
         <h4>Створення</h4>
         <p>
           Масив оголошується відкриває і закриває квадратною дужками{" "}
-          <span>[ ]</span> - літералом масиву. Усередині дужок кожен елемент
-          масиву поділяється комою.
+          <span className={s.Span}>SyntaxHighlighter[ ]</span> - літералом
+          масиву. Усередині дужок кожен елемент масиву поділяється комою.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>Доступ до елементів</h4>
         <p>
           Для доступу до значення елемента масиву використовується синтаксис
-          квадратних дужок <span>масив[індекс]</span>. Між іменем змінної масив,
-          що зберігає, і квадратними дужками не повинна бути пробілу.
+          квадратних дужок{" "}
+          <span className={s.Span}>SyntaxHighlighterмасив[індекс]</span>. Між
+          іменем змінної масив, що зберігає, і квадратними дужками не повинна
+          бути пробілу.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
 
@@ -73,7 +79,7 @@ const Arrey = () => {
             console.log(clients[1]); // Poly
             console.log(clients[2]); // Ajax
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Індексація елементів масиву починається з <strong>нуля</strong> .
         </p>
@@ -85,49 +91,51 @@ const Arrey = () => {
           На відміну від рядків, елементи масиву можна змінювати, звернувшись до
           них за індексом і надавши інше значення.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             clients[0] = "Kiwi";
             clients[1] = "Pango";
             console.log(clients); // ["Kiwi", "Pango", "Ajax"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>Довжина</h4>
         <p>
           Довжина масиву, тобто кількість його елементів, зберігається як
-          <span>length</span> . Це динамічна величина, яка автоматично
-          змінюється при додаванні або видаленні елементів.
+          <span className={s.Span}>SyntaxHighlighterlength</span> . Це динамічна
+          величина, яка автоматично змінюється при додаванні або видаленні
+          елементів.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             console.log(clients.length); // 3
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>Індекс останнього елемента</h4>
         <p>
           Найчастіше ми заздалегідь у коді не знаємо, яка буде довжина масиву.
           Для того щоб отримати значення останнього елемента застосовується
           наступний підхід - довжина масиву завжди на одиницю більша ніж індекс
           останнього елемента. Використовуючи формулу,{" "}
-          <span>довжина_масиву - 1</span> можна отримати значення останнього
-          елемента масиву довільної довжини.
+          <span className={s.Span}>SyntaxHighlighterдовжина_масиву - 1</span>{" "}
+          можна отримати значення останнього елемента масиву довільної довжини.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             const lastElementIndex = clients.length - 1;
             console.log(lastElementIndex); // 2
             console.log(clients[lastElementIndex]); // "Ajax"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h1 id="IterArr">Ітерація з масиву</h1>
         <p>
-          Цикл <span>for</span> можна використовувати для ітерації по масиву,
-          тобто перебрати його поелементно.
+          Цикл <span className={s.Span}>SyntaxHighlighterfor</span> можна
+          використовувати для ітерації по масиву, тобто перебрати його
+          поелементно.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly"];
 
@@ -135,40 +143,43 @@ const Arrey = () => {
               console.log(clients[i]);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Для доступу до елементів використовується синтаксис квадратних дужок
-          <span>масив[індекс]</span>, де <span>індекс</span> це значні
+          <span className={s.Span}>SyntaxHighlighterмасив[індекс]</span>, де{" "}
+          <span className={s.Span}>SyntaxHighlighterіндекс</span> це значні
           лічильники циклу від 0і до останнього індексу масиву, тобто менше, але
           не дорівнює його довжині.
         </p>
         <h4>
-          Цикл <span>for...of</span>
+          Цикл <span className={s.Span}>SyntaxHighlighterfor...of</span>
         </h4>
         <p>
-          Конструкція <span>for...of</span> оголошує цикл, що перебирає об'єкти,
-          що ітеруються, такі як масиви і рядки. Тіло циклу виконуватиметься для
-          значення кожного елемента. Це хороша заміна циклу, <span>for</span>{" "}
-          якщо не потрібен доступ до лічильника ітерації.
+          Конструкція <span className={s.Span}>SyntaxHighlighterfor...of</span>{" "}
+          оголошує цикл, що перебирає об'єкти, що ітеруються, такі як масиви і
+          рядки. Тіло циклу виконуватиметься для значення кожного елемента. Це
+          хороша заміна циклу,{" "}
+          <span className={s.Span}>SyntaxHighlighterfor</span> якщо не потрібен
+          доступ до лічильника ітерації.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             for (const variable of iterable) {
               // тіло цикла
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <ul>
           <li>
-            <span>variable</span> - Змінна яка зберігатиме значення елемента на
-            кожній ітерації.
+            <span className={s.Span}>SyntaxHighlightervariable</span> - Змінна
+            яка зберігатиме значення елемента на кожній ітерації.
           </li>
           <li>
-            <span>iterable</span> - Колекція, яка має перераховані елементи,
-            наприклад масив.
+            <span className={s.Span}>SyntaxHighlighteriterable</span> -
+            Колекція, яка має перераховані елементи, наприклад масив.
           </li>
         </ul>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly"];
 
@@ -182,16 +193,16 @@ const Arrey = () => {
               console.log(character);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Оператори та <span>break</span>
-          <span>continue</span>
+          Оператори та <span className={s.Span}>SyntaxHighlighterbreak</span>
+          <span className={s.Span}>SyntaxHighlightercontinue</span>
         </h4>
         <p>
           Шукатимемо ім'я клієнта в масиві імен, якщо знайшли - перервемо цикл,
           тому що немає сенсу шукати далі, імена у нас унікальні.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             const clientNameToFind = "Poly";
@@ -212,15 +223,18 @@ const Arrey = () => {
 
             console.log(message); // "Клієнт з таким іменем є в базі даних!"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Можна спочатку встановити <span>message</span> значення невдачі
-          пошуку, а в циклі перезаписати його на успіх, якщо знайшли ім'я. Але
-          <span>break</span> все одно знадобиться, тому що якщо у нас масив з
-          10000 клієнтів, а потрібний нам стоїть на позиції 2, то немає
-          абсолютно ніякого сенсу перебирати 9998 елементів, що залишилися.
+          Можна спочатку встановити{" "}
+          <span className={s.Span}>SyntaxHighlightermessage</span> значення
+          невдачі пошуку, а в циклі перезаписати його на успіх, якщо знайшли
+          ім'я. Але
+          <span className={s.Span}>SyntaxHighlighterbreak</span> все одно
+          знадобиться, тому що якщо у нас масив з 10000 клієнтів, а потрібний
+          нам стоїть на позиції 2, то немає абсолютно ніякого сенсу перебирати
+          9998 елементів, що залишилися.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Poly", "Ajax"];
             const clientNameToFind = "Poly";
@@ -236,11 +250,11 @@ const Arrey = () => {
 
             console.log(message); // Клієнт з таким іменем є в базі даних
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Використовуємо цикл для виведення лише чисел більше за певне значення.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
           const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
           const threshold = 15;
@@ -255,13 +269,17 @@ const Arrey = () => {
         }
         
           `}
-        </pre>
+        </SyntaxHighlighter>
         <h1 id="Link">Присвоєння за посиланням та за значенням</h1>
         <p>
           Фундаментальною відмінністю складних типів від примітивів є те, як
-          вони зберігаються і копіюються. Примітиви: <span>рядки</span>,{" "}
-          <span>числа</span>, <span>булі</span>, <span>null</span> і{" "}
-          <span>undefined</span>, при присвоенні копіюються повністю,{" "}
+          вони зберігаються і копіюються. Примітиви:{" "}
+          <span className={s.Span}>SyntaxHighlighterрядки</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighterчисла</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighterбулі</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighternull</span> і{" "}
+          <span className={s.Span}>SyntaxHighlighterundefined</span>, при
+          присвоенні копіюються повністю,{" "}
           <strong>за значенням (by value)</strong>.
         </p>
         <p>
@@ -280,7 +298,8 @@ const Arrey = () => {
         <p>
           Якщо ми захочемо повідомити вміст цього запису користувачам, то можемо
           зробити так - зробити фізичні копії і вручити їх кожному, тобто
-          зробити <span>незалежні</span> копії (присвоєння за значенням).
+          зробити <span className={s.Span}>SyntaxHighlighterнезалежні</span>{" "}
+          копії (присвоєння за значенням).
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={Hello2} alt="" />
@@ -317,7 +336,7 @@ const Arrey = () => {
         <p>
           Усі примітивні типи надаються за значенням, тобто створюється копія.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let a = 5;
             // Присвоєння по значенню, в пам'яті буде створенно ще один елемент
@@ -332,12 +351,12 @@ const Arrey = () => {
             // Значення b не змінилось так, як це окрема копія
             console.log(b); // 5
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Складні типи - об'єкти, масиви, функції присвоюються за посиланням,
           тобто змінна просто отримує посилання вже існуючий об'єкт.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const a = ["Mango"];
             // Так як a це масив, в b записується посиланняна вже існуючий
@@ -359,18 +378,21 @@ const Arrey = () => {
             console.log(a); // ["Mango", "Poly", "Ajax"]
             console.log(b); // ["Mango", "Poly", "Ajax"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h1 id="ArrMethod">Методи масиву</h1>
         <h4>
-          Методи <span>split()</span> <span>join()</span>
+          Методи <span className={s.Span}>SyntaxHighlightersplit()</span>{" "}
+          <span className={s.Span}>SyntaxHighlighterjoin()</span>
         </h4>
         <p>
-          Метод <span>split(delimiter)</span> перетворює рядок на масив,
-          «розбивши» його по роздільнику <span>delimiter</span>. Якщо роздільник
-          це порожній рядок, вийде масив окремих символів. Розділювач може бути
-          один або кілька символів.
+          Метод{" "}
+          <span className={s.Span}>SyntaxHighlightersplit(delimiter)</span>{" "}
+          перетворює рядок на масив, «розбивши» його по роздільнику{" "}
+          <span className={s.Span}>SyntaxHighlighterdelimiter</span>. Якщо
+          роздільник це порожній рядок, вийде масив окремих символів. Розділювач
+          може бути один або кілька символів.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const name = "Mango";
             console.log(name.split("")); // ["M", "a", "n", "g", "o"]
@@ -378,60 +400,69 @@ const Arrey = () => {
             const message = "JavaScript це цікаво";
             console.log(message.split(" ")); // ["JavaScript", "це", "цікаво"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Метод масивів <span>join(delimiter)</span> з'єднує елементи масиву
-          рядок. У рядку елементи будуть розділені символом або групою символів,
-          зазначених у <span>delimiter</span>. Тобто це операція зворотна методу
-          рядків <span>split(delimiter)</span>.
+          Метод масивів{" "}
+          <span className={s.Span}>SyntaxHighlighterjoin(delimiter)</span>{" "}
+          з'єднує елементи масиву рядок. У рядку елементи будуть розділені
+          символом або групою символів, зазначених у{" "}
+          <span className={s.Span}>SyntaxHighlighterdelimiter</span>. Тобто це
+          операція зворотна методу рядків{" "}
+          <span className={s.Span}>SyntaxHighlightersplit(delimiter)</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const words = ["JavaScript", "це", "цікаво"];
             console.log(words.join("")); // "JavaScriptцецікаво"
             console.log(words.join(" ")); // "JavaScript це цікаво"
             console.log(words.join("-")); // "JavaScript-це-цікаво"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Метод <span>indexOf()</span>
+          Метод <span className={s.Span}>SyntaxHighlighterindexOf()</span>
         </h4>
         <p>
-          <span>indexOf(value)</span> повертає перший індекс, в якому елемент зі
-          значенням <span>value</span> був знайдений в масиві, або число{" "}
-          <span>-1</span> якщо такого елемента немає. Використовуйте
-          <span>indexOf</span> тоді, коли потрібно отримати безпосередньо індекс
-          елемента.
+          <span className={s.Span}>SyntaxHighlighterindexOf(value)</span>{" "}
+          повертає перший індекс, в якому елемент зі значенням{" "}
+          <span className={s.Span}>SyntaxHighlightervalue</span> був знайдений в
+          масиві, або число <span className={s.Span}>SyntaxHighlighter-1</span>{" "}
+          якщо такого елемента немає. Використовуйте
+          <span className={s.Span}>SyntaxHighlighterindexOf</span> тоді, коли
+          потрібно отримати безпосередньо індекс елемента.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
             console.log(clients.indexOf("Poly")); // 2
             console.log(clients.indexOf("Monkong")); // -1
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Метод <span>includes()</span>
+          Метод <span className={s.Span}>SyntaxHighlighterincludes()</span>
         </h4>
         <p>
-          <span>includes(value)</span> перевіряє чи є у масиві елемент зі
-          значенням <span>value</span> і повертає <span>true</span> чи
-          <span>false</span> відповідно. Область застосування цього методу
-          зводиться до ситуацій, коли необхідно перевірити, чи є елемент у
-          масиві і не важлива його позиція <span>(індекс)</span>.
+          <span className={s.Span}>SyntaxHighlighterincludes(value)</span>{" "}
+          перевіряє чи є у масиві елемент зі значенням{" "}
+          <span className={s.Span}>SyntaxHighlightervalue</span> і повертає{" "}
+          <span className={s.Span}>SyntaxHighlightertrue</span> чи
+          <span className={s.Span}>SyntaxHighlighterfalse</span> відповідно.
+          Область застосування цього методу зводиться до ситуацій, коли
+          необхідно перевірити, чи є елемент у масиві і не важлива його позиція{" "}
+          <span className={s.Span}>SyntaxHighlighter(індекс)</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
             console.log(clients.includes("Poly")); // true
             console.log(clients.includes("Monkong")); // false
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h5>
-          Перевірка множинних <span>includes()</span> умов
+          Перевірка множинних{" "}
+          <span className={s.Span}>SyntaxHighlighterincludes()</span> умов
         </h5>
         <p>На перший погляд, код наступного прикладу виглядає добре.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const fruit = "apple";
 
@@ -439,13 +470,14 @@ const Arrey = () => {
               console.log("It is a red fruit!");
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Однак, якщо у нас буде більше червоних фруктів, наприклад ще вишня
           (cherry) або журавлина (cranberries)? Чи будемо розширювати умову за
-          допомогою додаткових <span>||</span>?
+          допомогою додаткових{" "}
+          <span className={s.Span}>SyntaxHighlighter||</span>?
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const fruit = "apple";
 
@@ -458,13 +490,14 @@ const Arrey = () => {
               console.log("It is a red fruit!");
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           {" "}
-          Можемо переписати умову використовуючи метод <span>includes()</span> ,
-          це дуже просто і масштабовано.
+          Можемо переписати умову використовуючи метод{" "}
+          <span className={s.Span}>SyntaxHighlighterincludes()</span> , це дуже
+          просто і масштабовано.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             // Виносимо варіанти в масив
             const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
@@ -476,9 +509,10 @@ const Arrey = () => {
               console.log(${"fruit"} is a red fruit!\`);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Методи <span>push()</span> <span>pop()</span>
+          Методи <span className={s.Span}>SyntaxHighlighterpush()</span>{" "}
+          <span className={s.Span}>SyntaxHighlighterpop()</span>
         </h4>
         <p>
           Додають чи видаляють крайні елементи масиву. Працюють лише з крайнім
@@ -489,14 +523,15 @@ const Arrey = () => {
           <img src={pop} alt="" />
         </div>
         <p>
-          Метод <span>push()</span> додає один або кілька елементів в кінець
-          масиву, без необхідності вказувати індекси елементів, що додаються.
-          Повертає довжину масиву після додавання елементів.
+          Метод <span className={s.Span}>SyntaxHighlighterpush()</span> додає
+          один або кілька елементів в кінець масиву, без необхідності вказувати
+          індекси елементів, що додаються. Повертає довжину масиву після
+          додавання елементів.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={push} alt="" zoomFactor={2.0} />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const numbers = [];
 
@@ -515,16 +550,17 @@ const Arrey = () => {
             numbers.push(5);
             console.log(numbers); // [1, 2, 3, 4, 5]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Метод <span>pop()</span> видаляє останній елемент кінця масиву і
-          повертає віддалений елемент. Якщо масив порожній, метод повертає
-          <span>undefined</span>.
+          Метод <span className={s.Span}>SyntaxHighlighterpop()</span> видаляє
+          останній елемент кінця масиву і повертає віддалений елемент. Якщо
+          масив порожній, метод повертає
+          <span className={s.Span}>SyntaxHighlighterundefined</span>.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={push2} alt="" />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const numbers = [1, 2, 3, 4, 5];
 
@@ -543,84 +579,92 @@ const Arrey = () => {
             console.log(numbers.pop()); //  1
             console.log(numbers); // []
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Метод <span>slice()</span>
+          Метод <span className={s.Span}>SyntaxHighlighterslice()</span>
         </h4>
         <p>
-          <span>slice(begin, end)</span> повертає новий масив, який містить
-          копію частини вихідного масиву, не змінюючи його. Копія робиться від
-          <span>begin</span> і до, але не включаючи <span>end</span> - індекси
-          елементів вихідного масиву.
+          <span className={s.Span}>SyntaxHighlighterslice(begin, end)</span>{" "}
+          повертає новий масив, який містить копію частини вихідного масиву, не
+          змінюючи його. Копія робиться від
+          <span className={s.Span}>SyntaxHighlighterbegin</span> і до, але не
+          включаючи <span className={s.Span}>SyntaxHighlighterend</span> -
+          індекси елементів вихідного масиву.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={slice} alt="" />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
           const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
           console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Якщо <span>begin</span> не <span>end</span> вказано, буде створено
-          повну копію вихідного масиву.
+          Якщо <span className={s.Span}>SyntaxHighlighterbegin</span> не{" "}
+          <span className={s.Span}>SyntaxHighlighterend</span> вказано, буде
+          створено повну копію вихідного масиву.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
             console.log(clients.slice()); // ["Mango", Ajax", "Poly", "Kiwi"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Якщо не вказано <span>end</span>, копіювання буде від{" "}
-          <span>start</span> і до кінця вихідного масиву.
+          Якщо не вказано <span className={s.Span}>SyntaxHighlighterend</span>,
+          копіювання буде від{" "}
+          <span className={s.Span}>SyntaxHighlighterstart</span> і до кінця
+          вихідного масиву.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
             console.log(clients.slice(1)); // ["Ajax", "Poly", "Kiwi"]
             console.log(clients.slice(2)); // ["Poly", "Kiwi"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Якщо значення <span>start</span> негативне, а <span>end</span> не
-          вказано, будуть скопійовані останні <span>start</span> елементи
+          Якщо значення <span className={s.Span}>SyntaxHighlighterstart</span>{" "}
+          негативне, а <span className={s.Span}>SyntaxHighlighterend</span> не
+          вказано, будуть скопійовані останні{" "}
+          <span className={s.Span}>SyntaxHighlighterstart</span> елементи
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
           const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
           console.log(clients.slice(-2)); // ["Poly", "Kiwi"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
-          Метод <span>splice()</span>
+          Метод <span className={s.Span}>SyntaxHighlightersplice()</span>
         </h4>
         <p>
           Швейцарський ніж для роботи з масивами, якщо потрібно змінити вихідний
           масив. Видаляє, додає та замінює елементи у довільному місці масиву.
         </p>
         <p>Щоб видалити елементи в масиві, передаються два аргументи.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
           splice(position, num)
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <ul>
           <li>
-            <span>position</span> - вказує позицію (індекс) першого елемента
-            видалення
+            <span className={s.Span}>SyntaxHighlighterposition</span> - вказує
+            позицію (індекс) першого елемента видалення
           </li>
           <li>
-            <span>num</span> - визначає кількість елементів, що видаляються
+            <span className={s.Span}>SyntaxHighlighternum</span> - визначає
+            кількість елементів, що видаляються
           </li>
         </ul>
         <p>
-          Метод <span>splice</span> змінює вихідний масив та повертає масив, що
-          містить віддалені елементи. Наприклад, ми маємо масив оцінок, який
-          містить п'ять чисел від 1 до 5.
+          Метод <span className={s.Span}>SyntaxHighlightersplice</span> змінює
+          вихідний масив та повертає масив, що містить віддалені елементи.
+          Наприклад, ми маємо масив оцінок, який містить п'ять чисел від 1 до 5.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const scores = [1, 2, 3, 4, 5];
 
@@ -633,9 +677,10 @@ const Arrey = () => {
             // А масив deletedScores має три видалених елемента
             console.log(deletedScores); // [1, 2, 3]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          На малюнку показано виклик методу <span>score.splice(0, 3)</span> з
+          На малюнку показано виклик методу{" "}
+          <span className={s.Span}>SyntaxHighlighterscore.splice(0, 3)</span> з
           прикладу.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
@@ -660,15 +705,16 @@ const Arrey = () => {
           передати три або більше аргументів, при цьому другий аргумент повинен
           дорівнювати нулю.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             splice(position, 0, new_element_1, new_element_2, ...)
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <ul>
           <li>
-            Аргумент <span>position</span> вказує початкову позицію у масиві,
-            куди буде вставлено нові елементи.
+            Аргумент <span className={s.Span}>SyntaxHighlighterposition</span>{" "}
+            вказує початкову позицію у масиві, куди буде вставлено нові
+            елементи.
           </li>
           <li>
             Другий аргумент - це нуль, він говорить методу не видаляти елементи
@@ -683,17 +729,20 @@ const Arrey = () => {
           Наприклад, у нас є масив із назвами кольорів у вигляді рядків. Додамо
           новий колір перед елементом із індексом 2.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const colors = ["red", "green", "blue"];
 
             colors.splice(2, 0, "purple");
             console.log(colors); // ["red", "green", "purple", "blue"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           На малюнку показано виклик методу{" "}
-          <span> colors.splice(2, 0, 'purple')</span> з прикладу.
+          <span className={s.Span}>
+            SyntaxHighlighter colors.splice(2, 0, 'purple')
+          </span>{" "}
+          з прикладу.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={splice2} alt="" />
@@ -702,14 +751,14 @@ const Arrey = () => {
           Можна додати довільну кількість елементів, передавши четвертий, п'ятий
           аргумент і т.д.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const colors = ["red", "green", "blue"];
 
             colors.splice(1, 0, "yellow", "pink");
             console.log(colors); // ["red", "yellow", "pink", "green", "blue"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h5>Заміна</h5>
         <p>
           Заміна це операція додавання, в якій видаляються елементи в місці
@@ -717,18 +766,19 @@ const Arrey = () => {
           аргументи. Кількість елементів, що видаляються і додаються, може не
           збігатися.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             splice(position, num, new_element_1, new_element_2, ...)
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <ul>
           <li>
-            <span>position</span> - вказує позицію (індекс) першого елемента
-            видалення
+            <span className={s.Span}>SyntaxHighlighterposition</span> - вказує
+            позицію (індекс) першого елемента видалення
           </li>
           <li>
-            <span>num</span> - визначає кількість елементів, що видаляються
+            <span className={s.Span}>SyntaxHighlighternum</span> - визначає
+            кількість елементів, що видаляються
           </li>
           <li>
             Третій, четвертий і всі наступні аргументи – це нові елементи, які
@@ -736,7 +786,7 @@ const Arrey = () => {
           </li>
         </ul>
         <p>наприклад, ми маємо масив мов програмування з чотирьох елементів.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const languages = ["C", "C++", "Java", "JavaScript"];
 
@@ -748,23 +798,26 @@ const Arrey = () => {
             languages.splice(2, 1, "C#", "Swift", "Go");
             console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           На малюнку показано виклик методу{" "}
-          <span>languages.splice(1, 1, 'Python')</span> з прикладу.
+          <span className={s.Span}>
+            SyntaxHighlighterlanguages.splice(1, 1, 'Python')
+          </span>{" "}
+          з прикладу.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={splice3} alt="" />
         </div>
         <h4>
-          Метод <span>concat()</span>
+          Метод <span className={s.Span}>SyntaxHighlighterconcat()</span>
         </h4>
         <p>
           Поєднує два або більше масиву в один. Він не змінює масив, на якому
           викликається, а повертає новий. Порядок аргументів методу впливає
           порядок елементів нового масиву.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
             const newClients = ["Monkong", "Singu"];
@@ -778,7 +831,7 @@ const Arrey = () => {
             console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
             console.log(newClients); // ["Monkong", "Singu"]
                 `}
-        </pre>
+        </SyntaxHighlighter>
       </div>
     </div>
   );

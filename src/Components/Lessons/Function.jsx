@@ -1,4 +1,7 @@
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 import s from "./Lessons.module.css";
 import sprite from "../../img/icomoon/sprite.svg";
 import Scrollspy from "react-scrollspy";
@@ -8,6 +11,8 @@ import stack from "../../img/stack.png";
 import callStack from "../../img/call-stack.png";
 
 const Function = () => {
+  const codeStyle = materialDark;
+
   return (
     <div className={s.lessonsBox}>
       <div className={s.breadNav}>
@@ -45,7 +50,7 @@ const Function = () => {
           <img src={fnBasics} alt="" />
         </div>
         <h3>Оголошення функції</h3>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
                  // 1. Оголошення функції multiply
                   function multiply() {
@@ -58,28 +63,30 @@ const Function = () => {
                 multiply(); // 'Це логи при викликові функції multiply'
                 multiply(); // 'Це логи при викликові функції multiply'
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Оголошення функції <strong>( function declaration )</strong>{" "}
-          починається з ключового слова <span>function</span>, за яким йде її
-          ім'я - дієслово, що відповідає на запитання{" "}
+          починається з ключового слова{" "}
+          <span className={s.Span}>SyntaxHighlighterfunction</span>, за яким йде
+          її ім'я - дієслово, що відповідає на запитання{" "}
           <strong>«Що зробити?» </strong> та пара круглих дужок.
         </p>
         <p>
-          Тіло функції вкладено у фігурні дужки <span>{}</span> і містить
+          Тіло функції вкладено у фігурні дужки{" "}
+          <span className={s.Span}>SyntaxHighlighter{}</span> і містить
           інструкції, які необхідно виконати при її <strong>викликові</strong> .
           Потім, коли необхідно, функція <strong>викликається</strong> за
           допомогою імені та пари круглих дужок.
         </p>
         <h3>параметри та аргументи</h3>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
                 // Оголошення параметрів  x, y, z
                 function multiply(x, y, z) {
                   console.log(\`Результат множення рівний ${"x * y * z"}\`);
                 }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Параметри це локальні змінні, доступні тільки в тілі функції. Вони
           поділяються комами. Параметрів може бути кілька або взагалі не бути,
@@ -102,7 +109,7 @@ const Function = () => {
           <strong>аргументи</strong> - значення для оголошених параметрів
           функції.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             // 1. Оголошення параметрів x, y, z
             function multiply(x, y, z) {
@@ -114,7 +121,7 @@ const Function = () => {
             multiply(4, 8, 12); // Результат множення рівний 384
             multiply(17, 6, 25); // Результат множення рівний 2550
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -127,18 +134,20 @@ const Function = () => {
             параметрів: значення першого аргументу буде присвоєно першому
             параметру, другого аргументу другому параметру і т. д. Якщо
             параметрів буде більше ніж аргументів, параметрам без значень буде
-            присвоєно <span>undefined</span>.
+            присвоєно <span className={s.Span}>SyntaxHighlighterundefined</span>
+            .
           </p>
         </div>
         <h3>Повернення значення</h3>
         <p>
-          Оператор <span>return</span> використовується передачі значення з тіла
-          функції у зовнішній код. Коли інтерпретатор зустрічає{" "}
-          <span>return</span>, він відразу виходить із функції (припиняє її
-          виконання), і повертає зазначене значення у місце коду, де функція
-          була викликана.
+          Оператор <span className={s.Span}>SyntaxHighlighterreturn</span>{" "}
+          використовується передачі значення з тіла функції у зовнішній код.
+          Коли інтерпретатор зустрічає{" "}
+          <span className={s.Span}>SyntaxHighlighterreturn</span>, він відразу
+          виходить із функції (припиняє її виконання), і повертає зазначене
+          значення у місце коду, де функція була викликана.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function multiply(x, y, z) {
                 console.log("Код до return виконується як звичайно");
@@ -159,7 +168,7 @@ const Function = () => {
               result = multiply(17, 6, 25);
               console.log(result); // 2550
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -168,10 +177,12 @@ const Function = () => {
             <h5>ЦІКАВО</h5>
           </div>
           <p>
-            Оператор <span>return</span> без явно вказаного значення повертає
-            спеціальне значення <span>undefined</span>. За відсутності{" "}
-            <span>return</span> в тілі функції вона все одно поверне{" "}
-            <span>undefined</span>.
+            Оператор <span className={s.Span}>SyntaxHighlighterreturn</span> без
+            явно вказаного значення повертає спеціальне значення{" "}
+            <span className={s.Span}>SyntaxHighlighterundefined</span>. За
+            відсутності <span className={s.Span}>SyntaxHighlighterreturn</span>{" "}
+            в тілі функції вона все одно поверне{" "}
+            <span className={s.Span}>SyntaxHighlighterundefined</span>.
           </p>
         </div>
         <h3>Порядок виконання коду</h3>
@@ -182,7 +193,7 @@ const Function = () => {
           з тіла функції, повертаючись у те місце, звідки прийшов і продовжує
           виконувати код, наступний після виклику функції.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function multiply(x, y, z) {
               console.log(\`Результат множення рівен  ${"x * y * z"}\`);
@@ -197,17 +208,19 @@ const Function = () => {
             // "Результат множеня рівен 30"
             // "Лог після виклику функції multiply"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>Параметри за замовчуванням</h3>
         <p>
           Іноді необхідно оголосити функцію, у параметрів якої будуть значення,
-          відмінні від <span>undefined</span>, навіть якщо для них не передали
-          аргументи. Це робиться дуже простим і очевидним чином, достатньо
-          вказати значення за промовчанням прямо при оголошенні параметрів
-          підпису функції. При такому записі, якщо параметр не передає значення
-          аргументу, використовується значення за замовчуванням.
+          відмінні від{" "}
+          <span className={s.Span}>SyntaxHighlighterundefined</span>, навіть
+          якщо для них не передали аргументи. Це робиться дуже простим і
+          очевидним чином, достатньо вказати значення за промовчанням прямо при
+          оголошенні параметрів підпису функції. При такому записі, якщо
+          параметр не передає значення аргументу, використовується значення за
+          замовчуванням.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function count(countFrom = 0, countTo = 10, step = 1) {
               console.log(\`countFrom = ${"countFrom"}, countTo = ${"countTo"}, step = ${"step"}\`);
@@ -221,25 +234,29 @@ const Function = () => {
             count(2); // countFrom = 2, countTo = 10, step = 1
             count(); // countFrom = 0, countTo = 10, step = 1
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>
-          Псевдомасив <span>arguments</span>
+          Псевдомасив <span className={s.Span}>SyntaxHighlighterarguments</span>
         </h3>
         <p>
           Доступ до списку всіх <strong>аргументів</strong> можна отримати за
-          допомогою спеціальної змінної <span>arguments</span>, яка доступна
-          тільки всередині функції і зберігає всі аргументи як псевдомасив.
+          допомогою спеціальної змінної{" "}
+          <span className={s.Span}>SyntaxHighlighterarguments</span>, яка
+          доступна тільки всередині функції і зберігає всі аргументи як
+          псевдомасив.
         </p>
         <p>
           <strong>Псевдомасив</strong> - колекція, з властивістю{" "}
-          <span>length</span> та можливістю звернутися до елемента за індексом,
-          але відсутністю більшості методів для роботи з масивом.
+          <span className={s.Span}>SyntaxHighlighterlength</span> та можливістю
+          звернутися до елемента за індексом, але відсутністю більшості методів
+          для роботи з масивом.
         </p>
         <p>
-          Розглянемо приклад використання <span>arguments</span> функції, яка
-          множить будь-яку кількість аргументів:
+          Розглянемо приклад використання{" "}
+          <span className={s.Span}>SyntaxHighlighterarguments</span> функції,
+          яка множить будь-яку кількість аргументів:
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function multiply() {
               let total = 1;
@@ -255,40 +272,44 @@ const Function = () => {
             console.log(multiply(1, 2, 3, 4)); //  24
             console.log(multiply(1, 2, 3, 4, 5)); //  120
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h5>Перетворення псевдомасиву</h5>
         <p>
           Зазвичай псевдомасив необхідно перетворити на повноцінний масив, так
           як у псевдомасиву немає методів масиву, наприклад,{" "}
-          <span>slice()</span> або <span>includes()</span>. Насправді
+          <span className={s.Span}>SyntaxHighlighterslice()</span> або{" "}
+          <span className={s.Span}>SyntaxHighlighterincludes()</span>. Насправді
           застосовують кілька основних способів.
         </p>
         <p>
-          Використовуючи метод <span>Array.from()</span>, який створить масив із
-          псевдомасиву.
+          Використовуючи метод{" "}
+          <span className={s.Span}>SyntaxHighlighterArray.from()</span>, який
+          створить масив із псевдомасиву.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function fn() {
               // В змінній args буде повноційний масив
               const args = Array.from(arguments);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Використовуючи операцію <span>...(rest)</span>, вона дозволяє зібрати
-          довільну кількість елементів, у разі аргументів, в масив і зберегти їх
-          у змінну. Збираємо всі аргументи, використовуючи операцію{" "}
-          <span>rest</span> прямо в підписі функції.
+          Використовуючи операцію{" "}
+          <span className={s.Span}>SyntaxHighlighter...(rest)</span>, вона
+          дозволяє зібрати довільну кількість елементів, у разі аргументів, в
+          масив і зберегти їх у змінну. Збираємо всі аргументи, використовуючи
+          операцію <span className={s.Span}>SyntaxHighlighterrest</span> прямо в
+          підписі функції.
         </p>
 
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function fn(...args) {
               // В змінній args буде повноцінний масив
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -297,22 +318,23 @@ const Function = () => {
             <h5>ЦІКАВО</h5>
           </div>
           <p>
-            Операція <span>rest</span> детальніше розглядається далі в курсі,
-            тут показано одне з її можливих застосувань.
+            Операція <span className={s.Span}>SyntaxHighlighterrest</span>{" "}
+            детальніше розглядається далі в курсі, тут показано одне з її
+            можливих застосувань.
           </p>
         </div>
         <h3>Паттерн "Раннє повернення"</h3>
         <p>
-          Оператор <span>if...else</span> – це основний спосіб створення
-          розгалужень. Тим не менш, складні вкладені розгалуження роблять код
-          заплутаним для розуміння.
+          Оператор <span className={s.Span}>SyntaxHighlighterif...else</span> –
+          це основний спосіб створення розгалужень. Тим не менш, складні
+          вкладені розгалуження роблять код заплутаним для розуміння.
         </p>
         <p>
           Створимо функцію, яка обробляє зняття грошей з особового рахунку у
           банку. Вона отримує суму для зняття та поточний баланс рахунку, після
           чого, залежно від умови, виконує той чи інший блок коду.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function withdraw(amount, balance) {
               if (amount === 0) {
@@ -328,33 +350,38 @@ const Function = () => {
             withdraw(500, 300); // "Недостатньо коштів на рахунку"
             withdraw(100, 300); // "Операція списання коштів пройшла успішно"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Навіть у такому простому прикладі є група вкладених умовних
           операторів, серед яких не одразу можна виділити зрозуміти логіку
           виконання коду.
         </p>
         <p>
-          У функції може бути більше одного оператора <span>return</span>.
-          Головне пам'ятати, що виконання функції переривається, коли
-          інтерпретатор зустрічає повернення, і весь код після нього буде
-          проігнорований у поточному виклику функції.
+          У функції може бути більше одного оператора{" "}
+          <span className={s.Span}>SyntaxHighlighterreturn</span>. Головне
+          пам'ятати, що виконання функції переривається, коли інтерпретатор
+          зустрічає повернення, і весь код після нього буде проігнорований у
+          поточному виклику функції.
         </p>
         <p>
           <strong>Паттерн "Рання повернення"</strong> - це спосіб
           використовувати можливість дострокового повернення з функції за
-          допомогою оператора <span>return</span>. Використовуючи цей прийом ми
-          отримуємо чистіший, плоскіший і зрозуміліший код, який легше
-          рефакторити.
+          допомогою оператора{" "}
+          <span className={s.Span}>SyntaxHighlighterreturn</span>.
+          Використовуючи цей прийом ми отримуємо чистіший, плоскіший і
+          зрозуміліший код, який легше рефакторити.
         </p>
         <p>
-          Виділимо всі перевірки умов в окремі оператори <span>if</span>, після
-          чого додамо код, що йде в тілі <span>else</span>. В ідеальному
+          Виділимо всі перевірки умов в окремі оператори{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span>, після чого додамо
+          код, що йде в тілі{" "}
+          <span className={s.Span}>SyntaxHighlighterelse</span>. В ідеальному
           випадку, повинен вийти плоский список умовних операторів, що йдуть
           один за одним, а в кінці блок, який виконається тільки в тому випадку,
-          якщо не виконається жоден <span>if</span>.
+          якщо не виконається жоден{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function withdraw(amount, balance) {
               // Якщо умова виконується, викликається console.log
@@ -382,32 +409,34 @@ const Function = () => {
             withdraw(500, 300); // "Недостатньо коштів на рахунку"
             withdraw(100, 300); // "Операція списання коштів успішна"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>Функціональний вираз</h3>
         <p>
-          <strong>Функціональний вираз (function expression)</strong> – звичайне
-          оголошення змінної, значення якої буде функція. Альтернативний спосіб
-          оголошення функції.
+          <strong>
+            Функціональний вираз (function exSyntaxHighlighterssion)
+          </strong>{" "}
+          – звичайне оголошення змінної, значення якої буде функція.
+          Альтернативний спосіб оголошення функції.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             // Оголошення функції  (function declaration)
               function multiply(x, y, z) {
                 console.log(\`Результат множення дорівнює ${"x * y * z"}\`);
               }
 
-              // Функціональний вираз  (function expression)
+              // Функціональний вираз  (function exSyntaxHighlighterssion)
               const multiply = function (x, y, z) {
                 console.log(\`Результат множення дорівнює ${"x * y * z"}\`);
               };
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Різниця в тому, що функціональний вираз не можна викликати до місця
           його створення, тільки після того, що це буквально оголошення
           constзмінної.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             // ❌ Помилка! Не працює виклик до оголошення
             multiply(1, 2, 3);
@@ -419,9 +448,9 @@ const Function = () => {
             // ✅ Працює виклик після оголошення
             multiply(4, 5, 6);
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>A оголошення функції можна викликати до місця створення в коді.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             // ✅ Працює виклик до оголошення
               multiply(1, 2, 3);
@@ -433,7 +462,7 @@ const Function = () => {
               // ✅ Працює виклик після оголошення
               multiply(4, 5, 6);
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -472,12 +501,14 @@ const Function = () => {
         <h3>Глобальна область видимості</h3>
         <p>
           Змінні, оголошені на верхньому рівні, тобто поза будь-якими
-          конструкціями на кшталт <span>if</span>, <span>while</span>,{" "}
-          <span>for</span> і функцій, знаходяться в{" "}
-          <strong>глобальній області видимості</strong>і доступні скрізь після
-          їх оголошення.
+          конструкціями на кшталт{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighterwhile</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighterfor</span> і функцій,
+          знаходяться в <strong>глобальній області видимості</strong>і доступні
+          скрізь після їх оголошення.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const globalValue = 10;
 
@@ -495,16 +526,18 @@ const Function = () => {
               }
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>Блокова область видимості</h3>
         <p>
-          Змінні, оголошені всередині інструкцій <span>if</span>,{" "}
-          <span>for</span>, функцій та інших блоків коду, обрамлених фігурними
-          дужками <span></span>, знаходяться в{" "}
+          Змінні, оголошені всередині інструкцій{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span>,{" "}
+          <span className={s.Span}>SyntaxHighlighterfor</span>, функцій та інших
+          блоків коду, обрамлених фігурними дужками{" "}
+          <span className={s.Span}>SyntaxHighlighter</span>, знаходяться в{" "}
           <strong>блочній області видимості</strong> і доступні тільки всередині
           цього блоку коду або вкладених у нього.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function foo() {
               const a = 20;
@@ -527,7 +560,7 @@ const Function = () => {
               console.log(a);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Це можна уявити як будинок із кімнатами. Будинок знаходиться у
           глобальній області видимості. Кожна функція та блок створюють нову
@@ -535,7 +568,7 @@ const Function = () => {
           кімнат, доступні лише тоді, коли ви перебуваєте усередині цієї
           кімнати. Поза кімнатою ці змінні недоступні.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
            for (let i = 0; i < 5; i++) {
              const a = 20;
@@ -555,7 +588,7 @@ const Function = () => {
              }
            }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>Пошук по ланцюжку областей видимості</h3>
         <p>
           Інтерпретатор намагається спочатку знайти змінну у тій галузі
@@ -578,7 +611,7 @@ const Function = () => {
           виконання функцій викликаних у собі, у тому, щоб продовжити своєї
           роботи.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function fnA() {
               console.log("Лог всередині функції fnA до виклику fnB");
@@ -600,7 +633,7 @@ const Function = () => {
             // "Лог всередині функції fnA після виклику fnB"
             // "Лог після виклику fnA"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Необхідний механізм зберігання списку функцій, які були викликані, але
           ще не закінчили виконання і механізм управління порядком виконання цих
@@ -614,9 +647,10 @@ const Function = () => {
           можна додати або видалити елементи тільки з верхівки стека.
         </p>
         <p>
-          Уявіть стек як масив, у якого є тільки методи <span>pop</span> і{" "}
-          <span>push</span>, тобто можна додати або видалити тільки елемент в
-          кінці колекції.
+          Уявіть стек як масив, у якого є тільки методи{" "}
+          <span className={s.Span}>SyntaxHighlighterpop</span> і{" "}
+          <span className={s.Span}>SyntaxHighlighterpush</span>, тобто можна
+          додати або видалити тільки елемент в кінці колекції.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={stack} alt="" />
@@ -660,7 +694,7 @@ const Function = () => {
             відбувся дзвінок.
           </p>
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             function bar() {
               console.log("bar");
@@ -678,11 +712,14 @@ const Function = () => {
 
             foo();
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          При виконанні цього коду спочатку викликається <span>foo()</span>,
-          потім усередині <span>foo()</span> викликається <span>bar()</span>, а
-          потім <span>baz()</span>. Виклики <span>console.log()</span> також
+          При виконанні цього коду спочатку викликається{" "}
+          <span className={s.Span}>SyntaxHighlighterfoo()</span>, потім
+          усередині <span className={s.Span}>SyntaxHighlighterfoo()</span>{" "}
+          викликається <span className={s.Span}>SyntaxHighlighterbar()</span>, а
+          потім <span className={s.Span}>SyntaxHighlighterbaz()</span>. Виклики{" "}
+          <span className={s.Span}>SyntaxHighlighterconsole.log()</span> також
           враховуються, адже це функція. На ілюстрації нижче покроково зображено
           стек викликів для прикладу.
         </p>
@@ -693,8 +730,11 @@ const Function = () => {
         <p>
           Стек викликів не безмежний, йому приділяється кінцевий обсяг пам'яті.
           Іноді в консолі можна побачити помилку{" "}
-          <span>"Uncaught RangeError: Maximum call stack size exceeded"</span> –
-          переповнення стеку (stack overflow).
+          <span className={s.Span}>
+            SyntaxHighlighter"Uncaught RangeError: Maximum call stack size
+            exceeded"
+          </span>{" "}
+          – переповнення стеку (stack overflow).
         </p>
         <p>
           Це може статися при неправильному використанні рекурсії або

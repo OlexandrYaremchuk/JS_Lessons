@@ -15,8 +15,12 @@ import switchImg from "../../img/switch.png";
 import globalScope from "../../img/GlobalScope.png";
 import WhileCicle from "../../img/WhileCicle.png";
 import doWhile from "../../img/doWhile.png";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const M1L2 = () => {
+  const codeStyle = materialDark;
+
   return (
     <div className={s.lessonsBox}>
       <div className={s.breadNav}>
@@ -49,33 +53,36 @@ const M1L2 = () => {
         <p>
           Розгалуження використовуються для виконання різного коду залежно від
           умови. Принцип роботи простий - результат умови наводиться до булю
-          <span>true</span> або <span>false</span> після чого потік програми
-          направляється в ту чи іншу гілку.
+          <span className={s.Span}>SyntaxHighlightertrue</span> або{" "}
+          <span className={s.Span}>SyntaxHighlighterfalse</span> після чого
+          потік програми направляється в ту чи іншу гілку.
         </p>
         <h4>
           Інструкція{" "}
           <strong>
-            <span>if</span>
+            <span className={s.Span}>SyntaxHighlighterif</span>
           </strong>
         </h4>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={ifImg} alt="" />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
                  if (умова) {
                 // тіло if
                 }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Вхідні дані, що наводяться до булю, називаються{" "}
           <strong>умовою</strong> . Умову поміщають за оператором{" "}
-          <span>if</span> у круглих дужках. Якщо умова наводиться до{" "}
-          <span>true</span>, то виконується код у фігурних дужках тіла{" "}
-          <span>if</span>.
+          <span className={s.Span}>SyntaxHighlighterif</span> у круглих дужках.
+          Якщо умова наводиться до{" "}
+          <span className={s.Span}>SyntaxHighlightertrue</span>, то виконується
+          код у фігурних дужках тіла{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
                 let cost = 0;
                 const subscription = "pro";
@@ -86,12 +93,13 @@ const M1L2 = () => {
 
                 console.log(cost); // 100
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Якщо умова наводиться до <span>false</span>, код у фігурних дужках
-          буде пропущено.
+          Якщо умова наводиться до{" "}
+          <span className={s.Span}>SyntaxHighlighterfalse</span>, код у фігурних
+          дужках буде пропущено.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let cost = 0;
             const subscription = "free";
@@ -102,17 +110,17 @@ const M1L2 = () => {
 
             console.log(cost); // 0
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h4>
           Інструкція{" "}
           <strong>
-            <span>if...else</span>
+            <span className={s.Span}>SyntaxHighlighterif...else</span>
           </strong>
         </h4>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={ifElse} alt="" />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             if (умова) {
             // тіло if
@@ -120,13 +128,15 @@ const M1L2 = () => {
             // тіло else
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Розширює синтаксис <span>if</span> тим, що якщо умова наводиться до
-          <span>false</span>, виконається код у фігурних дужках після оператора
-          <span>else</span>.
+          Розширює синтаксис <span className={s.Span}>SyntaxHighlighterif</span>{" "}
+          тим, що якщо умова наводиться до
+          <span className={s.Span}>SyntaxHighlighterfalse</span>, виконається
+          код у фігурних дужках після оператора
+          <span className={s.Span}>SyntaxHighlighterelse</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let cost;
             const subscription = "free";
@@ -139,12 +149,13 @@ const M1L2 = () => {
 
             console.log(cost); // 0
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Якщо умова наводиться до <span>true</span>, тіло блоку
-          <span>else</span> ігнорується.
+          Якщо умова наводиться до{" "}
+          <span className={s.Span}>SyntaxHighlightertrue</span>, тіло блоку
+          <span className={s.Span}>SyntaxHighlighterelse</span> ігнорується.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let cost;
             const subscription = "pro";
@@ -157,36 +168,40 @@ const M1L2 = () => {
 
             console.log(cost); // 100
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h3>
           Інструкція{" "}
           <strong>
-            <span>else...if</span>
+            <span className={s.Span}>SyntaxHighlighterelse...if</span>
           </strong>
         </h3>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={elseIf} alt="" />
         </div>
         <p>
-          Конструкція <span>if...else</span> може перевірити та зреагувати на
-          виконання або невиконання лише однієї умови.
+          Конструкція <span className={s.Span}>SyntaxHighlighterif...else</span>{" "}
+          може перевірити та зреагувати на виконання або невиконання лише однієї
+          умови.
         </p>
         <p>
-          Блок <span>else...if</span> дозволяє додати <span>else</span> ще один
-          оператор <span>if</span> з умовою. В кінці ланцюжка може бути
-          класичний блок <span>else</span>, який виконається тільки у випадку,
-          коли жодна з умов не приведеться до <span>true</span>.
+          Блок <span className={s.Span}>SyntaxHighlighterelse...if</span>{" "}
+          дозволяє додати <span className={s.Span}>SyntaxHighlighterelse</span>{" "}
+          ще один оператор <span className={s.Span}>SyntaxHighlighterif</span> з
+          умовою. В кінці ланцюжка може бути класичний блок{" "}
+          <span className={s.Span}>SyntaxHighlighterelse</span>, який
+          виконається тільки у випадку, коли жодна з умов не приведеться до{" "}
+          <span className={s.Span}>SyntaxHighlightertrue</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let cost;
-            const subscription = "premium";
+            const subscription = "SyntaxHighlightermium";
 
             if (subscription === "free") {
             cost = 0;
             } else if (subscription === "pro") {
             cost = 100;
-            } else if (subscription === "premium") {
+            } else if (subscription === "SyntaxHighlightermium") {
             cost = 500;
             } else {
             console.log("Invalid subscription type");
@@ -194,42 +209,46 @@ const M1L2 = () => {
 
             console.log(cost); // 500
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          При першому ж <span>true</span> перевірки припиняться і виконається
-          лише один сценарій, що відповідає цьому <span>true</span>. Тому такий
-          запис слід читати як: шукаю перший збіг умови, ігнорую все інше.
+          При першому ж <span className={s.Span}>SyntaxHighlightertrue</span>{" "}
+          перевірки припиняться і виконається лише один сценарій, що відповідає
+          цьому <span className={s.Span}>SyntaxHighlightertrue</span>. Тому
+          такий запис слід читати як: шукаю перший збіг умови, ігнорую все інше.
         </p>
         <h1 id="ternary operator">Тернарний оператор</h1>
         <p>
           Тернарний оператор використовується як синтаксично коротка заміна
-          інструкції <span>if...else</span>, коли однієї й тієї ж змінної
-          необхідно надати різні значення за умовою.
+          інструкції <span className={s.Span}>SyntaxHighlighterif...else</span>,
+          коли однієї й тієї ж змінної необхідно надати різні значення за
+          умовою.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             <умова> ? <вираз, якщо умова істина> : <вираз, якщо умова хибна>
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>Працює за такою схемою:</p>
         <ul>
           <li>
-            Обчислюється <span>умова</span>
+            Обчислюється <span className={s.Span}>SyntaxHighlighterумова</span>
           </li>
           <li>
-            Якщо умова істинна, тобто наводиться до <span>true</span>,
-            обчислюється вираз після <span>?</span>.
+            Якщо умова істинна, тобто наводиться до{" "}
+            <span className={s.Span}>SyntaxHighlightertrue</span>, обчислюється
+            вираз після <span className={s.Span}>SyntaxHighlighter?</span>.
           </li>
           <li>
-            Якщо умова хибна, тобто наводиться до <span>false</span>,
-            обчислюється вираз після <span>:</span>.
+            Якщо умова хибна, тобто наводиться до{" "}
+            <span className={s.Span}>SyntaxHighlighterfalse</span>, обчислюється
+            вираз після <span className={s.Span}>SyntaxHighlighter:</span>.
           </li>
           <li>
             Значення обчисленого виразу повертається як наслідок роботи
             тернарного оператора.
           </li>
         </ul>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let type;
             const age = 20;
@@ -242,20 +261,21 @@ const M1L2 = () => {
 
             console.log(type); // "adult"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Виконаємо рефакторинг замінивши <span>if...else</span> тернарним
+          Виконаємо рефакторинг замінивши{" "}
+          <span className={s.Span}>SyntaxHighlighterif...else</span> тернарним
           оператором.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const age = 20;
             const type = age >= 18 ? "adult" : "child";
             console.log(type); // "adult"
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>Запишемо операцію пошуку більшої кількості.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const num1 = 5;
             const num2 = 10;
@@ -269,13 +289,13 @@ const M1L2 = () => {
 
             console.log(biggerNumber); // 10
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Код працює правильно, отримуємо більше двох, але це рішення здається
           занадто громіздким, враховуючи, наскільки проста проблема.
           Використовуємо тернарний оператор.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const num1 = 5;
             const num2 = 10;
@@ -283,7 +303,7 @@ const M1L2 = () => {
 
             console.log(biggerNumber); // 10
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -300,25 +320,29 @@ const M1L2 = () => {
         <h1 id="switch">Інструкція switch</h1>
         <p>
           У деяких випадках незручність читання складних розгалужень
-          <span>if...else</span> можна уникнути, використовуючи більш «плоский»
-          синтаксис інструкції розгалуження <span>switch</span>.
+          <span className={s.Span}>SyntaxHighlighterif...else</span> можна
+          уникнути, використовуючи більш «плоский» синтаксис інструкції
+          розгалуження <span className={s.Span}>SyntaxHighlighterswitch</span>.
         </p>
         <p>
-          Область застосування <span>switch</span> обмежена завданнями з одним
-          загальним питанням (що порівнювати) та безліччю варіантів відповідей
-          (з чим порівнювати).
+          Область застосування{" "}
+          <span className={s.Span}>SyntaxHighlighterswitch</span> обмежена
+          завданнями з одним загальним питанням (що порівнювати) та безліччю
+          варіантів відповідей (з чим порівнювати).
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={switchImg} alt="" />
         </div>
         <p>
-          Його синтаксис складається з блоку <span>switch</span>(значення)- що
+          Його синтаксис складається з блоку{" "}
+          <span className={s.Span}>SyntaxHighlighterswitch</span>(значення)- що
           потрібно порівняти та безлічі окремих випадків{" "}
-          <span>case значення</span> - з чим потрібно порівняти. Для порівняння
-          використовується оператор строгої рівності <span>===</span>. Тобто не
-          можна порівняти на більше чи менше, лише на рівність.
+          <span className={s.Span}>SyntaxHighlightercase значення</span> - з чим
+          потрібно порівняти. Для порівняння використовується оператор строгої
+          рівності <span className={s.Span}>SyntaxHighlighter===</span>. Тобто
+          не можна порівняти на більше чи менше, лише на рівність.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             switch (значення) {
               case значення:
@@ -333,31 +357,41 @@ const M1L2 = () => {
                 інструкції;
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Значення в блоці <span>switch (значення)</span> - рядок або число, яке
-          порівнюється на строгу рівність з усіма значеннями в блоках{" "}
-          <span>case</span>
+          Значення в блоці{" "}
+          <span className={s.Span}>SyntaxHighlighterswitch (значення)</span> -
+          рядок або число, яке порівнюється на строгу рівність з усіма
+          значеннями в блоках{" "}
+          <span className={s.Span}>SyntaxHighlightercase</span>
           значениепо порядку зверху вниз.
         </p>
         <p>
-          Оператор <span>break</span> в завершенні кожного блоку{" "}
-          <span>case</span> необхідний щоб перервати подальші перевірки і
-          відразу перейти до коду <span>switch</span> в тому випадку, коли
-          перевірка на рівність повернула <span>true</span>.
+          Оператор <span className={s.Span}>SyntaxHighlighterbreak</span> в
+          завершенні кожного блоку{" "}
+          <span className={s.Span}>SyntaxHighlightercase</span> необхідний щоб
+          перервати подальші перевірки і відразу перейти до коду{" "}
+          <span className={s.Span}>SyntaxHighlighterswitch</span> в тому
+          випадку, коли перевірка на рівність повернула{" "}
+          <span className={s.Span}>SyntaxHighlightertrue</span>.
         </p>
         <p>
           Якщо жодного збігу значень не відбулося, необхідно виконати за
-          замовчуванням код, як у блоці <span>else</span> для інструкції
-          <span>if...else</span>. Для цього після всіх блоків <span>case</span>{" "}
-          додається блок <span>default</span>. Оператор <span>break</span> після
-          блоку <span>default</span> не потрібен, так як це і так останнє, що
-          буде виконано <span>switch</span>.
+          замовчуванням код, як у блоці{" "}
+          <span className={s.Span}>SyntaxHighlighterelse</span> для інструкції
+          <span className={s.Span}>SyntaxHighlighterif...else</span>. Для цього
+          після всіх блоків{" "}
+          <span className={s.Span}>SyntaxHighlightercase</span> додається блок{" "}
+          <span className={s.Span}>SyntaxHighlighterdefault</span>. Оператор{" "}
+          <span className={s.Span}>SyntaxHighlighterbreak</span> після блоку{" "}
+          <span className={s.Span}>SyntaxHighlighterdefault</span> не потрібен,
+          так як це і так останнє, що буде виконано{" "}
+          <span className={s.Span}>SyntaxHighlighterswitch</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let cost;
-            const subscription = "premium";
+            const subscription = "SyntaxHighlightermium";
 
             switch (subscription) {
               case "free":
@@ -368,7 +402,7 @@ const M1L2 = () => {
                 cost = 100;
                 break;
 
-              case "premium":
+              case "SyntaxHighlightermium":
                 cost = 500;
                 break;
 
@@ -378,7 +412,7 @@ const M1L2 = () => {
 
             console.log(cost); // 500
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -387,10 +421,11 @@ const M1L2 = () => {
             <h5>ЦІКАВО</h5>
           </div>
           <p>
-            Якщо оператор <span>break</span> буде відсутній, після того, як
-            виконається якась умова <span>case</span>, всі наступні за ним блоки
-            коду будуть виконуватися один за одним, що може призвести до
-            небажаних наслідків при неправильному застосуванні.
+            Якщо оператор <span className={s.Span}>SyntaxHighlighterbreak</span>{" "}
+            буде відсутній, після того, як виконається якась умова{" "}
+            <span className={s.Span}>SyntaxHighlightercase</span>, всі наступні
+            за ним блоки коду будуть виконуватися один за одним, що може
+            призвести до небажаних наслідків при неправильному застосуванні.
           </p>
         </div>
         <h1 id="fieldOfView">Область видимості</h1>
@@ -401,10 +436,11 @@ const M1L2 = () => {
         <p>
           Глобальна область видимості використовується за умовчанням. Усі і всі
           мають доступ до змінних оголошених у ній. Наприклад, змінна
-          <span>value</span> оголошена у глобальній області видимості, тобто
-          поза якимось блоком, і доступна будь-де після оголошення.
+          <span className={s.Span}>SyntaxHighlightervalue</span> оголошена у
+          глобальній області видимості, тобто поза якимось блоком, і доступна
+          будь-де після оголошення.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const value = 5;
 
@@ -414,14 +450,17 @@ const M1L2 = () => {
 
             console.log("Global scope: ", value); // 5
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Будь-яка конструкція використовує фігурні дужки <span>{}</span>(умови,
-          цикли, функції тощо) створює нову локальну область видимості, і
-          змінні, оголошені в цій області видимості, використовуючи{" "}
-          <span>let</span> або <span>const</span>, не доступні поза цим блоком.
+          Будь-яка конструкція використовує фігурні дужки{" "}
+          <span className={s.Span}>SyntaxHighlighter{}</span>(умови, цикли,
+          функції тощо) створює нову локальну область видимості, і змінні,
+          оголошені в цій області видимості, використовуючи{" "}
+          <span className={s.Span}>SyntaxHighlighterlet</span> або{" "}
+          <span className={s.Span}>SyntaxHighlighterconst</span>, не доступні
+          поза цим блоком.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             if (true) {
                 const value = 5;
@@ -430,7 +469,7 @@ const M1L2 = () => {
 
             console.log("Global scope: ", value); // ReferenceError: value is not defined
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Глибина вкладеності областей видимості не обмежена, і всі вони
           працюватиму за одним принципом - область видимості має доступ до всіх
@@ -445,24 +484,32 @@ const M1L2 = () => {
         </div>
         <ul>
           <li>
-            Глобальна є за умовчанням, створимо в ній змінну <span>global</span>
+            Глобальна є за умовчанням, створимо в ній змінну{" "}
+            <span className={s.Span}>SyntaxHighlighterglobal</span>
           </li>
           <li>
-            Далі використовуючи оператор <span>if</span> створимо блокову
-            область видимості <span>block A</span>
+            Далі використовуючи оператор{" "}
+            <span className={s.Span}>SyntaxHighlighterif</span> створимо блокову
+            область видимості{" "}
+            <span className={s.Span}>SyntaxHighlighterblock A</span>
           </li>
           <li>
-            Усередині області видимості <span>block A</span> поставимо ще один
-            оператор <span>if</span>, який створить вкладену область видимості{" "}
-            <span>block B</span>
+            Усередині області видимості{" "}
+            <span className={s.Span}>SyntaxHighlighterblock A</span> поставимо
+            ще один оператор <span className={s.Span}>SyntaxHighlighterif</span>
+            , який створить вкладену область видимості{" "}
+            <span className={s.Span}>SyntaxHighlighterblock B</span>
           </li>
           <li>
-            На одному рівні з <span>block A</span>, створимо область видимості
-            <span>block C</span> так само використовуючи оператор{" "}
-            <span>if</span>
+            На одному рівні з{" "}
+            <span className={s.Span}>SyntaxHighlighterblock A</span>, створимо
+            область видимості
+            <span className={s.Span}>SyntaxHighlighterblock C</span> так само
+            використовуючи оператор{" "}
+            <span className={s.Span}>SyntaxHighlighterif</span>
           </li>
         </ul>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const global = "global";
 
@@ -514,7 +561,7 @@ const M1L2 = () => {
             console.log(blockB); // ReferenceError: blockB is not defined
             console.log(blockC); // ReferenceError: blockC is not defined
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
             <svg className={s.textIcon}>
@@ -560,7 +607,7 @@ const M1L2 = () => {
           </li>
         </ul>
         <h2>
-          Цикл <span>while</span>
+          Цикл <span className={s.Span}>SyntaxHighlighterwhile</span>
         </h2>
         <p>
           <strong>Цикл з передумовою</strong> - цикл, який виконується поки що
@@ -568,40 +615,46 @@ const M1L2 = () => {
           перевіряється до виконання тіла циклу, тому тіло може бути не виконане
           жодного разу, якщо умова з самого початку є хибною.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
            while (condition) {
               // код, тело цикла (statement)
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Конструкція <span>while</span> створює цикл, який виконує блок коду,
-          доки умова перевірки оцінюється як <span>true</span>.
+          Конструкція <span className={s.Span}>SyntaxHighlighterwhile</span>{" "}
+          створює цикл, який виконує блок коду, доки умова перевірки оцінюється
+          як <span className={s.Span}>SyntaxHighlightertrue</span>.
         </p>
         <ul>
           <li>
-            <span>condition</span>, тобто умова, що обчислюється перед кожною
-            ітерацією цику.
+            <span className={s.Span}>SyntaxHighlightercondition</span>, тобто
+            умова, що обчислюється перед кожною ітерацією цику.
           </li>
           <li>
-            Якщо <span>condition</span> оцінюється як <span>true</span>,
-            оператор <span>while</span> виконує <span>statement</span>.
+            Якщо <span className={s.Span}>SyntaxHighlightercondition</span>{" "}
+            оцінюється як <span className={s.Span}>SyntaxHighlightertrue</span>,
+            оператор <span className={s.Span}>SyntaxHighlighterwhile</span>{" "}
+            виконує <span className={s.Span}>SyntaxHighlighterstatement</span>.
           </li>
           <li>
-            Якщо <span>condition</span> оцінюється як <span>false</span>,
-            виконання циклу переривається і скрипт продовжує виконувати
-            інструкції після циклу <span>while</span>.
+            Якщо <span className={s.Span}>SyntaxHighlightercondition</span>{" "}
+            оцінюється як <span className={s.Span}>SyntaxHighlighterfalse</span>
+            , виконання циклу переривається і скрипт продовжує виконувати
+            інструкції після циклу{" "}
+            <span className={s.Span}>SyntaxHighlighterwhile</span>.
           </li>
         </ul>
         <p>
-          Блок-схема ілюструє цикл <span>while</span>.
+          Блок-схема ілюструє цикл{" "}
+          <span className={s.Span}>SyntaxHighlighterwhile</span>.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={WhileCicle} alt="" />
         </div>
         <p>Зробимо лічильник.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let counter = 0;
 
@@ -610,12 +663,12 @@ const M1L2 = () => {
               counter += 1;
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
           Будемо заповнювати місця в готелі до тих пір, поки поточна кількість
           клієнтів не буде максимально допустимою.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let clientCounter = 18;
             const maxClients = 25;
@@ -625,43 +678,51 @@ const M1L2 = () => {
               clientCounter += 1;
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h2>
-          Цикл <span>do...while</span>
+          Цикл <span className={s.Span}>SyntaxHighlighterdo...while</span>
         </h2>
         <p>
           <strong>Цикл з постумовою</strong> – цикл, у якому умова перевіряється
           після виконання тіла циклу. Звідси випливає, що тіло завжди
           виконується хоча б один раз.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             do {
                 // statement
             } while (condition);
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Конструкція <span>do...while</span> створює цикл, який виконує блок
-          коду, доки <span>condition</span> не поверне <span>false</span>.
+          Конструкція{" "}
+          <span className={s.Span}>SyntaxHighlighterdo...while</span> створює
+          цикл, який виконує блок коду, доки{" "}
+          <span className={s.Span}>SyntaxHighlightercondition</span> не поверне{" "}
+          <span className={s.Span}>SyntaxHighlighterfalse</span>.
         </p>
         <p>
-          На відміну від циклу <span>while</span> цикл <span>do...while</span>{" "}
-          завжди виконує <span>statement</span> як мінімум один раз, перш ніж
-          він оцінить <span>condition</span>.
+          На відміну від циклу{" "}
+          <span className={s.Span}>SyntaxHighlighterwhile</span> цикл{" "}
+          <span className={s.Span}>SyntaxHighlighterdo...while</span> завжди
+          виконує <span className={s.Span}>SyntaxHighlighterstatement</span> як
+          мінімум один раз, перш ніж він оцінить{" "}
+          <span className={s.Span}>SyntaxHighlightercondition</span>.
         </p>
         <p>
           Усередині циклу потрібно внести зміни до деякої змінної, щоб
-          переконатися, що вираз дорівнює <span>false</span> після ітерацій. В
-          іншому випадку буде нескінченний цикл.
+          переконатися, що вираз дорівнює{" "}
+          <span className={s.Span}>SyntaxHighlighterfalse</span> після ітерацій.
+          В іншому випадку буде нескінченний цикл.
         </p>
         <p>
-          Блок-схема ілюструє цикл <span>do-while</span>
+          Блок-схема ілюструє цикл{" "}
+          <span className={s.Span}>SyntaxHighlighterdo-while</span>
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img src={doWhile} alt="" />
         </div>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             let password = "";
 
@@ -671,9 +732,9 @@ const M1L2 = () => {
 
             console.log("Ввели пароль: ", password);
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h2>
-          Цикл <span>for</span>
+          Цикл <span className={s.Span}>SyntaxHighlighterfor</span>
         </h2>
         <p>
           <strong>Цикл із лічильником</strong> - цикл, у якому деяка змінна
@@ -683,18 +744,20 @@ const M1L2 = () => {
         </p>
         <p>
           У більшості процедурних мов програмування реалізується конструкцією
-          <span>for</span>, в якій вказується лічильник, необхідна кількість
-          ітерацій та крок, з яким змінюється лічильник.
+          <span className={s.Span}>SyntaxHighlighterfor</span>, в якій
+          вказується лічильник, необхідна кількість ітерацій та крок, з яким
+          змінюється лічильник.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
-            for (initialization; condition; post-expression) {
+            for (initialization; condition; post-exSyntaxHighlighterssion) {
               // statements
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Алгоритм виконання циклу <span>for</span>:
+          Алгоритм виконання циклу{" "}
+          <span className={s.Span}>SyntaxHighlighterfor</span>:
         </p>
         <ul>
           <li>
@@ -705,40 +768,48 @@ const M1L2 = () => {
           <li>
             <strong>Умова (condition)</strong> – вираз, що оцінюється перед
             кожною ітерацією (повторенням) циклу. Тіло циклу виконується лише
-            тоді, коли вираз наводиться до <span>true</span>. Цикл завершується,
-            якщо значення буде <span>false</span>.
+            тоді, коли вираз наводиться до{" "}
+            <span className={s.Span}>SyntaxHighlightertrue</span>. Цикл
+            завершується, якщо значення буде{" "}
+            <span className={s.Span}>SyntaxHighlighterfalse</span>.
           </li>
           <li>
             <strong>Тіло (statements)</strong> – набір інструкцій для виконання
             на кожному повторенні. Виконується якщо вираз умови наводиться до
-            <span>true</span>.
+            <span className={s.Span}>SyntaxHighlightertrue</span>.
           </li>
           <li>
-            <strong>Пост-вираз (post-expression)</strong> – виконується
-            наприкінці кожного повторення циклу, перед перевіркою умови.
-            Використовується для оновлення змінної-лічильника.
+            <strong>Пост-вираз (post-exSyntaxHighlighterssion)</strong> –
+            виконується наприкінці кожного повторення циклу, перед перевіркою
+            умови. Використовується для оновлення змінної-лічильника.
           </li>
         </ul>
         <p>
-          Змінні-лічильники, за традицією, називаються буквами <span>i</span>,
-          <span>j</span> і <span>k</span>.
+          Змінні-лічильники, за традицією, називаються буквами{" "}
+          <span className={s.Span}>SyntaxHighlighteri</span>,
+          <span className={s.Span}>SyntaxHighlighterj</span> і{" "}
+          <span className={s.Span}>SyntaxHighlighterk</span>.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             for (let i = 0; i <= 20; i += 5) {
               console.log(i);
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          У прикладі оголошується змінна-лічильник <span>i</span>,
-          ініціалізується значенням <span>0</span> і цикл виконується доти, поки{" "}
-          <span>i</span> <span> ≤ 20</span>, тобто умова наводиться до{" "}
-          <span>true</span>. Після кожної ітерації лічильник збільшується на
-          <span>5</span>.
+          У прикладі оголошується змінна-лічильник{" "}
+          <span className={s.Span}>SyntaxHighlighteri</span>, ініціалізується
+          значенням <span className={s.Span}>SyntaxHighlighter0</span> і цикл
+          виконується доти, поки{" "}
+          <span className={s.Span}>SyntaxHighlighteri</span>{" "}
+          <span className={s.Span}>SyntaxHighlighter ≤ 20</span>, тобто умова
+          наводиться до <span className={s.Span}>SyntaxHighlightertrue</span>.
+          Після кожної ітерації лічильник збільшується на
+          <span className={s.Span}>SyntaxHighlighter5</span>.
         </p>
         <p>Порахуємо суму чисел до певного значення.</p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const target = 3;
             let sum = 0;
@@ -749,31 +820,35 @@ const M1L2 = () => {
 
             console.log(sum);
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <p>
-          Згадаймо про операцію <span>a % b</span> і виведемо залишок від поділу
-          використовуючи цикл.
+          Згадаймо про операцію{" "}
+          <span className={s.Span}>SyntaxHighlightera % b</span> і виведемо
+          залишок від поділу використовуючи цикл.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const max = 10;
             for (let i = 0; i < max; i += 1) {
           }
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h2>
-          Оператор <span>break</span>
+          Оператор <span className={s.Span}>SyntaxHighlighterbreak</span>
         </h2>
         <p>
           Перервати виконання циклу можна будь-якої миті. Для цього існує
-          оператор <span>break</span>, який повністю припиняє виконання циклу і
-          передає управління на рядок за його тілом.
+          оператор <span className={s.Span}>SyntaxHighlighterbreak</span>, який
+          повністю припиняє виконання циклу і передає управління на рядок за
+          його тілом.
         </p>
         <p>
-          Знайдемо число <span>3</span>. Як тільки виконається умова{" "}
-          <span>if</span> цикл припинить своє виконання (буде перерваний).
+          Знайдемо число <span className={s.Span}>SyntaxHighlighter3</span>. Як
+          тільки виконається умова{" "}
+          <span className={s.Span}>SyntaxHighlighterif</span> цикл припинить
+          своє виконання (буде перерваний).
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             for (let i = 0; i <= 5; i += 1) {
               console.log(i);
@@ -786,9 +861,9 @@ const M1L2 = () => {
 
             console.log("Лог после цикла");
                 `}
-        </pre>
+        </SyntaxHighlighter>
         <h2>
-          Оператор <span>continue</span>
+          Оператор <span className={s.Span}>SyntaxHighlightercontinue</span>
         </h2>
         <p>
           Перериває не весь цикл, лише виконання поточної ітерації. Його
@@ -798,10 +873,11 @@ const M1L2 = () => {
         </p>
         <p>
           Використовуємо цикл для виведення лише непарних чисел. Для парних
-          <span>i</span> спрацьовує <span>continue</span> виконання тіла
-          припиняється і управління передається на наступну ітерацію.
+          <span className={s.Span}>SyntaxHighlighteri</span> спрацьовує{" "}
+          <span className={s.Span}>SyntaxHighlightercontinue</span> виконання
+          тіла припиняється і управління передається на наступну ітерацію.
         </p>
-        <pre>
+        <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
             const number = 10;
 
@@ -813,7 +889,7 @@ const M1L2 = () => {
               console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
             }
                 `}
-        </pre>
+        </SyntaxHighlighter>
       </div>
     </div>
   );
