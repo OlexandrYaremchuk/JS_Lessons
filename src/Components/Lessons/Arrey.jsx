@@ -129,9 +129,8 @@ const Arrey = () => {
         </SyntaxHighlighter>
         <h1 id="IterArr">Ітерація з масиву</h1>
         <p>
-          Цикл <span className={s.Span}>SyntaxHighlighterfor</span> можна
-          використовувати для ітерації по масиву, тобто перебрати його
-          поелементно.
+          Цикл <span className={s.Span}>for</span> можна використовувати для
+          ітерації по масиву, тобто перебрати його поелементно.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -153,11 +152,11 @@ const Arrey = () => {
           Цикл <span className={s.Span}>for...of</span>
         </h4>
         <p>
-          Конструкція <span className={s.Span}>SyntaxHighlighterfor...of</span>{" "}
-          оголошує цикл, що перебирає об'єкти, що ітеруються, такі як масиви і
-          рядки. Тіло циклу виконуватиметься для значення кожного елемента. Це
-          хороша заміна циклу, <span className={s.Span}>for</span> якщо не
-          потрібен доступ до лічильника ітерації.
+          Конструкція <span className={s.Span}>for...of</span> оголошує цикл, що
+          перебирає об'єкти, що ітеруються, такі як масиви і рядки. Тіло циклу
+          виконуватиметься для значення кожного елемента. Це хороша заміна
+          циклу, <span className={s.Span}>for</span> якщо не потрібен доступ до
+          лічильника ітерації.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -432,10 +431,9 @@ const Arrey = () => {
           Метод <span className={s.Span}>includes()</span>
         </h4>
         <p>
-          <span className={s.Span}>SyntaxHighlighterincludes(value)</span>{" "}
-          перевіряє чи є у масиві елемент зі значенням{" "}
-          <span className={s.Span}>value</span> і повертає{" "}
-          <span className={s.Span}>true</span> чи
+          <span className={s.Span}>includes(value)</span> перевіряє чи є у
+          масиві елемент зі значенням <span className={s.Span}>value</span> і
+          повертає <span className={s.Span}>true</span> чи
           <span className={s.Span}>false</span> відповідно. Область застосування
           цього методу зводиться до ситуацій, коли необхідно перевірити, чи є
           елемент у масиві і не важлива його позиція{" "}
@@ -464,8 +462,7 @@ const Arrey = () => {
         <p>
           Однак, якщо у нас буде більше червоних фруктів, наприклад ще вишня
           (cherry) або журавлина (cranberries)? Чи будемо розширювати умову за
-          допомогою додаткових{" "}
-          <span className={s.Span}>SyntaxHighlighter||</span>?
+          допомогою додаткових <span className={s.Span}>||</span>?
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -788,7 +785,7 @@ const Arrey = () => {
           прикладу.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <img src={splice3} alt="" />
+          <img src={splice3} alt="" style={{ width: "750px" }} />
         </div>
         <h4>
           Метод <span className={s.Span}>concat()</span>

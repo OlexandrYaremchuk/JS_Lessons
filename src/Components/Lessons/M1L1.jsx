@@ -102,10 +102,10 @@ const M1L1 = () => {
         </p>
 
         <p>
-          <span className={s.Span}>SyntaxHighlighterJavaScript</span> -
-          реалізація специфікації EcmaScript, високорівнева мова програмування,
-          яку підтримують всі сучасні веб-браузери. Спочатку призначений для
-          взаємодії з елементами веб-сторінок та додавання інтерактивності.
+          <span className={s.Span}>JavaScript</span> - реалізація специфікації
+          EcmaScript, високорівнева мова програмування, яку підтримують всі
+          сучасні веб-браузери. Спочатку призначений для взаємодії з елементами
+          веб-сторінок та додавання інтерактивності.
         </p>
 
         <div className={s.interestBox}>
@@ -166,21 +166,20 @@ const M1L1 = () => {
         <h1 id="section-1">Підключення скрипту</h1>
         <p>
           Щоб додати скрипт на веб-сторінку в HTML-файлі, використовується тег{" "}
-          <span className={s.Span}>SyntaxHighlighterscript</span> , в атрибуті{" "}
-          <span className={s.Span}>SyntaxHighlightersrc</span> якого вказуємо
-          посилання на зовнішній JavaScript-файл.
+          <span className={s.Span}>script</span> , в атрибуті{" "}
+          <span className={s.Span}>src</span> якого вказуємо посилання на
+          зовнішній JavaScript-файл.
         </p>
         <p>Щоб підключити JavaScript із зовнішнього файлу:</p>
         <ul>
           <li>
-            Створіть файл із розширенням{" "}
-            <span className={s.Span}>SyntaxHighlighter.js</span> і помістіть
-            його в підпапку <span className={s.Span}>SyntaxHighlighterjs</span>.
+            Створіть файл із розширенням <span className={s.Span}>.js</span> і
+            помістіть його в підпапку <span className={s.Span}>js</span>.
           </li>
           <li>
             Потім вкажіть шлях до файлу скрипта в атрибуті{" "}
-            <span className={s.Span}>SyntaxHighlightersrc</span> тега{" "}
-            <span className={s.Span}>SyntaxHighlighterscript</span> .
+            <span className={s.Span}>src</span> тега{" "}
+            <span className={s.Span}>script</span> .
           </li>
         </ul>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -208,21 +207,18 @@ const M1L1 = () => {
           </div>
           <p>
             Розміщення JavaScript файлу в папці{" "}
-            <span className={s.Span}>SyntaxHighlighterjs</span> не потрібне, але
-            це хороша практика.
+            <span className={s.Span}>js</span> не потрібне, але це хороша
+            практика.
           </p>
         </div>
         <p>
-          Якщо скрипт підключено до{" "}
-          <span className={s.Span}>SyntaxHighlighter{`<head>`}</span>,
+          Якщо скрипт підключено до <span className={s.Span}>{`<head>`}</span>,
           відображення сторінки зупиняється, доки скрипт не завантажиться та
           виконається повністю. Браузер завантажує та відображає HTML поступово.
-          Якщо він бачить тег{" "}
-          <span className={s.Span}>SyntaxHighlighter{`<script>`}</span> без
+          Якщо він бачить тег <span className={s.Span}>{`<script>`}</span> без
           додаткових атрибутів, то спочатку виконується скрипт і потім
           обробляється решта код HTML-файлу. Тому скрипт підключають перед
-          тегом, що закриває{" "}
-          <span className={s.Span}>SyntaxHighlighter{`<body>`}</span>, після
+          тегом, що закриває <span className={s.Span}>{`<body>`}</span>, після
           всього вмісту, як у прикладі.
         </p>
 
@@ -242,20 +238,19 @@ const M1L1 = () => {
         </p>
         <p>
           Наступні комбінації клавіш відкривають інструменти розробника на
-          вкладці <span className={s.Span}>SyntaxHighlighterConsole:</span>{" "}
+          вкладці <span className={s.Span}>Console:</span>{" "}
         </p>
         <ul>
           <li>
-            Windows та Linux -{" "}
-            <span className={s.Span}>SyntaxHighlighterCtrl</span> +{" "}
-            <span className={s.Span}>SyntaxHighlighterShift</span> +{" "}
-            <span className={s.Span}>SyntaxHighlighterJ</span> aбо{" "}
-            <span className={s.Span}>SyntaxHighlighterF12</span>{" "}
+            Windows та Linux - <span className={s.Span}>Ctrl</span> +{" "}
+            <span className={s.Span}>Shift</span> +{" "}
+            <span className={s.Span}>J</span> aбо{" "}
+            <span className={s.Span}>F12</span>{" "}
           </li>
           <li>
-            MacOS - <span className={s.Span}>SyntaxHighlighterCommand</span> +{" "}
-            <span className={s.Span}>SyntaxHighlighterOption</span> +
-            <span className={s.Span}>SyntaxHighlighterJ</span>{" "}
+            MacOS - <span className={s.Span}>Command</span> +{" "}
+            <span className={s.Span}>Option</span> +
+            <span className={s.Span}>J</span>{" "}
           </li>
         </ul>
         <h3>Додаткові матеріали</h3>
@@ -302,48 +297,42 @@ const M1L1 = () => {
         <ul>
           <li>
             {" "}
-            <span className={s.Span}>SyntaxHighlightera</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighterb</span> - змінні (як в
-            рівнянні алгебри), це сховища даних, які використовує програма.
-            Змінна складається з ідентифікатора (імені) та пов'язаного з ним
-            значення.
+            <span className={s.Span}>a</span> і{" "}
+            <span className={s.Span}>b</span> - змінні (як в рівнянні алгебри),
+            це сховища даних, які використовує програма. Змінна складається з
+            ідентифікатора (імені) та пов'язаного з ним значення.
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter2</span> - Просто число.
-            Це називається значенням літералу (literal value), тому що не
-            зберігається у змінній.
+            <span className={s.Span}>2</span> - Просто число. Це називається
+            значенням літералу (literal value), тому що не зберігається у
+            змінній.
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter=</span>і{" "}
-            <span className={s.Span}>SyntaxHighlighter*</span> - оператори, що
-            роблять дії над значеннями та змінними.
+            <span className={s.Span}>=</span>і <span className={s.Span}>*</span>{" "}
+            - оператори, що роблять дії над значеннями та змінними.
           </li>
         </ul>
         <p>
-          Уявімо, що змінна <span className={s.Span}>SyntaxHighlighterb</span>{" "}
-          вже зберігає число <span className={s.Span}>SyntaxHighlighter10</span>
-          . Тоді ця інструкція каже машині:
+          Уявімо, що змінна <span className={s.Span}>b</span> вже зберігає число{" "}
+          <span className={s.Span}>10</span>. Тоді ця інструкція каже машині:
         </p>
         <ol>
           <li>
             Піди знайди змінну з ідентифікатором{" "}
-            <span className={s.Span}>SyntaxHighlighterb</span> і запитай, яке в
-            неї зараз значення.
+            <span className={s.Span}>b</span> і запитай, яке в неї зараз
+            значення.
           </li>
           <li>
-            Підстав значення змінної{" "}
-            <span className={s.Span}>SyntaxHighlighterb</span>(10) у
-            затвердження на місце{" "}
-            <span className={s.Span}>SyntaxHighlighterb</span>
+            Підстав значення змінної <span className={s.Span}>b</span>(10) у
+            затвердження на місце <span className={s.Span}>b</span>
           </li>
           <li>
-            Виконай операцію множення{" "}
-            <span className={s.Span}>SyntaxHighlighter10</span> на{" "}
-            <span className={s.Span}>SyntaxHighlighter2</span>.
+            Виконай операцію множення <span className={s.Span}>10</span> на{" "}
+            <span className={s.Span}>2</span>.
           </li>
           <li>
             Запиши результат обчислення вираження правої частини змінну{" "}
-            <span className={s.Span}>SyntaxHighlightera</span>.
+            <span className={s.Span}>a</span>.
           </li>
         </ol>
         <div className={s.interestBox}>
@@ -366,8 +355,8 @@ const M1L1 = () => {
           складаються із фраз, і ці фрази називаються виразами
         </p>
         <p>
-          <strong>Вираз (exSyntaxHighlighterssion) </strong>- посилання змінну
-          чи значення, чи набір змінних і значень разом із операторами.
+          <strong>Вираз (exssion) </strong>- посилання змінну чи значення, чи
+          набір змінних і значень разом із операторами.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -380,26 +369,23 @@ const M1L1 = () => {
         </p>
         <ul>
           <li>
-            <span className={s.Span}>SyntaxHighlighter[2]</span>- Вираз значення
-            літералу.
+            <span className={s.Span}>[2]</span>- Вираз значення літералу.
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter[b]</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighter[a]</span>- вирази
-            змінної, означають необхідність підставити значення змінної, але у
-            тому разі, якщо змінна стоїть у правій частині висловлювання
-            присвоювання.
+            <span className={s.Span}>[b]</span> і{" "}
+            <span className={s.Span}>[a]</span>- вирази змінної, означають
+            необхідність підставити значення змінної, але у тому разі, якщо
+            змінна стоїть у правій частині висловлювання присвоювання.
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter[b * 2]</span>-
-            арифметичний вираз множення.
+            <span className={s.Span}>[b * 2]</span>- арифметичний вираз
+            множення.
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter[a = b * 2]</span>- Вираз
-            привласнення. У нашому випадку вказує на необхідність обчислення
-            правої частини виразу та привласнення результату змінної{" "}
-            <span className={s.Span}>SyntaxHighlightera</span> у лівій частині
-            виразу.
+            <span className={s.Span}>[a = b * 2]</span>- Вираз привласнення. У
+            нашому випадку вказує на необхідність обчислення правої частини
+            виразу та привласнення результату змінної{" "}
+            <span className={s.Span}>a</span> у лівій частині виразу.
           </li>
         </ul>
         <p>
@@ -431,8 +417,8 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <p>
           Для наочності звернемося до якості рядка{" "}
-          <span className={s.Span}>SyntaxHighlighterlength</span>, яке містить
-          кількість символів рядка.
+          <span className={s.Span}>length</span>, яке містить кількість символів
+          рядка.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -441,14 +427,12 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <h3>Метод</h3>
         <p>
-          Це виклик дії, наприклад ,{" "}
-          <span className={s.Span}>SyntaxHighlighterприсісти</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterбігати</span>, тобто якась
-          активна операція. Так само і у даних є свої заздалегідь визначені
-          методи, наприклад, можна додати або видалити елементи з колекції,
-          перевести рядок у різний регістр і т. д. Синтаксис виклику методу дуже
-          схожий на звернення до властивості, але в кінці додається пара круглих
-          дужок.
+          Це виклик дії, наприклад , <span className={s.Span}>присісти</span>{" "}
+          або <span className={s.Span}>бігати</span>, тобто якась активна
+          операція. Так само і у даних є свої заздалегідь визначені методи,
+          наприклад, можна додати або видалити елементи з колекції, перевести
+          рядок у різний регістр і т. д. Синтаксис виклику методу дуже схожий на
+          звернення до властивості, але в кінці додається пара круглих дужок.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -457,8 +441,8 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <p>
           Наприклад звернемося до методу рядка{" "}
-          <span className={s.Span}>SyntaxHighlightertoUpperCase()</span> , який
-          зробить усі літери великими.
+          <span className={s.Span}>toUpperCase()</span> , який зробить усі
+          літери великими.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -503,26 +487,23 @@ const M1L1 = () => {
         </p>
         <ul>
           <li>
-            Першим символом має бути буква{" "}
-            <span className={s.Span}>SyntaxHighlightera-z</span> або{" "}
-            <span className={s.Span}>SyntaxHighlighterA-Z</span>
-            символ підкреслення{" "}
-            <span className={s.Span}>SyntaxHighlighter_</span> або знак долара{" "}
-            <span className={s.Span}>SyntaxHighlighter$</span>.
+            Першим символом має бути буква <span className={s.Span}>a-z</span>{" "}
+            або <span className={s.Span}>A-Z</span>
+            символ підкреслення <span className={s.Span}>_</span> або знак
+            долара <span className={s.Span}>$</span>.
           </li>
           <li>
-            Інші символи можуть бути літерами{" "}
-            <span className={s.Span}>SyntaxHighlightera-z</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighterA-Z</span>
-            цифрами <span className={s.Span}>SyntaxHighlighter0-9</span>,
-            підкресленнями <span className={s.Span}>SyntaxHighlighter_</span> та
-            знаками долара <span className={s.Span}>SyntaxHighlighter$</span> .
+            Інші символи можуть бути літерами <span className={s.Span}>-z</span>
+            , <span className={s.Span}>-Z</span>
+            цифрами <span className={s.Span}>0-9</span>, підкресленнями{" "}
+            <span className={s.Span}>_</span> та знаками долара{" "}
+            <span className={s.Span}>$</span> .
           </li>
           <li>
             Ідентифікатори чутливі до регістру. Це означає, що змінні{" "}
-            <span className={s.Span}>SyntaxHighlighteruser</span> та{" "}
-            <span className={s.Span}>SyntaxHighlighterusEr</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighterUser</span> різні
+            <span className={s.Span}>user</span> та{" "}
+            <span className={s.Span}>usEr</span>,{" "}
+            <span className={s.Span}>User</span> різні
           </li>
         </ul>
         <p>Ім'я змінної має бути зрозумілим.</p>
@@ -544,11 +525,10 @@ const M1L1 = () => {
         <p>
           Використання camelCase-нотації для ідентифікаторів є стандартом. Перше
           слово пишеться малими літерами, а кожне наступне починається з
-          великої. Наприклад,{" "}
-          <span className={s.Span}>SyntaxHighlighteruser</span>,{" "}
-          <span className={s.Span}>SyntaxHighlightergetUserData</span> ,{" "}
-          <span className={s.Span}>SyntaxHighlighterisActive</span>,{" "}
-          <span className={s.Span}>SyntaxHighlighteractiveGuestCount</span>.
+          великої. Наприклад, <span className={s.Span}>user</span>,{" "}
+          <span className={s.Span}>getUserData</span> ,{" "}
+          <span className={s.Span}>isActive</span>,{" "}
+          <span className={s.Span}>activeGuestCount</span>.
         </p>
         <div className={s.link}>
           <a target="_blank" href="https://bookflow.ru/kak-nazyvat-peremennye/">
@@ -574,9 +554,8 @@ const M1L1 = () => {
         <h3>Оголошення змінних</h3>
         <p>
           Оголошення змінної починається з ключового слова{" "}
-          <span className={s.Span}>SyntaxHighlighterconst</span>. Така змінна
-          має бути відразу ініціалізована значенням, після чого його не можна
-          перевизначити.
+          <span className={s.Span}>const</span>. Така змінна має бути відразу
+          ініціалізована значенням, після чого його не можна перевизначити.
         </p>
 
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -594,7 +573,7 @@ const M1L1 = () => {
         <p>
           Для того, щоб оголосити змінну, якій у майбутньому можна буде надати
           нове значення, використовується ключове слово{" "}
-          <span className={s.Span}>SyntaxHighlighterlet</span>.
+          <span className={s.Span}>let</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -622,33 +601,29 @@ const M1L1 = () => {
           </div>
           <p>
             Оголошення змінної без ключового слова{" "}
-            <span className={s.Span}>SyntaxHighlighterlet</span> або{" "}
-            <span className={s.Span}>SyntaxHighlighterconst</span> призведе до
-            помилки, якщо скрипт виконується у строгому режимі.
+            <span className={s.Span}>let</span> або{" "}
+            <span className={s.Span}>const</span> призведе до помилки, якщо
+            скрипт виконується у строгому режимі.
           </p>
         </div>
         <h3>
-          Коли використовувати{" "}
-          <span className={s.Span}>SyntaxHighlighterconst</span>, а коли{" "}
-          <span className={s.Span}>SyntaxHighlighterlet</span>
+          Коли використовувати <span className={s.Span}>const</span>, а коли{" "}
+          <span className={s.Span}>let</span>
         </h3>
         <p>
-          Єдина відмінність{" "}
-          <span className={s.Span}>SyntaxHighlighterconst</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighterlet</span> полягає в тому,
-          що <span className={s.Span}>SyntaxHighlighterconst</span> забороняє
-          повторне надання змінної будь-якого значення. Оголошення{" "}
-          <span className={s.Span}>SyntaxHighlighterconst</span> робить код
-          більш читаним, оскільки змінна завжди посилається на те саме значення.
-          У разі <span className={s.Span}>SyntaxHighlighterlet</span> такої
-          впевненості немає.
+          Єдина відмінність <span className={s.Span}>const</span> і{" "}
+          <span className={s.Span}>let</span> полягає в тому, що{" "}
+          <span className={s.Span}>const</span> забороняє повторне надання
+          змінної будь-якого значення. Оголошення{" "}
+          <span className={s.Span}>const</span> робить код більш читаним,
+          оскільки змінна завжди посилається на те саме значення. У разі{" "}
+          <span className={s.Span}>let</span> такої впевненості немає.
         </p>
         <h3>Константи, які не змінюються</h3>
         <p>
           Імена <strong>КОНСТАНТ</strong> - змінних, значення яких ніколи не
           змінюється протягом роботи всього скрипта, зазвичай записуються у
-          форматі{" "}
-          <span className={s.Span}>SyntaxHighlighterUPPER_SNAKE_CASE</span> .
+          форматі <span className={s.Span}>UPPER_SNAKE_CASE</span> .
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -663,17 +638,16 @@ const M1L1 = () => {
           Абсолютна більшість змінних - константи в іншому сенсі, вони просто не
           змінюють значення після присвоєння. Але при різних запусках скрипта це
           значення може бути різним. Імена таких змінних записують за допомогою
-          формату <span className={s.Span}>SyntaxHighlightercamelCase</span>.
+          формату <span className={s.Span}>camelCase</span>.
         </p>
 
         <h3>Звернення до зміної</h3>
         <p>Важливо розрізняти невизначені та неоголошені змінні.</p>
         <p>
           <strong>Невизначена (undefined)</strong> - це змінна, яка була
-          оголошена ключовим словом{" "}
-          <span className={s.Span}>SyntaxHighlighterlet</span>, але не
+          оголошена ключовим словом <span className={s.Span}>let</span>, але не
           ініціалізована значенням. За умовчанням їй надається початкове
-          значення <span className={s.Span}>SyntaxHighlighterundefined</span>.
+          значення <span className={s.Span}>undefined</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -719,8 +693,8 @@ const M1L1 = () => {
         <p>
           <strong>String</strong> - рядки, послідовність із нуля або більше
           символів. Рядок починається і закінчується одиночною{" "}
-          <span className={s.Span}>SyntaxHighlighter'</span>, або подвійними
-          лапками <span className={s.Span}>SyntaxHighlighter"</span>.
+          <span className={s.Span}>'</span>, або подвійними лапками{" "}
+          <span className={s.Span}>"</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -736,19 +710,17 @@ const M1L1 = () => {
         </p>
         <ul>
           <li>
-            <span className={s.Span}>SyntaxHighlightertrue</span> - так, мабуть,
-            істина, 1
+            <span className={s.Span}>true</span> - так, мабуть, істина, 1
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighterfalse</span>- ні, невірно,
-            брехня, 0
+            <span className={s.Span}>false</span>- ні, невірно, брехня, 0
           </li>
         </ul>
         <p>
           <strong>null</strong> - особливе значення, яке по суті означає ничто.
           Використовується в тих ситуаціях, коли необхідно вказати порожнечу.
           Наприклад, якщо користувач ще нічого не вибрав, то можна сказати що
-          значення <span className={s.Span}>SyntaxHighlighternull</span>.
+          значення <span className={s.Span}>null</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -759,7 +731,7 @@ const M1L1 = () => {
           <strong>undefined</strong> – ще одне спеціальне значення. За
           умовчанням, коли змінна оголошується, але з ініціалізується, її
           значення визначено, їй присвоюється{" "}
-          <span className={s.Span}>SyntaxHighlighterundefined</span>.
+          <span className={s.Span}>undefined</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -768,7 +740,7 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <h3>
-          Оператор <span className={s.Span}>SyntaxHighlightertypeof</span>
+          Оператор <span className={s.Span}>typeof</span>
         </h3>
         <p>
           Використовується для отримання типу змінної. Повертає місце свого
@@ -802,9 +774,9 @@ const M1L1 = () => {
         <h3>Виведення даних (відтворення)</h3>
         <p>
           Для виведення даних є два методи:{" "}
-          <span className={s.Span}>SyntaxHighlighterconsole.log()</span>і{" "}
-          <span className={s.Span}>SyntaxHighlighteralert()</span>. У круглих
-          дужках вказуємо ім'я змінної, значення якої потрібно вивести.
+          <span className={s.Span}>console.log()</span>і{" "}
+          <span className={s.Span}>alert()</span>. У круглих дужках вказуємо
+          ім'я змінної, значення якої потрібно вивести.
         </p>
 
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -824,9 +796,9 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Метод <span className={s.Span}>SyntaxHighlighteralert()</span>{" "}
-          виводить модальне вікно, текст якого відповідає значенню змінної (або
-          літералу), яку передамо в дужках.
+          Метод <span className={s.Span}>alert()</span> виводить модальне вікно,
+          текст якого відповідає значенню змінної (або літералу), яку передамо в
+          дужках.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -842,16 +814,14 @@ const M1L1 = () => {
             <h5>ЦІКАВО</h5>
           </div>
           <p>
-            <span className={s.Span}>SyntaxHighlighterconsole</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighteralert</span> є частиною
-            інтерфейсу <span className={s.Span}>SyntaxHighlighterwindow</span> –
-            глобального об'єкта, доступного під час виконання скрипту на
-            веб-сторінці. Запис{" "}
-            <span className={s.Span}>SyntaxHighlighterwindow.alert()</span>{" "}
-            надлишковий, пишемо просто{" "}
-            <span className={s.Span}>SyntaxHighlighteralert()</span> або{" "}
-            <span className={s.Span}>SyntaxHighlighterconsole.log()</span>.
-            Детальніше про це говоритимемо далі в курсі.
+            <span className={s.Span}>console</span> і{" "}
+            <span className={s.Span}>alert</span> є частиною інтерфейсу{" "}
+            <span className={s.Span}>window</span> – глобального об'єкта,
+            доступного під час виконання скрипту на веб-сторінці. Запис{" "}
+            <span className={s.Span}>window.alert()</span> надлишковий, пишемо
+            просто <span className={s.Span}>alert()</span> або{" "}
+            <span className={s.Span}>console.log()</span>. Детальніше про це
+            говоритимемо далі в курсі.
           </p>
         </div>
         <a href="https://medium.com/free-code-camp/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b">
@@ -860,23 +830,20 @@ const M1L1 = () => {
         <h3>Отримання даних</h3>
         <p>
           Для отримання даних від користувача{" "}
-          <span className={s.Span}>SyntaxHighlighterprompt()</span> є{" "}
-          <span className={s.Span}>SyntaxHighlighterconfirm()</span>. Це також
-          методи з інтерфейсу{" "}
-          <span className={s.Span}>SyntaxHighlighterwindow</span>. Результатом
-          свого виконання вони повертають те, що було введено користувачем, тому
+          <span className={s.Span}>prompt()</span> є{" "}
+          <span className={s.Span}>confirm()</span>. Це також методи з
+          інтерфейсу <span className={s.Span}>window</span>. Результатом свого
+          виконання вони повертають те, що було введено користувачем, тому
           результат роботи можна записати в змінну для подальшого використання.
         </p>
         <p>
-          <span className={s.Span}>SyntaxHighlighterconfirm()</span> - Виводить
-          модальне вікно з повідомленням, і дві кнопки,{" "}
-          <span className={s.Span}>SyntaxHighlighterOk</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighterCancel</span>. При
-          натисканні на <span className={s.Span}>SyntaxHighlighterOk</span> ,
-          результатом буде <span className={s.Span}>SyntaxHighlightertrue</span>{" "}
-          при натисканні на{" "}
-          <span className={s.Span}>SyntaxHighlighterCancel</span> - повертається{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>.
+          <span className={s.Span}>confirm()</span> - Виводить модальне вікно з
+          повідомленням, і дві кнопки, <span className={s.Span}>Ok</span> і{" "}
+          <span className={s.Span}>Cancel</span>. При натисканні на{" "}
+          <span className={s.Span}>Ok</span> , результатом буде{" "}
+          <span className={s.Span}>true</span> при натисканні на{" "}
+          <span className={s.Span}>Cancel</span> - повертається{" "}
+          <span className={s.Span}>false</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -887,14 +854,12 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          <span className={s.Span}>SyntaxHighlighterprompt()</span> - Виводить
-          модальне вікно з полем введення та кнопками{" "}
-          <span className={s.Span}>SyntaxHighlighterOk</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighterCancel</span>. При
-          натисканні <span className={s.Span}>SyntaxHighlighter</span>,
-          результатом буде те, що ввів користувач,{" "}
-          <span className={s.Span}>SyntaxHighlighterCancel</span> повертається{" "}
-          <span className={s.Span}>SyntaxHighlighternull</span>.
+          <span className={s.Span}>prompt()</span> - Виводить модальне вікно з
+          полем введення та кнопками <span className={s.Span}>Ok</span> і{" "}
+          <span className={s.Span}>Cancel</span>. При натисканні{" "}
+          <span className={s.Span}></span>, результатом буде те, що ввів
+          користувач, <span className={s.Span}>Cancel</span> повертається{" "}
+          <span className={s.Span}>null</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -905,8 +870,7 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Важлива особливість{" "}
-          <span className={s.Span}>SyntaxHighlighterprompt</span> у тому, що
+          Важлива особливість <span className={s.Span}>prompt</span> у тому, що
           незалежно від того, що ввів користувач, завжди повернеться рядок.
           Тобто якщо користувач ввів 5, то повернеться не число 5, а рядок "5".
         </p>
@@ -961,45 +925,37 @@ const M1L1 = () => {
           </div>
           <p>
             Важливо запам'ятати терміни виразів.{" "}
-            <span className={s.Span}>SyntaxHighlighter + - * / %</span>{" "}
-            називаються <strong>оператори</strong> , а те, на чому вони
-            застосовуються – <strong>операнди</strong> .
+            <span className={s.Span}> + - * / %</span> називаються{" "}
+            <strong>оператори</strong> , а те, на чому вони застосовуються –{" "}
+            <strong>операнди</strong> .
           </p>
         </div>
         <h3>Оператори порівняння</h3>
         <p>
           Використовуються для порівняння двох значень. Результатом свого
-          виконання повертають буль-{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>, тобто «так» чи
-          «ні».
+          виконання повертають буль- <span className={s.Span}>true</span> або{" "}
+          <span className={s.Span}>false</span>, тобто «так» чи «ні».
         </p>
         <ul>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a > b`}</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighter{`a < b`}</span>- більше
-            /менше
+            <span className={s.Span}>{`a > b`}</span> і{" "}
+            <span className={s.Span}>{`a < b`}</span>- більше /менше
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a >= b`}</span> i{" "}
-            <span className={s.Span}>SyntaxHighlighter{`a <= b`}</span>-
-            більше/менше або рівно{" "}
+            <span className={s.Span}>{`a >= b`}</span> i{" "}
+            <span className={s.Span}>{`a <= b`}</span>- більше/менше або рівно{" "}
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a == b`}</span> -
-            рівність
+            <span className={s.Span}>{`a == b`}</span> - рівність
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a != b`}</span> -
-            нерівність
+            <span className={s.Span}>{`a != b`}</span> - нерівність
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a === b`}</span> -
-            сувора рівність
+            <span className={s.Span}>{`a === b`}</span> - сувора рівність
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighter{`a !== b`}</span> -
-            сувора нерівність
+            <span className={s.Span}>{`a !== b`}</span> - сувора нерівність
           </li>
         </ul>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -1021,10 +977,10 @@ const M1L1 = () => {
         <h3>Оператори рівності</h3>
         <p>
           «Нестрогі» оператори рівності
-          <span className={s.Span}>SyntaxHighlighter==</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighter!=</span> виконують
-          перетворення типів порівнюваних значень до числа, що може призвести до
-          помилок, особливо у початківців.
+          <span className={s.Span}>==</span> і{" "}
+          <span className={s.Span}>!=</span> виконують перетворення типів
+          порівнюваних значень до числа, що може призвести до помилок, особливо
+          у початківців.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1042,9 +998,8 @@ const M1L1 = () => {
         <img src={operatorTable1} alt="" />
         <p>
           Тому для перевірки рівності або нерівності двох значень
-          використовуються тільки оператори{" "}
-          <span className={s.Span}>SyntaxHighlighter===</span> (сувора рівність)
-          та <span className={s.Span}>SyntaxHighlighter!==</span> (сувора
+          використовуються тільки оператори <span className={s.Span}>===</span>{" "}
+          (сувора рівність) та <span className={s.Span}>!==</span> (сувора
           нерівність), які не виконують наведення типів операндів.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -1067,22 +1022,20 @@ const M1L1 = () => {
         <h1 id="section-7">Числа</h1>
         <p>
           Всі числа JavaScript, як цілі так і дробові, мають тип{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber</span> і записувати
-          їх можна не тільки в десятковій системі числення.
+          <span className={s.Span}>Number</span> і записувати їх можна не тільки
+          в десятковій системі числення.
         </p>
         <h3>Приведення до числа</h3>
         <p>
           Більшість арифметичних операцій та математичних функцій перетворять
           значення на число автоматично. Для того щоб зробити це явно,
-          використовуйте функцію{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber(val)</span>,
-          передаючи їй у <span className={s.Span}>SyntaxHighlighterval</span>{" "}
-          те, що треба привести до числа.
+          використовуйте функцію <span className={s.Span}>Number(val)</span>,
+          передаючи їй у <span className={s.Span}>val</span> те, що треба
+          привести до числа.
         </p>
         <p>
           Якщо значення не може призвести до числа, результатом буде спеціальне
-          числове значення{" "}
-          <span className={s.Span}>SyntaxHighlighterNaN (Not a Number)</span>.
+          числове значення <span className={s.Span}>NaN (Not a Number)</span>.
           Аналогічним чином відбувається перетворення та інших математичних
           операторах і функціях.
         </p>
@@ -1099,18 +1052,16 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <h3>
-          Методи та{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber.parseInt()</span>{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber.parseFloat()</span>
+          Методи та <span className={s.Span}>Number.parseInt()</span>{" "}
+          <span className={s.Span}>Number.parseFloat()</span>
         </h3>
         <p>
           Перетворюють рядок символ за символом, доки це можливо. У разі
           виникнення помилки повертається число, яке вийшло.
         </p>
         <p>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber.parseInt()</span>{" "}
-          парсить з рядка ціле число.
+          Метод <span className={s.Span}>Number.parseInt()</span> парсить з
+          рядка ціле число.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1121,9 +1072,8 @@ const M1L1 = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber.parseFloat()</span>{" "}
-          парсить з рядка ціле число.
+          Метод <span className={s.Span}>Number.parseFloat()</span> парсить з
+          рядка ціле число.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1136,32 +1086,29 @@ const M1L1 = () => {
         <h3>Перевірка на число</h3>
         <p>
           Для перевірки на число можна використовувати метод{" "}
-          <span className={s.Span}>SyntaxHighlighterNumber.isNaN(val)</span>.
-          Він перевіряє, чи вказане значення{" "}
-          <span className={s.Span}>SyntaxHighlighterNaN</span> чи ні. Метод
+          <span className={s.Span}>Number.isNaN(val)</span>. Він перевіряє, чи
+          вказане значення <span className={s.Span}>NaN</span> чи ні. Метод
           відповідає питанням "Це Not A Number?" і повертає:
         </p>
         <ul>
           <li>
-            <span className={s.Span}>SyntaxHighlightertrue</span>- якщо значення{" "}
-            <span className={s.Span}>SyntaxHighlighterval</span> це{" "}
-            <span className={s.Span}>SyntaxHighlighterNaN</span>
+            <span className={s.Span}>true</span>- якщо значення{" "}
+            <span className={s.Span}>val</span> це{" "}
+            <span className={s.Span}>NaN</span>
           </li>
           <li>
-            <span className={s.Span}>SyntaxHighlighterfalse</span>- якщо
-            значення <span className={s.Span}>SyntaxHighlighterval</span> це не
-            <span className={s.Span}>SyntaxHighlighterNaN</span>
+            <span className={s.Span}>false</span>- якщо значення{" "}
+            <span className={s.Span}>val</span> це не
+            <span className={s.Span}>NaN</span>
           </li>
         </ul>
         <p>
-          Для всіх значень <span className={s.Span}>SyntaxHighlighterval</span>{" "}
-          крім <span className={s.Span}>SyntaxHighlighterNaN</span> при передачі
-          в <span className={s.Span}>SyntaxHighlighterNumber.isNaN(val)</span>{" "}
-          поверне <span className={s.Span}>SyntaxHighlighterfalse</span>. Цей
-          метод не робить спробу перетворити{" "}
-          <span className={s.Span}>SyntaxHighlighterval</span> до числа, а
-          просто виконує перевірку на{" "}
-          <span className={s.Span}>SyntaxHighlighterNaN</span>.
+          Для всіх значень <span className={s.Span}>val</span> крім{" "}
+          <span className={s.Span}>NaN</span> при передачі в{" "}
+          <span className={s.Span}>Number.isNaN(val)</span> поверне{" "}
+          <span className={s.Span}>false</span>. Цей метод не робить спробу
+          перетворити <span className={s.Span}>val</span> до числа, а просто
+          виконує перевірку на <span className={s.Span}>NaN</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1176,20 +1123,19 @@ const M1L1 = () => {
         <p>
           При додаванні не цілих чисел у JavaScript та інших мовах
           програмування, є особливість. Якщо коротко, то{" "}
-          <span className={s.Span}>SyntaxHighlighter0.1 + 0.2</span> не одно{" "}
-          <span className={s.Span}>SyntaxHighlighter0.3</span>, результат
-          додавання більше ніж{" "}
-          <span className={s.Span}>SyntaxHighlighter0.3</span>. Все від того, що
-          машина рахує в двійковій системі.
+          <span className={s.Span}>0.1 + 0.2</span> не одно{" "}
+          <span className={s.Span}>0.3</span>, результат додавання більше ніж{" "}
+          <span className={s.Span}>0.3</span>. Все від того, що машина рахує в
+          двійковій системі.
         </p>
         <p>
-          Число <span className={s.Span}>SyntaxHighlighter0.1</span> в двійковій
-          системі числення - це нескінченний дріб, тому що одиниця на десять у
-          двійковій системі не ділиться. Двійкове значення нескінченних дробів
-          зберігається лише певного знака, тому виникає неточність. При
-          додаванні <span className={s.Span}>SyntaxHighlighter0.1</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighter0.2</span>, дві неточності
-          складаються, виходить незначна, але все ж таки помилка в обчисленнях.
+          Число <span className={s.Span}>0.1</span> в двійковій системі числення
+          - це нескінченний дріб, тому що одиниця на десять у двійковій системі
+          не ділиться. Двійкове значення нескінченних дробів зберігається лише
+          певного знака, тому виникає неточність. При додаванні{" "}
+          <span className={s.Span}>0.1</span> і{" "}
+          <span className={s.Span}>0.2</span>, дві неточності складаються,
+          виходить незначна, але все ж таки помилка в обчисленнях.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1213,8 +1159,7 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <p>
           Ще один спосіб - скласти, а результат відсікти до певного знака після
-          коми за допомогою методу{" "}
-          <span className={s.Span}>SyntaxHighlightertoFixed()</span>.
+          коми за допомогою методу <span className={s.Span}>toFixed()</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1224,7 +1169,7 @@ const M1L1 = () => {
         </SyntaxHighlighter>
 
         <h3>
-          Клас <span className={s.Span}>SyntaxHighlighterMath</span>
+          Клас <span className={s.Span}>Math</span>
         </h3>
         <p>
           Один із вбудованих класів, який надає набір методів для роботи з
@@ -1262,9 +1207,8 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <h1 id="section-8">Рядки</h1>
         <p>
-          <span className={s.Span}>SyntaxHighlighterРядок</span> - це
-          індексований набір із нуля або більше символів, укладених у одинарні
-          або подвійні лапки.
+          <span className={s.Span}>Рядок</span> - це індексований набір із нуля
+          або більше символів, укладених у одинарні або подвійні лапки.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1273,12 +1217,11 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <p>
           Важливо пам'ятати, що індексація елементів рядка починається з нуля.
-          Наприклад у рядку{" "}
-          <span className={s.Span}>SyntaxHighlighter"JavaScript"</span> літера{" "}
-          <span className={s.Span}>SyntaxHighlighter"J"</span> стоїть на позиції
-          з індексом <span className={s.Span}>SyntaxHighlighter0</span>, а{" "}
-          <span className={s.Span}>SyntaxHighlighter"t"</span> йде під індексом{" "}
-          <span className={s.Span}>SyntaxHighlighter9</span>.
+          Наприклад у рядку <span className={s.Span}>"JavaScript"</span> літера{" "}
+          <span className={s.Span}>"J"</span> стоїть на позиції з індексом{" "}
+          <span className={s.Span}>0</span>, а{" "}
+          <span className={s.Span}>"t"</span> йде під індексом{" "}
+          <span className={s.Span}>9</span>.
         </p>
         <img className={s.stringImg} src={string} alt="" />
         <p>
@@ -1289,10 +1232,9 @@ const M1L1 = () => {
         </p>
         <h3>Конкатенація рядків</h3>
         <p>
-          Якщо застосувати оператор{" "}
-          <span className={s.Span}>SyntaxHighlighter+</span> до рядка та іншого
-          типу даних, результатом операції «складання» буде рядок. Ця операція
-          називається конкатенація, або складання рядків.
+          Якщо застосувати оператор <span className={s.Span}>+</span> до рядка
+          та іншого типу даних, результатом операції «складання» буде рядок. Ця
+          операція називається конкатенація, або складання рядків.
         </p>
         <p>
           Під час конкатенації будь-який тип даних приводиться до рядка і
@@ -1322,11 +1264,11 @@ const M1L1 = () => {
         </SyntaxHighlighter>
         <p>
           В останньому прикладі відбулася математична операція додавання для
-          перших двох чисел <span className={s.Span}>SyntaxHighlighter1</span> і{" "}
-          <span className={s.Span}>SyntaxHighlighter2</span>, після чого число{" "}
-          <span className={s.Span}>SyntaxHighlighter3</span> було перетворено на
-          рядок <span className={s.Span}>SyntaxHighlighter"3"</span> і поєднано
-          з рядком <span className={s.Span}>SyntaxHighlighter"4"</span>.
+          перших двох чисел <span className={s.Span}>1</span> і{" "}
+          <span className={s.Span}>2</span>, після чого число{" "}
+          <span className={s.Span}>3</span> було перетворено на рядок{" "}
+          <span className={s.Span}>"3"</span> і поєднано з рядком{" "}
+          <span className={s.Span}>"4"</span>.
         </p>
         <h3>Шаблонні рядки</h3>
         <p>
@@ -1334,7 +1276,7 @@ const M1L1 = () => {
           Шаблонний рядок укладено у зворотні (косі) лапки замість подвійних або
           одинарних і може містити місцезаповнювачі, які позначаються знаком
           долара та фігурними дужками -{" "}
-          <span className={s.Span}>SyntaxHighlighter${`выражение`}</span>.
+          <span className={s.Span}>${`выражение`}</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1357,7 +1299,7 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           них.
         </p>
         <h4>
-          Властивість <span className={s.Span}>SyntaxHighlighterlength</span>
+          Властивість <span className={s.Span}>length</span>
         </h4>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1368,8 +1310,8 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
          `}
         </SyntaxHighlighter>
         <h4>
-          Методи <span className={s.Span}>SyntaxHighlightertoLowerCase()</span>{" "}
-          <span className={s.Span}>SyntaxHighlightertoUpperCase()</span>
+          Методи <span className={s.Span}>toLowerCase()</span>{" "}
+          <span className={s.Span}>toUpperCase()</span>
         </h4>
         <p>
           Повертають новий рядок у відповідному регістрі, не змінюючи
@@ -1388,10 +1330,9 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           Бувають ситуації коли всі символи в рядку необхідно перетворити на
           один регістр, верхній або нижній. Наприклад, при пошуку за ключовим
           словом, коли користувач вводить рядок{" "}
-          <span className={s.Span}>SyntaxHighlighter'saMsUng'</span>, а
-          порівняти його треба з рядком{" "}
-          <span className={s.Span}>SyntaxHighlighter'samsung'</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighter'SAMSUNG'</span>.
+          <span className={s.Span}>'saMsUng'</span>, а порівняти його треба з
+          рядком <span className={s.Span}>'samsung'</span> або{" "}
+          <span className={s.Span}>'SAMSUNG'</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1404,10 +1345,9 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           Щоб не вимагати абсолютно точного введення, можна зробити
           «нормалізацію» введеного користувачем рядка, тобто перетворити всі
           його символи у верхній або нижній регістр. Методи рядка{" "}
-          <span className={s.Span}>SyntaxHighlightertoLowerCase()</span> та{" "}
-          <span className={s.Span}>SyntaxHighlightertoUpperCase()</span>{" "}
-          повернуть новий рядок у відповідному регістрі, не змінюючи
-          оригінальний.
+          <span className={s.Span}>toLowerCase()</span> та{" "}
+          <span className={s.Span}>toUpperCase()</span> повернуть новий рядок у
+          відповідному регістрі, не змінюючи оригінальний.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1424,12 +1364,11 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
         </SyntaxHighlighter>
 
         <h4>
-          Метод <span className={s.Span}>SyntaxHighlighterindexOf()</span>
+          Метод <span className={s.Span}>indexOf()</span>
         </h4>
         <p>
           Повертає позицію (індекс) на якій знаходиться перший збіг підрядка або{" "}
-          <span className={s.Span}>SyntaxHighlighter-1</span> якщо нічого не
-          знайдено.
+          <span className={s.Span}>-1</span> якщо нічого не знайдено.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1440,16 +1379,15 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
             `}
         </SyntaxHighlighter>
         <h4>
-          Метод <span className={s.Span}>SyntaxHighlighterincludes()</span>
+          Метод <span className={s.Span}>includes()</span>
         </h4>
         <p>
           Перевіряє чи входить підрядок у рядок, повертає буль -{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span> якщо входить і{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span> в іншому
-          випадку. Регістр символів у рядку та підрядку має значення, тому що
-          наприклад буква <span className={s.Span}>SyntaxHighlighter"a"</span>{" "}
-          не дорівнює букві <span className={s.Span}>SyntaxHighlighter"А"</span>
-          .
+          <span className={s.Span}>true</span> якщо входить і{" "}
+          <span className={s.Span}>false</span> в іншому випадку. Регістр
+          символів у рядку та підрядку має значення, тому що наприклад буква{" "}
+          <span className={s.Span}>"a"</span> не дорівнює букві{" "}
+          <span className={s.Span}>"А"</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1474,13 +1412,12 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           <p>Усі методи рядків чутливі до регістру.</p>
         </div>
         <h5>
-          Метод <span className={s.Span}>SyntaxHighlighterendsWith()</span>
+          Метод <span className={s.Span}>endsWith()</span>
         </h5>
         <p>
           Дозволяє визначити, чи рядок закінчується символами (підрядком)
-          зазначеними в дужках, повертаючи{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>.
+          зазначеними в дужках, повертаючи <span className={s.Span}>true</span>{" "}
+          або <span className={s.Span}>false</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1493,8 +1430,8 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
             `}
         </SyntaxHighlighter>
         <h5>
-          Методи <span className={s.Span}>SyntaxHighlighterreplace()</span> та{" "}
-          <span className={s.Span}>SyntaxHighlighterreplaceAll()</span>
+          Методи <span className={s.Span}>replace()</span> та{" "}
+          <span className={s.Span}>replaceAll()</span>
         </h5>
         <p>
           Повертають новий рядок, в якому перші (replace) або всі збіги
@@ -1513,18 +1450,16 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
             `}
         </SyntaxHighlighter>
         <h5>
-          Метод <span className={s.Span}>SyntaxHighlighterslice()</span>
+          Метод <span className={s.Span}>slice()</span>
         </h5>
         <p>
           Метод рядків{" "}
-          <span className={s.Span}>
-            SyntaxHighlighterslice(startIndex, endIndex)
-          </span>{" "}
+          <span className={s.Span}>slice(startIndex, endIndex)</span>{" "}
           використовується для створення копії частини чи всього рядка. Він
           робить копію елементів рядка від{" "}
-          <span className={s.Span}>SyntaxHighlighterstartIndex</span> і до, але
-          не включаючи <span className={s.Span}>SyntaxHighlighterendIndex</span>{" "}
-          та повертає новий рядок, не змінюючи оригінал.
+          <span className={s.Span}>startIndex</span> і до, але не включаючи{" "}
+          <span className={s.Span}>endIndex</span> та повертає новий рядок, не
+          змінюючи оригінал.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1536,7 +1471,7 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
 
             `}
         </SyntaxHighlighter>
-        <h1 id="section-9">Логічні опеcyjdysатори</h1>
+        <h1 id="section-9">Логічні оператори</h1>
         <p>
           Логічні оператори використовуються для перевірки умов з множинними
           виразами, наприклад, в операціях порівняння.
@@ -1544,16 +1479,15 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
         <h3>Приведення типів </h3>
         <p>
           У логічних операціях здійснюється приведення типів операндів до{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>. Приведення
-          відбувається якщо код виявлено логічний оператор.
+          <span className={s.Span}>true</span> або{" "}
+          <span className={s.Span}>false</span>. Приведення відбувається якщо
+          код виявлено логічний оператор.
         </p>
         <p>
           <strong>Truthy</strong> і <strong>Falsy</strong> - терміни, які
           використовуються для тих значень, які, в логічній операції, наводяться
-          до <span className={s.Span}>SyntaxHighlightertrue</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>, хоча спочатку
-          не були булями.
+          до <span className={s.Span}>true</span> або{" "}
+          <span className={s.Span}>false</span>, хоча спочатку не були булями.
         </p>
         <div className={s.interestBox}>
           <div className={s.interestHeader}>
@@ -1565,13 +1499,13 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           <p>
             Запам'ятайте 6 помилкових (falsy) значень, що приводяться до{" "}
             <span className={s.Span}>SyntaxHighlighterfalse</span> логічного
-            перетворення: <span className={s.Span}>SyntaxHighlighter0</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighterNaN</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighternull</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighterundefined</span>,{" "}
-            <span className={s.Span}>SyntaxHighlighterпорожній рядок</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighterfalse</span>. Абсолютно
-            все інше наводиться до true.
+            перетворення: <span className={s.Span}>0</span>,{" "}
+            <span className={s.Span}>NaN</span>,{" "}
+            <span className={s.Span}>null</span>,{" "}
+            <span className={s.Span}>undefined</span>,{" "}
+            <span className={s.Span}>порожній рядок</span> і{" "}
+            <span className={s.Span}>false</span>. Абсолютно все інше наводиться
+            до true.
           </p>
         </div>
         <h3>Логічні оператори</h3>
@@ -1582,11 +1516,10 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
         <img src={booleanOperators} alt="" />
         <h3>Логічне "І"</h3>
         <p>
-          Оператор <span className={s.Span}>SyntaxHighlighter&&</span> приводить
-          усі операнди до булю та повертає значення одного з них. Лівий операнд
-          якщо його можна призвести до{" "}
-          <span className={s.Span}>SyntaxHighlighterfalse</span>, і правий в
-          інших випадках.
+          Оператор <span className={s.Span}>&&</span> приводить усі операнди до
+          булю та повертає значення одного з них. Лівий операнд якщо його можна
+          призвести до <span className={s.Span}>false</span>, і правий в інших
+          випадках.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1595,10 +1528,9 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
         </SyntaxHighlighter>
         <p>
           У наступному прикладі обидві умови повернуть{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span>, тому
-          результатом всього виразу буде{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span>- повернеться
-          значення правого операнда.
+          <span className={s.Span}>true</span>, тому результатом всього виразу
+          буде <span className={s.Span}>true</span>- повернеться значення
+          правого операнда.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -1631,17 +1563,15 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           </div>
           <p>
             При виконанні логічного «І», правий операнд може не обчислюватися,
-            якщо лівий був приведений до{" "}
-            <span className={s.Span}>SyntaxHighlighterfalse</span>.
+            якщо лівий був приведений до <span className={s.Span}>false</span>.
           </p>
         </div>
         <h3>Логічне "АБО"</h3>
         <p>
-          Оператор <span className={s.Span}>SyntaxHighlighter||</span> приводить
-          усі операнди до булю та повертає значення одного з них. Лівий операнд
-          якщо його можна призвести до{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span>, і правий в
-          інших випадках.
+          Оператор <span className={s.Span}>||</span> приводить усі операнди до
+          булю та повертає значення одного з них. Лівий операнд якщо його можна
+          призвести до <span className={s.Span}>true</span>, і правий в інших
+          випадках.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>{`
                 const age = 5;
@@ -1649,10 +1579,9 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
             
             `}</SyntaxHighlighter>
         <p>
-          Тут результатом теж буде{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span>, оскільки хоча б
-          один з операндів, у цьому випадку правий, був приведений до{" "}
-          <span className={s.Span}>SyntaxHighlightertrue</span>.
+          Тут результатом теж буде <span className={s.Span}>true</span>,
+          оскільки хоча б один з операндів, у цьому випадку правий, був
+          приведений до <span className={s.Span}>true</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>{`
                 const age = 20;
@@ -1683,8 +1612,7 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
           </div>
           <p>
             При виконанні логічного «АБО», правий операнд може не обчислюватися,
-            якщо лівий був приведений до{" "}
-            <span className={s.Span}>SyntaxHighlightertrue</span>.
+            якщо лівий був приведений до <span className={s.Span}>true</span>.
           </p>
         </div>
         <h3>Логічне "НЕ"</h3>
@@ -1699,11 +1627,10 @@ console.log(greeting); // "Welcome Mango, your room number is 207!"             
             
             `}</SyntaxHighlighter>
         <p>
-          Оператор <span className={s.Span}>SyntaxHighlighter!</span> приводить
-          операнд до булю, якщо необхідно, а потім робить інверсію – замінює
-          його на протилежний{" "}
-          <span className={s.Span}>SyntaxHighlighter{`true -> false`}</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighter{`false -> true`}</span>.
+          Оператор <span className={s.Span}>!</span> приводить операнд до булю,
+          якщо необхідно, а потім робить інверсію – замінює його на протилежний{" "}
+          <span className={s.Span}>{`true -> false`}</span> або{" "}
+          <span className={s.Span}>{`false -> true`}</span>.
         </p>
 
         <SyntaxHighlighter language="javascript" style={codeStyle}>{`
