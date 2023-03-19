@@ -41,7 +41,7 @@ const Object = () => {
         <h3>Створення об'єкта</h3>
         <p>
           Для оголошення використовуються фігурні дужки{" "}
-          <span className={s.Span}>SyntaxHighlighter{}</span> – літерал об'єкта.
+          <span className={s.Span}>{}</span> – літерал об'єкта.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -56,8 +56,7 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Під час створення об'єкту можна додати властивості, кожне з яких
-          описується парами{" "}
-          <span className={s.Span}>SyntaxHighlighterключ:значення</span>. Ключ
+          описується парами <span className={s.Span}>ключ:значення</span>. Ключ
           ще називають ім'ям властивості, і це завжди рядок. Значенням
           властивості можуть бути будь-які типи: примітиви, масиви, об'єкти,
           були, функції тощо. Властивості поділяються комою.
@@ -67,9 +66,8 @@ const Object = () => {
           <li>Якщо ключ укладено в лапки, це може бути довільний рядок.</li>
           <li>
             Якщо лапок немає, то вступають обмеження - ім'я без прогалин,
-            починається на букву або символи{" "}
-            <span className={s.Span}>SyntaxHighlighter_</span> і{" "}
-            <span className={s.Span}>SyntaxHighlighter$</span>.
+            починається на букву або символи <span className={s.Span}>_</span> і{" "}
+            <span className={s.Span}>$</span>.
           </li>
         </ul>
         <h3>Вкладені властивості</h3>
@@ -105,12 +103,10 @@ const Object = () => {
         <h3>Звернення до властивостей через крапку</h3>
         <p>
           Перший спосіб отримати доступ до властивості об'єкта це синтаксис
-          <span className={s.Span}>
-            SyntaxHighlighterоб'єкт.ім'я_властивість
-          </span>
-          . Синтаксис «через крапку» використовується в більшості випадків і
-          підходить тоді, коли ми знаємо ім'я (ключ) властивості до якого хочемо
-          отримати доступ.
+          <span className={s.Span}>об'єкт.ім'я_властивість</span>. Синтаксис
+          «через крапку» використовується в більшості випадків і підходить тоді,
+          коли ми знаємо ім'я (ключ) властивості до якого хочемо отримати
+          доступ.
         </p>
         <ul>
           <li>
@@ -118,8 +114,7 @@ const Object = () => {
           </li>
           <li>
             Якщо об'єкт не має властивості з таким ім'ям, на місце звернення
-            повернеться{" "}
-            <span className={s.Span}>SyntaxHighlighterundefined</span>.
+            повернеться <span className={s.Span}>undefined</span>.
           </li>
         </ul>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -147,15 +142,12 @@ const Object = () => {
           Для доступу до вкладених властивостей використовується ланцюжок
           оборотний «через точку». Наприклад, якщо необхідно отримати значення
           країни користувача, записуємо{" "}
-          <span className={s.Span}>SyntaxHighlighteruser.location.country</span>
-          , де
-          <span className={s.Span}>SyntaxHighlighteruser.location</span> це
-          звернення (шлях) до об'єкта у властивості{" "}
-          <span className={s.Span}>SyntaxHighlighterlocation</span>, а{" "}
-          <span className={s.Span}>SyntaxHighlighteruser.locaton.country</span>{" "}
-          звернення до властивості{" "}
-          <span className={s.Span}>SyntaxHighlightercountry</span> у цьому
-          об'єкті. Тобто "точка" вказує таку вкладеність.
+          <span className={s.Span}>user.location.country</span>, де
+          <span className={s.Span}>user.location</span> це звернення (шлях) до
+          об'єкта у властивості <span className={s.Span}>location</span>, а{" "}
+          <span className={s.Span}>user.locaton.country</span> звернення до
+          властивості <span className={s.Span}>country</span> у цьому об'єкті.
+          Тобто "точка" вказує таку вкладеність.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -178,10 +170,9 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Якщо значення властивості це масив, то нашому прикладі
-          <span className={s.Span}>SyntaxHighlighteruser.hobbies</span>{" "}
-          звернення до цього масиву. Далі можна отримати доступ до його
-          елементів через квадратні дужки та індекс або використовувати
-          властивості та методи.
+          <span className={s.Span}>user.hobbies</span> звернення до цього
+          масиву. Далі можна отримати доступ до його елементів через квадратні
+          дужки та індекс або використовувати властивості та методи.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -198,11 +189,9 @@ const Object = () => {
         <h3>Звернення до властивостей через квадратні дужки</h3>
         <p>
           Другий спосіб отримати доступ до властивості об'єкта це синтаксис
-          <span className={s.Span}>
-            SyntaxHighlighterоб'єкт["ім'я властивості"]
-          </span>
-          . Схоже на звернення до елемента масиву з відзнакою в тому, що в
-          дужках вказується індекс індексу, а ім'я властивості як рядок.
+          <span className={s.Span}>об'єкт["ім'я властивості"]</span>. Схоже на
+          звернення до елемента масиву з відзнакою в тому, що в дужках
+          вказується індекс індексу, а ім'я властивості як рядок.
         </p>
         <p>
           Синтаксис «квадратних дужок» використовується значно рідше, якщо ім'я
@@ -215,8 +204,7 @@ const Object = () => {
           </li>
           <li>
             Якщо об'єкт не має властивості з таким ім'ям, на місце звернення
-            повернеться{" "}
-            <span className={s.Span}>SyntaxHighlighterundefined</span>.
+            повернеться <span className={s.Span}>undefined</span>.
           </li>
         </ul>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
@@ -412,11 +400,11 @@ const Object = () => {
         <p>
           Такі об'єкти можна назвати "моделями". Вони пов'язують дані та методи
           для роботи з цими даними. Наприклад, можна було оголосити змінну
-          <span className={s.Span}>SyntaxHighlighterbooks</span> і дві функції{" "}
-          <span className={s.Span}>SyntaxHighlightergetBooks()</span> і
-          <span className={s.Span}>SyntaxHighlighteraddBook(bookName)</span>,
-          але тоді це були б три незалежні сутності без явної синтаксичної, і зі
-          слабким логічним зв'язком.
+          <span className={s.Span}>books</span> і дві функції{" "}
+          <span className={s.Span}>getBooks()</span> і
+          <span className={s.Span}>addBook(bookName)</span>, але тоді це були б
+          три незалежні сутності без явної синтаксичної, і зі слабким логічним
+          зв'язком.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -430,13 +418,11 @@ const Object = () => {
         <p>
           Методи використовуються для роботи з властивостями об'єкта, їх зміни.
           Для доступу до об'єкта в методі використовується не ім'я змінної,
-          наприклад <span className={s.Span}>SyntaxHighlighterbookShelf</span>,
-          а ключове слово <span className={s.Span}>SyntaxHighlighterthis</span>{" "}
-          – контекст. Значенням{" "}
-          <span className={s.Span}>SyntaxHighlighterthis</span> буде об'єкт
-          перед «крапкою», тобто об'єкт, який викликав цей метод, у нашому
-          випадку це посилання на об'єкт{" "}
-          <span className={s.Span}>SyntaxHighlighterbookShelf</span>.
+          наприклад <span className={s.Span}>bookShelf</span>, а ключове слово{" "}
+          <span className={s.Span}>this</span> – контекст. Значенням{" "}
+          <span className={s.Span}>this</span> буде об'єкт перед «крапкою»,
+          тобто об'єкт, який викликав цей метод, у нашому випадку це посилання
+          на об'єкт <span className={s.Span}>bookShelf</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -454,9 +440,8 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Для того щоб отримати доступ до властивостей об'єкта в методах, ми
-          звертаємося до нього через{" "}
-          <span className={s.Span}>SyntaxHighlighterthis</span> і далі як завжди
-          - "через точку" до властивостей.
+          звертаємося до нього через <span className={s.Span}>this</span> і далі
+          як завжди - "через точку" до властивостей.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -503,28 +488,26 @@ const Object = () => {
           </div>
           <p>
             Ми детально розберемо ключове слово{" "}
-            <span className={s.Span}>SyntaxHighlighterthis</span> та всі його
-            підводні камені у наступних заняттях, а зараз досить просто
-            використовувати{" "}
-            <span className={s.Span}>SyntaxHighlighterthis</span> при зверненні
-            до властивостей об'єкта у його методах.
+            <span className={s.Span}>this</span> та всі його підводні камені у
+            наступних заняттях, а зараз досить просто використовувати{" "}
+            <span className={s.Span}>this</span> при зверненні до властивостей
+            об'єкта у його методах.
           </p>
         </div>
         <h1 id="obj-cikle">Перебір об'єкту</h1>
         <p>
           На відміну від масиву або рядка, об'єкт це не сутність, що ітерується,
           тобто його не можна перебрати циклами{" "}
-          <span className={s.Span}>SyntaxHighlighterfor</span> або{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...of</span>.
+          <span className={s.Span}>for</span> або{" "}
+          <span className={s.Span}>for...of</span>.
         </p>
         <h3>
-          Цикл <span className={s.Span}>SyntaxHighlighterfor...in</span>
+          Цикл <span className={s.Span}>for...in</span>
         </h3>
         <p>
           Для перебору об'єктів використовується спеціальний цикл{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...in</span>, який
-          перебирає ключі об'єкта{" "}
-          <span className={s.Span}>SyntaxHighlighterobject</span>.
+          <span className={s.Span}>for...in</span>, який перебирає ключі об'єкта{" "}
+          <span className={s.Span}>object</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -534,10 +517,10 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Змінна <span className={s.Span}>SyntaxHighlighterkey</span> доступна
-          лише у тілі циклу. На кожній ітерації до неї буде записано значення
-          ключа (ім'я) властивості. Щоб отримати значення властивості з таким
-          ключем (ім'ям), використовується синтаксис квадратних дужок.
+          Змінна <span className={s.Span}>key</span> доступна лише у тілі циклу.
+          На кожній ітерації до неї буде записано значення ключа (ім'я)
+          властивості. Щоб отримати значення властивості з таким ключем (ім'ям),
+          використовується синтаксис квадратних дужок.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -557,13 +540,12 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <h3>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterhasOwnProperty()</span>
+          Метод <span className={s.Span}>hasOwnProperty()</span>
         </h3>
         <p>
           Розберемо концепцію власних та невласних властивостей об'єкта і
           навчимося правильно використовувати цикл{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...in</span>.
+          <span className={s.Span}>for...in</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -579,30 +561,24 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.create(animal)</span>{" "}
-          створює та повертає новий об'єкт, пов'язуючи його з об'єктом{" "}
-          <span className={s.Span}>SyntaxHighlighteranimal</span>. Тому можна
-          отримати значення якості{" "}
-          <span className={s.Span}>SyntaxHighlighterlegs</span> звернувшись до
-          нього як
-          <span className={s.Span}>SyntaxHighlighterdog.legs</span>, хоча його
-          немає в об'єкті <span className={s.Span}>SyntaxHighlighterdog</span> -
-          це невласна властивість з об'єкта{" "}
-          <span className={s.Span}>SyntaxHighlighteranimal</span>.
+          Метод <span className={s.Span}>Object.create(animal)</span> створює та
+          повертає новий об'єкт, пов'язуючи його з об'єктом{" "}
+          <span className={s.Span}>animal</span>. Тому можна отримати значення
+          якості <span className={s.Span}>legs</span> звернувшись до нього як
+          <span className={s.Span}>dog.legs</span>, хоча його немає в об'єкті{" "}
+          <span className={s.Span}>dog</span> - це невласна властивість з
+          об'єкта <span className={s.Span}>animal</span>.
         </p>
         <p>
-          Оператор <span className={s.Span}>SyntaxHighlighterin</span>, який
-          використовується в циклі{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...in</span>, не робить
-          різницю між власними та невласними властивостями об'єкта. Ця
-          особливість заважає, оскільки ми хочемо перебрати лише власні
-          властивості. Для того, щоб дізнатися, чи є в об'єкті власна
-          властивість чи ні, використовується метод
-          <span className={s.Span}>SyntaxHighlighterhasOwnProperty(key)</span>,
-          який повертає <span className={s.Span}>SyntaxHighlightertrue</span>{" "}
-          або
-          <span className={s.Span}>SyntaxHighlighterfalse</span>.
+          Оператор <span className={s.Span}>in</span>, який використовується в
+          циклі <span className={s.Span}>for...in</span>, не робить різницю між
+          власними та невласними властивостями об'єкта. Ця особливість заважає,
+          оскільки ми хочемо перебрати лише власні властивості. Для того, щоб
+          дізнатися, чи є в об'єкті власна властивість чи ні, використовується
+          метод
+          <span className={s.Span}>hasOwnProperty(key)</span>, який повертає{" "}
+          <span className={s.Span}>true</span> або
+          <span className={s.Span}>false</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -616,11 +592,10 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Тому при переборі циклом{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...in</span> необхідно на
-          кожній ітерації додати перевірку на власність. Навіть якщо зараз ми
-          впевнені в тому, що об'єкт не має невласних властивостей, це захистить
-          від можливих помилок у майбутньому.
+          Тому при переборі циклом <span className={s.Span}>for...in</span>{" "}
+          необхідно на кожній ітерації додати перевірку на власність. Навіть
+          якщо зараз ми впевнені в тому, що об'єкт не має невласних
+          властивостей, це захистить від можливих помилок у майбутньому.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -643,15 +618,14 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <h3>
-          Метод <span className={s.Span}>SyntaxHighlighterObject.keys()</span>
+          Метод <span className={s.Span}>Object.keys()</span>
         </h3>
         <p>
-          Вбудований клас{" "}
-          <span className={s.Span}>SyntaxHighlighterObject</span> має кілька
+          Вбудований клас <span className={s.Span}>Object</span> має кілька
           корисних методів для роботи з об'єктами. Перший це{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.keys(obj)</span>,
-          який приймає об'єкт і повертає масив ключів його властивостей. Якщо
-          об'єкті немає властивостей, метод поверне порожній масив.
+          <span className={s.Span}>Object.keys(obj)</span>, який приймає об'єкт
+          і повертає масив ключів його властивостей. Якщо об'єкті немає
+          властивостей, метод поверне порожній масив.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -666,13 +640,12 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <p>
-          Скомбінувавши результат{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.keys()</span> та цикл
-          <span className={s.Span}>SyntaxHighlighterfor...of</span> можна зручно
-          перебрати власні властивості об'єкта, не вдаючись до використання
-          архаїчного циклу{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...in </span> з
-          перевірками належності властивостей.
+          Скомбінувавши результат <span className={s.Span}>Object.keys()</span>{" "}
+          та цикл
+          <span className={s.Span}>for...of</span> можна зручно перебрати власні
+          властивості об'єкта, не вдаючись до використання архаїчного циклу{" "}
+          <span className={s.Span}>for...in </span> з перевірками належності
+          властивостей.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -697,18 +670,15 @@ const Object = () => {
           значення якості з таким ключем.
         </p>
         <h3>
-          Об'єкт{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.values()</span>
+          Об'єкт <span className={s.Span}>Object.values()</span>
         </h3>
         <p>
-          Якщо метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.keys(obj)</span>{" "}
-          повертає масив ключів власних властивостей об'єкта, метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.values(obj)</span>{" "}
-          повертає масив значень його власних властивостей. Якщо об'єкті немає
-          властивостей, метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.values(obj)</span>{" "}
-          поверне порожній масив.
+          Якщо метод <span className={s.Span}>Object.keys(obj)</span> повертає
+          масив ключів власних властивостей об'єкта, метод{" "}
+          <span className={s.Span}>Object.values(obj)</span> повертає масив
+          значень його власних властивостей. Якщо об'єкті немає властивостей,
+          метод <span className={s.Span}>Object.values(obj)</span> поверне
+          порожній масив.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -726,18 +696,15 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Масив значень властивостей також можна перебрати циклом{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...of</span>, наприклад,
-          для отримання загальної суми числових значень.
+          <span className={s.Span}>for...of</span>, наприклад, для отримання
+          загальної суми числових значень.
         </p>
         <p>
           Допустимо перед нами стоїть завдання порахувати загальну кількість
           продуктів в об'єкті формату{" "}
-          <span className={s.Span}>
-            SyntaxHighlighterім'я-продукту: кількість
-          </span>
-          . Тоді підійде спосіб{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.values()</span> для
-          того, щоб отримати масив усіх значень і потім зручно їх скласти.
+          <span className={s.Span}>ім'я-продукту: кількість</span>. Тоді підійде
+          спосіб <span className={s.Span}>Object.values()</span> для того, щоб
+          отримати масив усіх значень і потім зручно їх скласти.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -760,15 +727,13 @@ const Object = () => {
                 `}
         </SyntaxHighlighter>
         <h3>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.entries()</span>
+          Метод <span className={s.Span}>Object.entries()</span>
         </h3>
         <p>
-          Метод{" "}
-          <span className={s.Span}>SyntaxHighlighterObject.entries(obj)</span>{" "}
-          повертає масив записів, кожним елементом якого буде ще один масив із
-          2-х елементів: імені властивості та значення цієї властивості з
-          об'єкта obj.
+          Метод <span className={s.Span}>Object.entries(obj)</span> повертає
+          масив записів, кожним елементом якого буде ще один масив із 2-х
+          елементів: імені властивості та значення цієї властивості з об'єкта
+          obj.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -796,12 +761,11 @@ const Object = () => {
             <h5>ЦІКАВО</h5>
           </div>
           <p>
-            Насправді метод{" "}
-            <span className={s.Span}>SyntaxHighlighterObject.entries(obj)</span>{" "}
+            Насправді метод <span className={s.Span}>Object.entries(obj)</span>{" "}
             використовується рідко, лише з якихось дуже специфічних завдань. У
             99% випадків буде використано метод{" "}
-            <span className={s.Span}>SyntaxHighlighterObject.keys()</span> або{" "}
-            <span className={s.Span}>SyntaxHighlighterObject.values()</span>.
+            <span className={s.Span}>Object.keys()</span> або{" "}
+            <span className={s.Span}>Object.values()</span>.
           </p>
         </div>
         <h1 id="objArray">Масив об'єктів</h1>
@@ -834,10 +798,10 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Для перебору такого масиву використовується стандартний цикл{" "}
-          <span className={s.Span}>SyntaxHighlighterfor...of</span>. Значення
-          властивостей кожного об'єкта можна отримати за допомогою синтаксису
-          «через крапку, оскільки у кожному об'єкті набір властивостей та його
-          імена будуть однакові, відрізняються лише значення.
+          <span className={s.Span}>for...of</span>. Значення властивостей
+          кожного об'єкта можна отримати за допомогою синтаксису «через крапку,
+          оскільки у кожному об'єкті набір властивостей та його імена будуть
+          однакові, відрізняються лише значення.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
@@ -855,7 +819,7 @@ const Object = () => {
         </SyntaxHighlighter>
         <p>
           Наприклад, отримаємо список назв усіх книг у колекції{" "}
-          <span className={s.Span}>SyntaxHighlighterbooks</span>.
+          <span className={s.Span}>books</span>.
         </p>
         <SyntaxHighlighter language="javascript" style={codeStyle}>
           {`
