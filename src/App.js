@@ -20,6 +20,7 @@ import Function from "./Components/Lessons/Function";
 import Object from "./Components/Lessons/Object";
 import SpreadRest from "./Components/Lessons/SpreadRest";
 import CallBack from "./Components/Lessons/CallBack";
+import ArrayMethod from "./Components/Lessons/ArrMethod";
 function App(props) {
   return (
     <BrowserRouter>
@@ -40,6 +41,7 @@ function App(props) {
               <Route path="Object" element={<Object />} />
               <Route path="SpreadRest" element={<SpreadRest />} />
               <Route path="CallBack" element={<CallBack />} />
+              <Route path="ArrayMethod" element={<ArrayMethod />} />
             </Routes>
           </div>
         </div>
