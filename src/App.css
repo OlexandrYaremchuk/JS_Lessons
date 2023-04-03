@@ -3,8 +3,8 @@
 
   position: fixed;
   /* min-height: 1500px; */
-  min-height: 100%;
-  height: 100%;
+  /* min-height: 100%; */
+  height: 100vh;
 
   font-size: 14px;
 }
@@ -12,14 +12,16 @@
 .Main {
   display: flex;
   justify-content: space-around;
+  z-index: 0;
 }
 
-.navbarBox {
+/* .navbarBox {
   width: 25vw;
-}
+} */
 
 .mainTextBox {
-  width: 75vw;
+  width: 100vw;
+  padding: 0 10vw;
   /* padding-top: %; */
 }
 
@@ -31,6 +33,15 @@
 }
 
 .Main {
-  min-height: 100%;
-  height: 100%;
+  /* min-height: 100%; */
+  height: 100vh;
+}
+.progressBar {
+  /* position: fixed; */
+  top: 0;
+  left: -100vw;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
 }

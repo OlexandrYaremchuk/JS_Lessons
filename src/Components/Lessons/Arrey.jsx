@@ -16,9 +16,11 @@ import splice2 from "../../img/splice2.png";
 import splice3 from "../../img/splice3.png";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { motion, useScroll } from "framer-motion";
 
 const Arrey = () => {
   const codeStyle = materialDark;
+  const { scrollYProgress } = useScroll();
 
   return (
     <div className={s.lessonsBox}>
