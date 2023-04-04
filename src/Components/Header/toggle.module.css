@@ -101,12 +101,30 @@ body {
   color: #fafafa;
   font-weight: 900;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     width: 100vw;
-    transform: translateX(-100%);
-    padding: 20px;
+    /* transform: translateX(-100%); */
+    /* padding: 20px; */
+    padding: 0 10px;
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    width: 50vw;
+    padding: 0 10px;
+
+    /* transform: translateX(-100%);
+    padding: 20px; */
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 30vw;
+    padding: 0 2vw;
   }
 }
 

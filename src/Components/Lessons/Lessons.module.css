@@ -56,6 +56,7 @@ a {
 
 .article {
   margin-top: 50px;
+  font-size: 18px;
 }
 
 .interestBox {
@@ -116,13 +117,7 @@ pre {
   border-radius: 10px;
   color: #ffffff;
   z-index: -1;
-}
-@media (max-width: 767px) {
-  pre {
-    width: 80vw;
-    /* padding: 20px; */
-    font-size: 8px;
-  }
+  overflow-x: scroll;
 }
 .stringImg {
   width: 850px;
@@ -130,4 +125,28 @@ pre {
 .themeIMG {
   display: "flex";
   justify-content: "center";
+}
+
+@media screen and (max-width: 767px) {
+  pre {
+    width: 100%;
+    /* padding: 20px; */
+    font-size: 8px;
+    overflow-y: scroll;
+    padding-left: 0;
+    white-space: pre-wrap;
+  }
+  .article {
+    font-size: 14px;
+  }
+  SyntaxHighlighter {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: pre-wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
