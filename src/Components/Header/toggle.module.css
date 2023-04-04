@@ -98,6 +98,16 @@ body {
   will-change: transform;
   z-index: 100;
   padding-right: 2vw;
+  color: #fafafa;
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .menu {
+    width: 100vw;
+    transform: translateX(-100%);
+    padding: 20px;
+    font-size: 18px;
+  }
 }
 
 button {
