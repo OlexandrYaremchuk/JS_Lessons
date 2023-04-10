@@ -1,6 +1,12 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.home {
+  position: absolute;
+  top: 4vh;
+  left: 95vw;
+  background: none;
+}
 .progressBar {
   position: fixed;
   top: 0;
@@ -12,13 +18,13 @@
 }
 
 .lessonsBox {
-  /* padding: 15px; */
+  padding: 7vw;
   /* position: relative; */
   /* background-color: aqua; */
 }
 
 .breadNav {
-  width: 79.6vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -149,4 +155,8 @@ pre {
 }
 
 @media screen and (min-width: 1024px) {
+}
+img {
+  width: 35vw;
+  margin: 3vh 0;
 }

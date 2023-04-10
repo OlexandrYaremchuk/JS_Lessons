@@ -7,10 +7,18 @@ import sprite from "../../img/icomoon/sprite.svg";
 import Scrollspy from "react-scrollspy";
 import callBack01 from "../../img/callBack01.jpeg";
 import declarative from "../../img/declarative.jpeg";
+import { FcHome } from "react-icons/fc";
+import { Link } from "react-router-dom";
+
 const ArrayMethod = () => {
   const codeStyle = materialDark;
   return (
     <div className={s.lessonsBox}>
+      <button className={s.home}>
+        <Link to="/Start">
+          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+        </Link>
+      </button>
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

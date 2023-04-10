@@ -1,7 +1,11 @@
+* {
+  text-decoration: none;
+  text-underline-offset: none;
+}
 .App {
   width: 100vw;
 
-  position: fixed;
+  /* position: fixed; */
   /* min-height: 1500px; */
   /* min-height: 100%; */
   height: 100vh;
@@ -13,6 +17,7 @@
   display: flex;
   justify-content: space-around;
   z-index: 0;
+  height: 100vh;
 }
 
 /* .navbarBox {
@@ -21,7 +26,6 @@
 
 .mainTextBox {
   width: 100vw;
-  padding: 0 10vw;
   /* padding-top: %; */
 }
 
@@ -32,10 +36,6 @@
   scrollbar-color: rebeccapurple green;
 }
 
-.Main {
-  /* min-height: 100%; */
-  height: 100vh;
-}
 .progressBar {
   /* position: fixed; */
   top: 0;

@@ -17,12 +17,19 @@ import WhileCicle from "../../img/WhileCicle.png";
 import doWhile from "../../img/doWhile.png";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { FcHome } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const M1L2 = () => {
   const codeStyle = materialDark;
 
   return (
     <div className={s.lessonsBox}>
+      <button className={s.home}>
+        <Link to="/Start">
+          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+        </Link>
+      </button>
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

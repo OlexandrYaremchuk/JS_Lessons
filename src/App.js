@@ -14,6 +14,8 @@ import SpreadRest from "./Components/Lessons/SpreadRest";
 import CallBack from "./Components/Lessons/CallBack";
 import ArrayMethod from "./Components/Lessons/ArrMethod";
 import This from "./Components/Lessons/This";
+import StartComponent from "./Components/start/StartComponent";
+
 import {
   motion,
   stagger,
@@ -22,6 +24,8 @@ import {
   useSpring,
 } from "framer-motion";
 import { MenuToggle } from "./Components/Header/MenuToggle";
+import Start from "./Components/start/Start";
+import Prototipe from "./Components/Lessons/Prototipe";
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();
@@ -77,6 +81,8 @@ function App(props) {
     <BrowserRouter>
       <div className="App" ref={scope}>
         <Header />
+        <Start />
+        {/* <StartComponent /> */}
         <div className="Main">
           <div className="navbarBox">
             <Navbar />
@@ -85,6 +91,7 @@ function App(props) {
 
           <div className="mainTextBox">
             <Routes>
+              <Route path="Start" element={<Start />} />
               <Route path="GitHub" element={<GitHub />} />
               <Route path="M1L1" element={<M1L1 />} />
               <Route path="M1L2" element={<M1L2 />} />
@@ -95,6 +102,7 @@ function App(props) {
               <Route path="CallBack" element={<CallBack />} />
               <Route path="ArrayMethod" element={<ArrayMethod />} />
               <Route path="This" element={<This />} />
+              <Route path="Prototipe" element={<Prototipe />} />
             </Routes>
           </div>
         </div>

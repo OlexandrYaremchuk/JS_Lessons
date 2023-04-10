@@ -2,13 +2,13 @@ body {
   --black: #000000;
   --ash-black: #222;
   --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
+  --sky: #e87b0e;
+  --green: #dd6722;
   --blue: #1300ff;
   --dusk: #6600ff;
   --purple: #9900ff;
-  --pink: #10dbf5;
-  --red: #fe0222;
+  --pink: #ea7e0b;
+  --menu: #f4f2f5da;
   --orange: #fd7702;
   --yellow: #ffbb00;
 
@@ -92,7 +92,10 @@ body {
   left: 0;
   bottom: 0;
   width: 30vw;
-  background: var(--accent);
+  /* background: var(--accent); */
+  border-radius: 0px;
+  background: #fbfafadd;
+  box-shadow: 8px 5px 13px #676767, -5px -5px 3px #ffffff;
   padding-top: 100px;
   transform: translateX(-100%);
   will-change: transform;
@@ -100,6 +103,9 @@ body {
   padding-right: 2vw;
   color: #fafafa;
   font-weight: 900;
+  filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* підтримка вебкіта */
+  backdrop-filter: blur(2px);
 }
 @media screen and (max-width: 767px) {
   .menu {

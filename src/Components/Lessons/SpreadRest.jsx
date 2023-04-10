@@ -5,11 +5,18 @@ import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import s from "./Lessons.module.css";
 import sprite from "../../img/icomoon/sprite.svg";
 import Scrollspy from "react-scrollspy";
+import { FcHome } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const SpreadRest = () => {
   const codeStyle = materialDark;
   return (
     <div className={s.lessonsBox}>
+      <button className={s.home}>
+        <Link to="/Start">
+          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+        </Link>
+      </button>
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

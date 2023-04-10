@@ -17,6 +17,8 @@ import splice3 from "../../img/splice3.png";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { motion, useScroll } from "framer-motion";
+import { FcHome } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Arrey = () => {
   const codeStyle = materialDark;
@@ -24,6 +26,11 @@ const Arrey = () => {
 
   return (
     <div className={s.lessonsBox}>
+      <button className={s.home}>
+        <Link to="/Start">
+          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+        </Link>
+      </button>
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

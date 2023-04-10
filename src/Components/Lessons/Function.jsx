@@ -9,12 +9,19 @@ import fnBasics from "../../img/fn-basics.png";
 import scope from "../../img/scope.png";
 import stack from "../../img/stack.png";
 import callStack from "../../img/call-stack.png";
+import { FcHome } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Function = () => {
   const codeStyle = materialDark;
 
   return (
     <div className={s.lessonsBox}>
+      <button className={s.home}>
+        <Link to="/Start">
+          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+        </Link>
+      </button>
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}
