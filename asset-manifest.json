@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.137b5e51.css",
-    "main.js": "/JS_Lessons/static/js/main.64a6ea85.js",
+    "main.css": "/JS_Lessons/static/css/main.480abeda.css",
+    "main.js": "/JS_Lessons/static/js/main.00d010de.js",
     "static/media/oop.png": "/JS_Lessons/static/media/oop.a4d972549560be513436.png",
     "static/media/callBack01.jpeg": "/JS_Lessons/static/media/callBack01.bc6ab17358246e895cb3.jpeg",
     "static/media/oop2.png": "/JS_Lessons/static/media/oop2.e557e1a5d562b5657371.png",
@@ -39,11 +39,11 @@
     "static/media/fn-basics.png": "/JS_Lessons/static/media/fn-basics.ba2828e9781a30ba7be1.png",
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.137b5e51.css.map": "/JS_Lessons/static/css/main.137b5e51.css.map",
-    "main.64a6ea85.js.map": "/JS_Lessons/static/js/main.64a6ea85.js.map"
+    "main.480abeda.css.map": "/JS_Lessons/static/css/main.480abeda.css.map",
+    "main.00d010de.js.map": "/JS_Lessons/static/js/main.00d010de.js.map"
   },
   "entrypoints": [
-    "static/css/main.137b5e51.css",
-    "static/js/main.64a6ea85.js"
+    "static/css/main.480abeda.css",
+    "static/js/main.00d010de.js"
   ]
 }
