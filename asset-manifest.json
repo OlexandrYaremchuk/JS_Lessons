@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.12025b69.css",
+    "main.css": "/JS_Lessons/static/css/main.42940a1e.css",
     "main.js": "/JS_Lessons/static/js/main.a58a1361.js",
     "static/media/oop.png": "/JS_Lessons/static/media/oop.a4d972549560be513436.png",
     "static/media/callBack01.jpeg": "/JS_Lessons/static/media/callBack01.bc6ab17358246e895cb3.jpeg",
@@ -39,11 +39,11 @@
     "static/media/fn-basics.png": "/JS_Lessons/static/media/fn-basics.ba2828e9781a30ba7be1.png",
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.12025b69.css.map": "/JS_Lessons/static/css/main.12025b69.css.map",
+    "main.42940a1e.css.map": "/JS_Lessons/static/css/main.42940a1e.css.map",
     "main.a58a1361.js.map": "/JS_Lessons/static/js/main.a58a1361.js.map"
   },
   "entrypoints": [
-    "static/css/main.12025b69.css",
+    "static/css/main.42940a1e.css",
     "static/js/main.a58a1361.js"
   ]
 }
