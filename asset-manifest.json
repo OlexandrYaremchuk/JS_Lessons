@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.2f9bfc23.css",
-    "main.js": "/JS_Lessons/static/js/main.6353c544.js",
+    "main.css": "/JS_Lessons/static/css/main.500b6b21.css",
+    "main.js": "/JS_Lessons/static/js/main.3d68066f.js",
     "static/media/oop.png": "/JS_Lessons/static/media/oop.a4d972549560be513436.png",
     "static/media/callBack01.jpeg": "/JS_Lessons/static/media/callBack01.bc6ab17358246e895cb3.jpeg",
     "static/media/oop2.png": "/JS_Lessons/static/media/oop2.e557e1a5d562b5657371.png",
@@ -12,8 +12,11 @@
     "static/media/js-engine.gif": "/JS_Lessons/static/media/js-engine.2cf10c2268098a632ac2.gif",
     "static/media/afterDelegation.png": "/JS_Lessons/static/media/afterDelegation.2aafa50bd7eca66fdfb3.png",
     "static/media/switch.png": "/JS_Lessons/static/media/switch.8d75cc28a53f0eefd994.png",
+    "static/media/throttle.png": "/JS_Lessons/static/media/throttle.594adc3eefe9c0944366.png",
+    "static/media/trailingDebounce.png": "/JS_Lessons/static/media/trailingDebounce.a15401f026a6fee66058.png",
     "static/media/else-if.png": "/JS_Lessons/static/media/else-if.445d23bed4576bc5c309.png",
     "static/media/eventBubbling.png": "/JS_Lessons/static/media/eventBubbling.1d00dd09ab199995b103.png",
+    "static/media/leadingDebounce.png": "/JS_Lessons/static/media/leadingDebounce.838211763873438fedda.png",
     "static/media/logo.png": "/JS_Lessons/static/media/logo.96a13af0147433eded9b.png",
     "static/media/live-dom-tree.png": "/JS_Lessons/static/media/live-dom-tree.a1711013a702c8e47e50.png",
     "static/media/Arrey1.png": "/JS_Lessons/static/media/Arrey1.c2df4a00c9aed8b8865a.png",
@@ -44,16 +47,17 @@
     "static/media/link.png": "/JS_Lessons/static/media/link.1f6d1a803ed066f017ac.png",
     "static/media/splice2.png": "/JS_Lessons/static/media/splice2.6fa30534ff37c9896cb7.png",
     "static/media/insert-adjacent.png": "/JS_Lessons/static/media/insert-adjacent.0b4da6d886012217b906.png",
+    "static/media/pageFold.png": "/JS_Lessons/static/media/pageFold.c60edad79f96bbe151bd.png",
     "static/media/push.png": "/JS_Lessons/static/media/push.57a6128db6feba82facc.png",
     "static/media/fn-basics.png": "/JS_Lessons/static/media/fn-basics.ba2828e9781a30ba7be1.png",
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "static/media/dom-traversal.png": "/JS_Lessons/static/media/dom-traversal.f26900a55aac85f42e6d.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.2f9bfc23.css.map": "/JS_Lessons/static/css/main.2f9bfc23.css.map",
-    "main.6353c544.js.map": "/JS_Lessons/static/js/main.6353c544.js.map"
+    "main.500b6b21.css.map": "/JS_Lessons/static/css/main.500b6b21.css.map",
+    "main.3d68066f.js.map": "/JS_Lessons/static/js/main.3d68066f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f9bfc23.css",
-    "static/js/main.6353c544.js"
+    "static/css/main.500b6b21.css",
+    "static/js/main.3d68066f.js"
   ]
 }
