@@ -12,18 +12,27 @@ import Scrollspy from "react-scrollspy";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { FcHome } from "react-icons/fc";
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
+import GitHubBtn from "../GitHubBtn";
 
 const M1L1 = () => {
   const codeStyle = materialDark;
+  const location = useLocation();
+  const locationPathname = location.pathname;
 
   return (
     <div className={s.lessonsBox}>
       <button className={s.home}>
         <Link to="/Start">
-          <FcHome customStyle={{ with: "40vh" }} size="3em" />
+          <FcHome
+            customStyle={{ with: "40vh", marginTop: "20vw" }}
+            size="3em"
+          />
         </Link>
       </button>
+      <GitHubBtn locationPathname={locationPathname} />
+
       <div className={s.breadNav}>
         <Scrollspy
           items={[
@@ -72,7 +81,6 @@ const M1L1 = () => {
           </div>
         </Scrollspy>
       </div>
-
       <div className={s.article}>
         <h1>Знайомство з JavaScript</h1>
         <p>

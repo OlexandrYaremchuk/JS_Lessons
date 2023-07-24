@@ -65,7 +65,7 @@ body {
   border-radius: 5px;
   width: 20px;
   height: 20px;
-  top: 10px;
+  top: 50px;
   right: 10px;
   display: flex;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
   width: 30vw;
   /* background: var(--accent); */
   border-radius: 0px;
-  background: #fbfafadd;
+  background: #fbfafad8;
   box-shadow: 8px 5px 13px #676767, -5px -5px 3px #ffffff;
   padding-top: 100px;
   transform: translateX(-100%);
@@ -103,9 +103,9 @@ body {
   padding-right: 2vw;
   color: #fafafa;
   font-weight: 900;
-  filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px); /* підтримка вебкіта */
-  backdrop-filter: blur(2px);
+  /* filter: blur(2px); */
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 @media screen and (max-width: 767px) {
   .menu {

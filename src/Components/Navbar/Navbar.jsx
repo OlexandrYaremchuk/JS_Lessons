@@ -14,7 +14,6 @@ const Navbar = () => {
               Стартова сторінка
             </li>
           </Link>
-
           <Link to="/GitHub">
             <li className="list" id="GitHub">
               Основи Git та GitHub
@@ -60,27 +59,35 @@ const Navbar = () => {
               Модуль 4 - Заняття 8 - Перебираючі методи масиву
             </li>
           </Link>
-          <Link to="/ArrayMethod">
-            <li className="list">
-              Модуль 4 - Заняття 8 - Перебираючі методи масиву
-            </li>
-          </Link>
           <Link to="/This">
             <li className="list">Модуль 5 - Заняття 9 - Ключове слово this</li>
           </Link>
           <Link to="/Prototipe">
             <li className="list">Модуль 5 - Заняття 10 - Прототипи та класи</li>
           </Link>
-
-          <li className="list">Модуль 6 - Заняття 11 - DOM</li>
-          <li className="list">Модуль 6 - Заняття 12 - Події</li>
-          <li className="list">Модуль 7 - Заняття 13 - Делегування подій</li>
-          <li className="list">
-            Модуль 7 - Заняття 14 - throttle/debounce и lazyload{" "}
-          </li>
-          <li className="list">Модуль 8 - Заняття 15 - Модульність коду</li>
-          <li className="list">Модуль 8 - Заняття 16 - Веб - сховище</li>
-          <li className="list">Модуль 9 - Заняття 17 - Таймери та час</li>
+          <Link to="/DOM">
+            <li className="list">Модуль 6 - Заняття 11 - DOM</li>
+          </Link>
+          <Link to="/Events">
+            <li className="list">Модуль 6 - Заняття 12 - Події</li>
+          </Link>
+          <Link to="/Events-delegation">
+            <li className="list">Модуль 7 - Заняття 13 - Делегування подій</li>
+          </Link>
+          <Link to="/throttle">
+            <li className="list">
+              Модуль 7 - Заняття 14 - throttle/debounce и lazyload{" "}
+            </li>
+          </Link>
+          <Link to="/npm-module">
+            <li className="list">Модуль 8 - Заняття 15 - Модульність коду</li>
+          </Link>
+          <Link to="/web-storage">
+            <li className="list">Модуль 8 - Заняття 16 - Веб - сховище</li>
+          </Link>
+          <Link to="/time-date">
+            <li className="list">Модуль 9 - Заняття 17 - Таймери та час</li>
+          </Link>
           <li className="list">Модуль 9 - Заняття 18 - Проміси</li>
           <li className="list">Модуль 10 - Заняття 19 - HTTP-запити</li>
           <li className="list">Модуль 10 - Заняття 20 - Пагінація</li>

@@ -3,86 +3,191 @@ export const LessonPlane = [
     id: 1,
     title: "Основи Git та GitHub",
     description:
-      "Git є системою контролю версій, яка дозволяє зберігати та відстежувати зміни у коді та визначати, які саме зміни були внесені та хто їх вніс. Git дозволяє працювати зі структурованими гілками, які дозволяють паралельно розробляти різні функції, фіксувати баги та вирішувати конфлікти. GitHub, з іншого боку, є веб-сервісом, який надає зручний інтерфейс для зберігання та розповсюдження коду, який зберігається за допомогою Git. GitHub дозволяє розробникам співпрацювати над проектами, обговорювати зміни, стежити за питаннями, пропозиціями та внесенням змін.",
-    image: "https://picsum.photos/id/123/200/300",
+      "Git є системою контролю версій, яка дозволяє зберігати та відстежувати зміни у коді та визначати, які саме зміни були внесені та хто їх вніс.  GitHub, з іншого боку, є веб-сервісом, який надає зручний інтерфейс для зберігання та розповсюдження коду, який зберігається за допомогою Git.",
+    image: "https://cdn.freebiesupply.com/logos/thumbs/2x/git-logo.png",
     url: "/GitHub",
+    repUrl: "https://github.com",
   },
   {
     id: 2,
     title: "Змінні та типи",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "В JavaScript є п'ять примітивних типів даних: числа, рядки, булеві значення, undefined та null. Також є два спеціальних типи: об'єкти та масиви. Змінні в JavaScript можуть змінювати свій тип даних під час виконання програми, що дозволяє писати більш гнучкий та динамічний код.",
+    image: "https://miro.medium.com/v2/resize:fit:1400/0*mYuuRwjUfUOAdHpo.jpg",
     url: "/M1L1",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/1-1-Зміні%20та%20типи",
   },
   {
     id: 3,
     title: "Розгалуження та цикли",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      " JavaScript для управління виконанням коду використовуються розгалуження та цикли. Умовні оператори, цикли for, while та do-while дозволяють повторювати виконання певного блоку коду до досягнення заданої умови. Використання розгалужень та циклів дозволяє детально керувати процесом виконання коду та покращувати ефективність програми.",
+    image: "https://www.alphacodingskills.com/cpp/img/cpp-if-else.png",
     url: "/M1L2",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/1-2%20Розгалуження%20та%20цикли",
   },
   {
     id: 4,
     title: "Масиви",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "У масивах можна зберігати дані будь-якого типу, включаючи числа, рядки та об'єкти. Також масиви надають багато корисних методів, таких як map(), filter(), reduce(), що дозволяють працювати з даними в зручний та ефективний спосіб.",
+    image:
+      "https://www.plus2net.com/javascript_tutorial/images/checkbox-array.png",
     url: "/Arrey",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/2-1%20Масиви",
   },
   {
     id: 5,
     title: "Функції",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Функції в JavaScript є одним з основних будівельних блоків мови, вони дозволяють створювати повторювані блоки коду з певним функціоналом. Функції можуть бути використані для організації коду в модулі або бібліотеці, які можуть бути використані в інших частинах програми. Функції можуть бути анонімними, які можуть бути передані в якості параметрів, або бути оголошеними з іменем.",
+    image:
+      "https://d2h1bfu6zrdxog.cloudfront.net/wp-content/uploads/2022/07/javascript-functions.png",
     url: "/Function",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/2-2-1%20Function",
   },
   {
     id: 6,
     title: "Обʼєкт",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Об'єкти використовуються для представлення реальних об'єктів з властивостями та методами. Властивості об'єкта можуть бути динамічно додані та видалені за допомогою звичайного оператора доступу. Об'єкти також можуть бути передані як аргументи функцій або повернуті з них, що дозволяє їх використовувати як зручний механізм для передачі та обробки даних.",
+    image:
+      "https://www.freecodecamp.org/news/content/images/2021/07/Blue--Violet-and-Orange-Shapes-Fitness-Influencer-YouTube-Thumbnail-Set--3-.png",
 
     url: "/Object",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/3%20Обєкти",
   },
   {
     id: 7,
     title: "Деструктуризація та spread/rest",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Rest та Spread - це функціональні можливості ES6, що забезпечують зручну роботу з масивами та об'єктами. Rest забезпечує збір змінних в масив, тоді як Spread - розпаковує масив та передає його як окремі значення. Rest також дозволяє забирати певні значення з об'єкта, тоді як Spread - додає нові значення до нього. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:955/1*x70lFgXw_qyuVtn1C1nclg.jpeg",
     url: "/SpreadRest",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/3-3%20Object-RES-practice",
   },
   {
     id: 8,
     title: "CallBack та стрілочні цункції",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Callback - це функція, яку передають як параметр в іншу функцію. Використання callback дозволяє передавати функції як аргументи і виконувати їх у відповідному контексті. Callback використовують, коли потрібно виконати додаткові дії після виконання певної операції. ",
+    image:
+      "https://www.tutsmake.com/wp-content/uploads/2020/05/Callback-Function-JavaScript.jpeg",
     url: "/CallBack",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/4-1%20CallBackFunction",
   },
   {
     id: 9,
     title: "Перебираючі методи масиву",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Перебираючі методи масиву в JavaScript дозволяють виконувати різні операції з кожним елементом масиву, не використовуючи цикли. Метод forEach(), map(), filter(), reduce(). Кожен з цих методів має свої варіації і може бути використаний для різних завдань.",
+    image:
+      "https://1.bp.blogspot.com/-8xCJ4cEJwNs/YRNzEXQ3lRI/AAAAAAAAVwc/tQu8u-kPALYOPdVqsXOUFiPTsrPXZaExQCLcBGAsYHQ/s0/JS_Array.png",
     url: "/ArrayMethod",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/5-1%20Array%20Method",
   },
   {
     id: 10,
     title: "Ключове слово this",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Ключове слово this в JavaScript вказує на об'єкт, в якому виконується поточна функція. Контекст, або значення this, залежить від того, як була викликана функція. У глобальному контексті this посилається на глобальний об'єкт. У стрілкових функціях this приймає контекст з місця їх оголошення. Методи об'єктів встановлюють this в контексті об'єкта, в якому вони були викликані.",
+    image:
+      "https://cms-assets.tutsplus.com/cdn-cgi/image/width=800/uploads/users/1851/posts/29256/final_image/js-product.png",
     url: "/This",
-  },
-  {
-    id: 10,
-    title: "Ключове слово this",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
-    url: "/This",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/6-1-this",
   },
   {
     id: 11,
     title: "Прототипи та класи",
-    description: "Lesson 1 description",
-    image: "https://picsum.photos/id/123/200/300",
+    description:
+      "Прототипи та класи є основними механізмами об'єктно-орієнтованого програмування в JavaScript. Прототипи є простими об'єктами, які використовуються для створення нових об'єктів з визначеним набором властивостей. Класи є шаблонами, що визначають властивості та методи об'єктів. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:690/1*bmhUUIkug3fLHUQuB9kmvg.jpeg",
     url: "/Prototipe",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/7-1%20prototipe",
+  },
+  {
+    id: 12,
+    title: "DOM",
+    description:
+      "Незалежний від мови інтерфейс до роботи з HTML-документом. Містить набір властивостей та методів, які дозволяють шукати, створювати та видаляти елементи, реагувати на дії користувача та багато іншого. Тобто поєднує сторінку з мовою програмування.",
+    image:
+      "https://ourcodeworld.com/public-media/articles/articleocw-56bba37e791bc.png",
+    url: "/DOM",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/8-1-dom",
+  },
+  {
+    id: 13,
+    title: "Події",
+    description:
+      "Події в JavaScript є механізмом, який дозволяє виконувати код у відповідь на певні дії користувача або системи. Кожна подія має відповідні обробники подій, які виконуються при спрацьовуванні події.Події можуть бути викликані через взаємодію користувача з веб-сторінкою, таку як клік миші або натискання клавіші на клавіатурі. Також можуть бути викликані події, пов'язані зі станом веб-сторінки, такі як завантаження сторінки або її закриття. Щоб прослуховувати події, можна використовувати метод addEventListener(). Цей метод приймає два аргументи: назву події і функцію-обробник. Функція-обробник буде виконана відразу ж, коли подія спрацює. Події в JavaScript є потужним інструментом для взаємодії з користувачем та забезпечення багатофункціональності веб-сторінок і додатків. Вони дозволяють реагувати на дії користувача та змінювати стан веб-сторінки в залежності від цих дій.",
+    image:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--J43C-IwA--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/1zm80qaekzgu8p54w98g.jpg",
+    url: "/Events",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/8-2%20-%20event",
+  },
+  {
+    id: 14,
+    title: "Делегування подій",
+    description:
+      "Делегування подій є потужним інструментом для оптимізації обробки подій в JavaScript. Замість того, щоб додавати обробники подій до кожного елемента на сторінці, ви можете встановити обробник подій на їх спільного батька і використовувати делегування подій, щоб обробляти події на його дочірніх елементах. Прикладом може бути таблиця, де ви хочете додати обробник подій на кожен рядок, коли користувач клікає на нього. Замість того, щоб додавати обробник подій до кожного рядка, ви можете встановити обробник подій на батьківський елемент таблиці і використовувати делегування подій, щоб обробляти події кліка на кожному рядку. Це дозволяє зменшити кількість обробників подій на сторінці та поліпшити продуктивність.",
+    image: "https://i.ytimg.com/vi/IFxnIlGT0pc/hqdefault.jpg",
+    url: "/Events-delegation",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/8-3%20-%20event%20delegation",
+  },
+  {
+    id: 15,
+    title: "throttle/debounce та lazyload",
+    description:
+      "Делегування подій є потужним інструментом для оптимізації обробки подій в JavaScript. Замість того, щоб додавати обробники подій до кожного елемента на сторінці, ви можете встановити обробник подій на їх спільного батька і використовувати делегування подій, щоб обробляти події на його дочірніх елементах. Прикладом може бути таблиця, де ви хочете додати обробник подій на кожен рядок, коли користувач клікає на нього. Замість того, щоб додавати обробник подій до кожного рядка, ви можете встановити обробник подій на батьківський елемент таблиці і використовувати делегування подій, щоб обробляти події кліка на кожному рядку. Це дозволяє зменшити кількість обробників подій на сторінці та поліпшити продуктивність.",
+    image:
+      "https://www.syncfusion.com/blogs/wp-content/uploads/2022/11/JavaScript-Debounce-vs.-Throttle-2.png",
+    url: "/throttle",
+    repUrl: "",
+  },
+  {
+    id: 16,
+    title: "Модульність коду",
+    description:
+      "Модульність коду в JavaScript відноситься до підходу, коли програмний код розбивається на окремі модулі або компоненти, які мають чітко визначені функціональність та взаємодіють один з одним через визначені інтерфейси. Модульність спрощує розробку, підтримку та розширення кодової бази, забезпечуючи розділення відповідальностей та зменшуючи залежності між різними частинами програми.",
+    image:
+      "https://blog.prosite.dev/content/images/2021/06/webpack-prosite.jpg",
+    url: "/npm-module",
+    repUrl:
+      "https://github.com/OlexandrYaremchuk/JS-class-work/tree/main/10-1-npm",
+  },
+  {
+    id: 17,
+    title: "Веб-сховище",
+    description:
+      "Асинхронний код - це спосіб виконання програмного коду, в якому операції виконуються паралельно, без очікування завершення попередніх операцій. Замість того, щоб блокувати виконання коду, коли відбувається тривала операція, асинхронний код дозволяє продовжувати виконання інших операцій, поки тривала операція завершиться. Наприклад, при виконанні асинхронного запиту до сервера, програма може продовжувати виконання інших операцій, не чекаючи на повернення результату запиту. Коли запит буде завершено, виконається відповідне дійство, вказане в Promise або callback-функції. Це дозволяє програмі бути більш реагуючою та швидко відповідати на події та запити користувача.",
+    image:
+      "https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto//img/LocalStorage-cover_photo.png",
+    url: "/web-storage",
+    repUrl: "",
+  },
+  {
+    id: 18,
+    title: "Таймери та час",
+    description:
+      "Веб-сховище (Web Storage) в JavaScript є механізмом для зберігання даних на боці клієнта, без необхідності взаємодії з сервером. Воно надає простий спосіб збереження та отримання даних у вигляді ключ-значення. Веб-сховище в JavaScript є потужним інструментом для збереження та управління даними на боці клієнта, що дає можливість розробникам створювати більш інтерактивні та персоналізовані веб-додатки. Завдяки можливостям веб-сховища, можна зберігати стан додатку, вибрані налаштування, переглядені дані та багато іншого. Це забезпечує зручність та персоналізацію для користувачів, а також дозволяє додаткам працювати офлайн або в обмежених умовах з'єднання з Інтернетом.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSBbhLhSvdexNfItpNba3c6I_l6gvDANkpw&usqp=CAU",
+    url: "/time-date",
+    repUrl: "",
   },
 ];

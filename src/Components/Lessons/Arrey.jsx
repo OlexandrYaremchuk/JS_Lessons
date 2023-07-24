@@ -18,11 +18,14 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { motion, useScroll } from "framer-motion";
 import { FcHome } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import GitHubBtn from "../GitHubBtn";
 
 const Arrey = () => {
   const codeStyle = materialDark;
   const { scrollYProgress } = useScroll();
+  const location = useLocation();
+  const locationPathname = location.pathname;
 
   return (
     <div className={s.lessonsBox}>
@@ -31,6 +34,8 @@ const Arrey = () => {
           <FcHome customStyle={{ with: "40vh" }} size="3em" />
         </Link>
       </button>
+      <GitHubBtn locationPathname={locationPathname} />
+
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

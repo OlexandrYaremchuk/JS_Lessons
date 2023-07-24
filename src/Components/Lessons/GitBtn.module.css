@@ -1,0 +1,43 @@
+@media screen and (min-width: 901px) {
+  .git {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    left: 195vw;
+
+    top: 15vh;
+  }
+  .gitImg {
+    position: absolute;
+    top: 88vh;
+    left: 95vw;
+    width: 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .git {
+    /* position: fixed; */
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    left: 195vw;
+
+    top: 15vh;
+  }
+  .gitImg {
+    /* position: absolute; */
+    top: 70vh;
+    left: 85vw;
+    width: 3em;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .gitImg {
+    position: absolute;
+    top: 88vh;
+    left: 94vw;
+    width: 3em;
+  }
+}

@@ -47,12 +47,14 @@ const StartComponent = () => {
                 }}
               >
                 <Link
+                  className="link"
                   to={LessonPlane[i].url}
                   id="GitHub"
                   onClick={handleLinkClick}
                 >
                   <div className="card">
                     <h2>{LessonPlane[i].title}</h2>
+                    <img src={LessonPlane[i].image} alt="" />
                     <p>{LessonPlane[i].description}</p>
                   </div>
                 </Link>

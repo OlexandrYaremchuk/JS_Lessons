@@ -26,6 +26,14 @@ import {
 import { MenuToggle } from "./Components/Header/MenuToggle";
 import Start from "./Components/start/Start";
 import Prototipe from "./Components/Lessons/Prototipe";
+import GitHubBtn from "./Components/GitHubBtn";
+import DOM from "./Components/Lessons/DOM";
+import Events from "./Components/Lessons/Events";
+import EventsDelegation from "./Components/Lessons/EventsDelegation";
+import Throttle from "./Components/Lessons/throttle_debounce";
+import NpmModule from "./Components/Lessons/npm_module";
+import WebStorage from "./Components/Lessons/web-storage";
+import TimeDate from "./Components/Lessons/time_date";
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();
@@ -103,6 +111,13 @@ function App(props) {
               <Route path="ArrayMethod" element={<ArrayMethod />} />
               <Route path="This" element={<This />} />
               <Route path="Prototipe" element={<Prototipe />} />
+              <Route path="DOM" element={<DOM />} />
+              <Route path="Events" element={<Events />} />
+              <Route path="Events-delegation" element={<EventsDelegation />} />
+              <Route path="throttle" element={<Throttle />} />
+              <Route path="npm-module" element={<NpmModule />} />
+              <Route path="web-storage" element={<WebStorage />} />
+              <Route path="time-date" element={<TimeDate />} />
             </Routes>
           </div>
         </div>

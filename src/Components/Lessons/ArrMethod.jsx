@@ -1,6 +1,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import GitHubBtn from "../GitHubBtn";
 
 import s from "./Lessons.module.css";
 import sprite from "../../img/icomoon/sprite.svg";
@@ -8,10 +9,13 @@ import Scrollspy from "react-scrollspy";
 import callBack01 from "../../img/callBack01.jpeg";
 import declarative from "../../img/declarative.jpeg";
 import { FcHome } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const ArrayMethod = () => {
   const codeStyle = materialDark;
+  const location = useLocation();
+  const locationPathname = location.pathname;
+
   return (
     <div className={s.lessonsBox}>
       <button className={s.home}>
@@ -19,6 +23,8 @@ const ArrayMethod = () => {
           <FcHome customStyle={{ with: "40vh" }} size="3em" />
         </Link>
       </button>
+      <GitHubBtn locationPathname={locationPathname} />
+
       <div className={s.breadNav}>
         <Scrollspy
           items={["branching", "section-2", "section-3"]}

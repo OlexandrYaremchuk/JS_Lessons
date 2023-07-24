@@ -1,6 +1,6 @@
 $color-purple: #8b5cf6;
 $color-pink: #ed6c11;
-$color-gray: #9ca3af;
+$color-gray: #5a5a5c;
 $color-black: #1f2937;
 /* Змінна зі значенням розміру картки */
 $card-size: 23vw;
@@ -22,7 +22,6 @@ $delate: 100wh;
   box-sizing: border-box;
 }
 .app {
-  // display: none;
   width: 100vh;
   height: 100vh;
   padding-top: 15vh;
@@ -30,7 +29,7 @@ $delate: 100wh;
 }
 
 .carousel {
-  left: 25%;
+  left: 5vw;
   position: relative;
   width: $card-size;
   height: $card-size;
@@ -40,7 +39,7 @@ $delate: 100wh;
 
 .card-container {
   position: absolute;
-  width: 25vw;
+  // width: 25vw;
   height: 50vh;
   transform: rotateY(calc(var(--offset) * 50deg))
     scaleY(calc(1 + var(--abs-offset) * -0.4))
@@ -50,8 +49,9 @@ $delate: 100wh;
   transition: all 0.3s ease-out;
 }
 .card {
-  width: 100%;
-  height: 60vh;
+  width: 40vw;
+  height: auto;
+  min-height: 65vh;
   padding: 2rem;
   background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
   border-radius: 1rem;
@@ -59,9 +59,10 @@ $delate: 100wh;
   text-align: justify;
   align-items: center;
   transition: all 0.3s ease-out;
+
   h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 0.7em;
     color: $color-black;
@@ -72,7 +73,17 @@ $delate: 100wh;
     opacity: var(--active);
   }
   p {
-    padding: 0 1vw 1vh;
+    margin-top: 2vh;
+    padding: 1vw 0 0 0;
+  }
+  img {
+    width: 20vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+    box-shadow: 4px 6px 5px 0px rgba(83, 83, 83, 0.75);
   }
 }
 .nav {
@@ -88,31 +99,41 @@ $delate: 100wh;
   background: unset;
   border: unset;
   &.left {
-    transform: translateX(-400%) translateY(50%);
+    transform: translateX(-24vw) translateY(50%);
   }
   &.right {
-    transform: translateX(985%) translateY(50%);
+    transform: translateX(60vw) translateY(50%);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .planBox {
+@media screen and (max-width: 600px) {
+  .app {
     width: 100vw;
   }
+  .card-container {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    transform: rotateY(calc(var(--offset) * 50deg))
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 1rem));
+    transition: all 0.3s ease-out;
+  }
   .carousel {
-    width: 70vw;
-    height: 60vh;
-    left: 25%;
+    left: 5vw;
     position: relative;
-    perspective: 50vw;
+    width: 90%;
+    height: 90%;
+    perspective: 500px;
     transform-style: preserve-3d;
   }
   .nav {
-    color: white;
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid black;
+    color: rgb(20, 20, 20);
+    font-size: 3rem;
+
     top: 50%;
     z-index: 2;
     cursor: pointer;
@@ -120,40 +141,82 @@ $delate: 100wh;
     background: unset;
     border: unset;
     &.left {
-      transform: translateX(-300%) translateY(50%);
+      transform: translateX(14vw) translateY(320%);
     }
     &.right {
-      transform: translateX(785%) translateY(50%);
+      transform: translateX(60vw) translateY(320%);
     }
   }
   .card {
-    width: 40vw;
-    height: auto;
-    min-height: 60vw;
-    padding: 2rem;
-    background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
-    border-radius: 1rem;
-    color: $color-gray;
-    text-align: justify;
-    transition: all 0.3s ease-out;
-    h2 {
-      text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 0 0 0.7em;
-      color: $color-black;
+    width: 90%;
+    height: 30vh;
+    // max-height: 70%;
+    // padding: 10%;
+    img {
+      width: 90%;
     }
-    p,
     h2 {
-      transition: all 0.3s ease-out;
-      opacity: var(--active);
+      font-size: 1rem;
+      padding: 0 5%;
     }
     p {
-      padding: 0 1vw 1vh;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
   }
 }
 
-@media screen and (min-width: 1024px) {
+.link {
+  text-decoration: none;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .app {
+    width: 100vw;
+  }
+  .card-container {
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+  }
+  .carousel {
+    left: 20vw;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  .nav {
+    border: 1px solid black;
+    color: rgb(20, 20, 20);
+    font-size: 3rem;
+
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    background: unset;
+    border: unset;
+    &.left {
+      transform: translateX(-15vw) translateY(-120%);
+    }
+    &.right {
+      transform: translateX(68vw) translateY(-120%);
+    }
+  }
+  .card {
+    width: 90%;
+    height: 30vh;
+    // max-height: 70%;
+    // padding: 10%;
+    img {
+      width: 90%;
+    }
+    h2 {
+      font-size: 1rem;
+      padding: 0 5%;
+    }
+    p {
+      font-size: 0.6rem;
+    }
+  }
 }
