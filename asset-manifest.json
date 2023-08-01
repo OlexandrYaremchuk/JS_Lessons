@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/JS_Lessons/static/css/main.7815584e.css",
-    "main.js": "/JS_Lessons/static/js/main.fc5c3c47.js",
+    "main.css": "/JS_Lessons/static/css/main.e6675405.css",
+    "main.js": "/JS_Lessons/static/js/main.3eb354c1.js",
     "static/media/oop.png": "/JS_Lessons/static/media/oop.a4d972549560be513436.png",
     "static/media/callBack01.jpeg": "/JS_Lessons/static/media/callBack01.bc6ab17358246e895cb3.jpeg",
     "static/media/oop2.png": "/JS_Lessons/static/media/oop2.e557e1a5d562b5657371.png",
     "static/media/application.png": "/JS_Lessons/static/media/application.6278f96dd7655cf585b5.png",
     "static/media/object.png": "/JS_Lessons/static/media/object.639208ed3a450a46bf69.png",
     "static/media/declarative.jpeg": "/JS_Lessons/static/media/declarative.d4b6f39d17d27fd08924.jpeg",
+    "static/media/network-tab.webp": "/JS_Lessons/static/media/network-tab.c1df783fab6df60062d3.webp",
     "static/media/beforeDelegation.png": "/JS_Lessons/static/media/beforeDelegation.aa9915629bb1f853dafa.png",
     "static/media/method-finally.png": "/JS_Lessons/static/media/method-finally.2a12dcfd115eac0c7290.png",
     "static/media/method-then.png": "/JS_Lessons/static/media/method-then.2156ce4ce86fce5555de.png",
@@ -15,7 +16,10 @@
     "static/media/npmInit.png": "/JS_Lessons/static/media/npmInit.0a2fbe691e6b215a67af.png",
     "static/media/method-catch.png": "/JS_Lessons/static/media/method-catch.66f43210324b868a6158.png",
     "static/media/promise-chain.png": "/JS_Lessons/static/media/promise-chain.3b1b8e7c12658a38889c.png",
+    "static/media/cors.png": "/JS_Lessons/static/media/cors.4dd1613473f34a0c590c.png",
     "static/media/scope.png": "/JS_Lessons/static/media/scope.947d6ff593e5023fbdca.png",
+    "static/media/http-vs-https.png": "/JS_Lessons/static/media/http-vs-https.5b114d15145fe71a52e8.png",
+    "static/media/rest-api.webp": "/JS_Lessons/static/media/rest-api.76bff0214933449d78bb.webp",
     "static/media/js-engine.gif": "/JS_Lessons/static/media/js-engine.2cf10c2268098a632ac2.gif",
     "static/media/afterDelegation.png": "/JS_Lessons/static/media/afterDelegation.2aafa50bd7eca66fdfb3.png",
     "static/media/switch.png": "/JS_Lessons/static/media/switch.8d75cc28a53f0eefd994.png",
@@ -24,7 +28,9 @@
     "static/media/trailingDebounce.png": "/JS_Lessons/static/media/trailingDebounce.a15401f026a6fee66058.png",
     "static/media/else-if.png": "/JS_Lessons/static/media/else-if.445d23bed4576bc5c309.png",
     "static/media/eventBubbling.png": "/JS_Lessons/static/media/eventBubbling.1d00dd09ab199995b103.png",
+    "static/media/client-server.png": "/JS_Lessons/static/media/client-server.610ca5fa32c6f6b83d78.png",
     "static/media/leadingDebounce.png": "/JS_Lessons/static/media/leadingDebounce.838211763873438fedda.png",
+    "static/media/request-response.png": "/JS_Lessons/static/media/request-response.f97010382ec905c80b02.png",
     "static/media/logo.png": "/JS_Lessons/static/media/logo.96a13af0147433eded9b.png",
     "static/media/live-dom-tree.png": "/JS_Lessons/static/media/live-dom-tree.a1711013a702c8e47e50.png",
     "static/media/Arrey1.png": "/JS_Lessons/static/media/Arrey1.c2df4a00c9aed8b8865a.png",
@@ -69,11 +75,11 @@
     "static/media/push2.png": "/JS_Lessons/static/media/push2.6cafee0d7c3ad75a9ba2.png",
     "static/media/dom-traversal.png": "/JS_Lessons/static/media/dom-traversal.f26900a55aac85f42e6d.png",
     "index.html": "/JS_Lessons/index.html",
-    "main.7815584e.css.map": "/JS_Lessons/static/css/main.7815584e.css.map",
-    "main.fc5c3c47.js.map": "/JS_Lessons/static/js/main.fc5c3c47.js.map"
+    "main.e6675405.css.map": "/JS_Lessons/static/css/main.e6675405.css.map",
+    "main.3eb354c1.js.map": "/JS_Lessons/static/js/main.3eb354c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7815584e.css",
-    "static/js/main.fc5c3c47.js"
+    "static/css/main.e6675405.css",
+    "static/js/main.3eb354c1.js"
   ]
 }
