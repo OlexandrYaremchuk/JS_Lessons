@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JS_Lessons/static/css/main.e6675405.css",
-    "main.js": "/JS_Lessons/static/js/main.4e8002be.js",
+    "main.js": "/JS_Lessons/static/js/main.ab1de0b5.js",
     "static/media/oop.png": "/JS_Lessons/static/media/oop.a4d972549560be513436.png",
     "static/media/callBack01.jpeg": "/JS_Lessons/static/media/callBack01.bc6ab17358246e895cb3.jpeg",
     "static/media/oop2.png": "/JS_Lessons/static/media/oop2.e557e1a5d562b5657371.png",
@@ -68,6 +68,7 @@
     "static/media/call-stack.png": "/JS_Lessons/static/media/call-stack.21911e0b095027e03a0f.png",
     "static/media/splice3.png": "/JS_Lessons/static/media/splice3.3fe56b34b901d6535276.png",
     "static/media/bundle.png": "/JS_Lessons/static/media/bundle.5d4c4ba92cbc8f92adb9.png",
+    "static/media/crud.png": "/JS_Lessons/static/media/crud.002f7932a2a9de4adb7f.png",
     "static/media/link.png": "/JS_Lessons/static/media/link.1f6d1a803ed066f017ac.png",
     "static/media/splice2.png": "/JS_Lessons/static/media/splice2.6fa30534ff37c9896cb7.png",
     "static/media/dependencies.png": "/JS_Lessons/static/media/dependencies.00f911120a02b99e3150.png",
@@ -79,10 +80,10 @@
     "static/media/dom-traversal.png": "/JS_Lessons/static/media/dom-traversal.f26900a55aac85f42e6d.png",
     "index.html": "/JS_Lessons/index.html",
     "main.e6675405.css.map": "/JS_Lessons/static/css/main.e6675405.css.map",
-    "main.4e8002be.js.map": "/JS_Lessons/static/js/main.4e8002be.js.map"
+    "main.ab1de0b5.js.map": "/JS_Lessons/static/js/main.ab1de0b5.js.map"
   },
   "entrypoints": [
     "static/css/main.e6675405.css",
-    "static/js/main.4e8002be.js"
+    "static/js/main.ab1de0b5.js"
   ]
 }
